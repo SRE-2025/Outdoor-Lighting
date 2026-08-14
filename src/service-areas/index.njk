@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: "Service Areas — Landscaping Across Central Texas"
+description: "Research Turf Management serves 27 Central Texas cities including Buda, Kyle, San Marcos, Dripping Springs & Wimberley with landscape design, hardscape & turf care."
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">{{ site.tagline }}</p>
+      <h1>Landscaping across the Central Texas corridor</h1>
+      <p class="hero__sub">Based in Buda and serving 27 cities across Hays County, South Austin and the Hill Country. Wherever you are in the corridor, you get the same trusted crew.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Service Areas</nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 40px">
+      <p class="eyebrow">Priority corridor</p>
+      <h2>Our core service cities</h2>
+      <p class="lead">These are the communities we serve most — click through for local details.</p>
+    </div>
+    <div class="grid grid-4">
+      {% for loc in locations.priority %}
+      <a class="card card--link" href="/service-areas/{{ loc.slug }}/">
+        <div class="card__icon">{{ ico.svg("pin") }}</div>
+        <h3>{{ loc.city }}</h3>
+        <p class="muted" style="font-size:.9rem">{{ loc.county }}</p>
+        <span class="card__more">{{ loc.city }} landscaping {{ ico.svg("arrow") }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="wrap center">
+    <p class="eyebrow">Full coverage</p>
+    <h2>All 27 cities we serve</h2>
+    <p class="lead narrow" style="margin:0 auto 28px">Don't see your city on the priority list? We likely still serve you. Here's our complete Central Texas service area.</p>
+    <ul class="chips" style="justify-content:center;max-width:920px;margin:0 auto">
+      {% for loc in locations.priority %}
+      <li><a class="chip chip--strong" href="/service-areas/{{ loc.slug }}/" style="text-decoration:none">{{ loc.city }}</a></li>
+      {% endfor %}
+      {% for city in locations.additional %}
+      <li class="chip">{{ city }}</li>
+      {% endfor %}
+    </ul>
+    <p class="muted" style="margin-top:24px">Not sure if we reach you? <a href="/contact/">Just ask</a> — if we can't help, we'll point you to someone who can.</p>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

@@ -1,0 +1,63 @@
+{
+  "name": "Research Turf Management",
+  "shortName": "Research Turf",
+  "tagline": "Growing Green, Living Beauty",
+  "url": "https://researchturfmgmt.com",
+  "description": "Research Turf Management designs, builds, and maintains beautiful, water-wise landscapes across Buda, Kyle, San Marcos and Central Texas. Family-owned since 1998.",
+  "founded": 2007,
+  "parentFounded": 1998,
+  "yearsInBusiness": 28,
+  "phone": "(512) 233-6300",
+  "phoneRaw": "+15122336300",
+  "email": "office@excelpest-lawncontrol.com",
+  "address": {
+    "street": "175 Warehouse Dr, Ste A",
+    "city": "Buda",
+    "state": "TX",
+    "zip": "78610-3547",
+    "county": "Hays County"
+  },
+  "geo": {
+    "lat": 30.0855,
+    "lng": -97.8403
+  },
+  "hours": [
+    { "days": "Monday – Friday", "open": "8:00 AM", "close": "5:00 PM" },
+    { "days": "Saturday – Sunday", "open": "Closed", "close": "" }
+  ],
+  "openingHoursSpec": [
+    { "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" }
+  ],
+  "owner": {
+    "name": "Gye Hutson",
+    "title": "Owner & Lead Landscape Designer"
+  },
+  "officeManager": {
+    "name": "Megan Avery",
+    "title": "Director of Office Operations"
+  },
+  "trust": {
+    "googleRating": "5.0",
+    "bbbRating": "A+",
+    "bbbAccreditedYear": 2007
+  },
+  "discount": "10% off for military, veterans, first responders, nurses & teachers",
+  "offers": [
+    "Free design consultations & estimates",
+    "Licensed & fully insured",
+    "Workmanship warranties",
+    "Family-owned & locally operated"
+  ],
+  "sister": {
+    "name": "Excel Pest & Lawn Control",
+    "url": "https://excelpest-lawncontrol.com",
+    "phone": "(737) 201-3059",
+    "blurb": "Our sister company for pest control, termite letters, rodent exclusion & lawn pest treatment."
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/ExcelPestandLawnControl/",
+    "youtube": "https://www.youtube.com/@excelpestlawncontrol",
+    "google": "https://www.google.com/maps"
+  },
+  "author": "Research Turf Management"
+}

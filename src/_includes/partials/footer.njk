@@ -1,0 +1,56 @@
+{% import "partials/icons.njk" as ico %}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__mark" style="width:38px;height:38px">{{ ico.svg("logo") }}</span>
+          <span class="brand__text">
+            <span class="brand__name">Research Turf Management</span>
+            <span class="brand__tag">Growing Green, Living Beauty</span>
+          </span>
+        </div>
+        <p>Family-owned landscape design, build &amp; turf management serving Buda, Kyle, San&nbsp;Marcos and Central Texas since {{ site.parentFounded }}.</p>
+        <p class="mb-0"><strong style="color:#fff">Licensed &amp; insured.</strong> Free estimates. Workmanship warranties.</p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          {% for s in collections.services %}
+          <li><a href="{{ s.url }}">{{ s.data.service.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          {% for loc in locations.priority %}
+          <li><a href="/service-areas/{{ loc.slug }}/">{{ loc.city }}</a></li>
+          {% endfor %}
+          <li><a href="/service-areas/">All 27 cities &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</li>
+          <li><strong style="color:#fff">Mon–Fri 8am–5pm</strong></li>
+        </ul>
+        <p style="margin-top:14px">
+          Pest control? Visit our sister company<br>
+          <a href="{{ site.sister.url }}" rel="noopener"><strong>Excel Pest &amp; Lawn Control &rarr;</strong></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>&copy; {{ "now" | year }} {{ site.name }}. All rights reserved.</span>
+      <span>Buda, TX &middot; {{ site.address.county }} &middot; Design → Build → Maintain</span>
+    </div>
+  </div>
+</footer>

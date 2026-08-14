@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: "Reviews — 5-Star Rated Landscaping in Central Texas"
+description: "Research Turf Management is 5.0-star rated with customers who've stayed for decades. Read real reviews and see why Central Texas trusts our family-owned crew."
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">5.0★ · Family-owned since {{ site.parentFounded }}</p>
+      <h1>Customers who stay for decades</h1>
+      <p class="hero__sub">We've earned a perfect rating the slow way — by treating every yard like our own and showing up, year after year, for the same families.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Reviews</nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="stats" style="max-width:820px;margin:0 auto 48px">
+      <div class="stat"><div class="stat__n">5.0★</div><div class="stat__l">Average rating</div></div>
+      <div class="stat"><div class="stat__n">{{ reviews.aggregate.reviewCount }}</div><div class="stat__l">Five-star reviews</div></div>
+      <div class="stat"><div class="stat__n">30+</div><div class="stat__l">Years with longest customer</div></div>
+      <div class="stat"><div class="stat__n">{{ site.trust.bbbRating }}</div><div class="stat__l">BBB rating</div></div>
+    </div>
+
+    <div class="grid grid-2">
+      {% for r in reviews.featured %}
+      <figure class="review" style="margin:0">
+        <div class="review__stars">★★★★★</div>
+        <blockquote class="review__quote" style="border:0;padding:0;margin:0 0 16px">"{{ r.quote }}"</blockquote>
+        <figcaption>
+          <span class="review__author">{{ r.author }}</span>
+          <span class="review__context"> · {{ r.context }}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="wrap center narrow" style="margin:0 auto">
+    <p class="eyebrow">Worked with us?</p>
+    <h2>We'd love your review</h2>
+    <p class="lead">If we've taken care of your landscape, a few words on Google means the world to a family business — and helps your neighbors find a crew they can trust.</p>
+    <div class="hero__actions" style="justify-content:center">
+      <a class="btn btn--primary btn--lg" href="{{ site.social.google }}" rel="noopener">Leave a Google Review</a>
+      <a class="btn btn--ghost btn--lg" href="/contact/">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: "Page Not Found"
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+{% import "partials/icons.njk" as ico %}
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner center" style="margin:0 auto">
+      <p class="hero__tagline">404</p>
+      <h1>This page went to seed.</h1>
+      <p class="hero__sub" style="margin-left:auto;margin-right:auto">We couldn't find the page you were looking for — but we can still help with your landscape.</p>
+      <div class="hero__actions" style="justify-content:center">
+        <a class="btn btn--white btn--lg" href="/">Back to Home</a>
+        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap center">
+    <p class="muted">Or jump to a popular page:</p>
+    <ul class="chips" style="justify-content:center;max-width:600px;margin:0 auto">
+      <li><a class="chip" href="/services/">Services</a></li>
+      <li><a class="chip" href="/portfolio/">Portfolio</a></li>
+      <li><a class="chip" href="/service-areas/">Service Areas</a></li>
+      <li><a class="chip" href="/reviews/">Reviews</a></li>
+      <li><a class="chip" href="/about/">About</a></li>
+    </ul>
+  </div>
+</section>

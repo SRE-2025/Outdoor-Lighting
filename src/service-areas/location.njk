@@ -1,0 +1,84 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: locations.priority
+  size: 1
+  alias: loc
+  addAllPagesToCollections: true
+permalink: "/service-areas/{{ loc.slug }}/"
+eleventyComputed:
+  title: "{{ loc.headline | safe }}"
+  description: "Landscape design, hardscape, lawn care & turf management in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Research Turf Management."
+  schema:
+    "@context": "https://schema.org"
+    "@type": "Service"
+    serviceType: "Landscaping and Turf Management"
+    areaServed:
+      "@type": "City"
+      name: "{{ loc.city }}, TX"
+    provider:
+      "@type": "LandscapingBusiness"
+      name: "Research Turf Management"
+      telephone: "{{ site.phone }}"
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">{{ loc.city }}, TX · {{ loc.county }}</p>
+      <h1>{{ loc.headline }}</h1>
+      <p class="hero__sub">{{ loc.intro }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/contact/">Free {{ loc.city }} Estimate</a>
+        <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span><a href="/service-areas/">Service Areas</a><span>/</span>{{ loc.city }}</nav>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <p class="eyebrow">Local landscaping in {{ loc.city }}</p>
+      <h2>The crew {{ loc.city }} can count on</h2>
+      <p class="lead">{{ loc.note }}</p>
+      <p>As a family-owned company operating out of nearby Buda since {{ site.parentFounded }}, we know {{ loc.city }} and {{ loc.county }} — the soil, the water restrictions, and the plants that actually survive here. Every project gets the same care whether it's a full landscape build or steady seasonal maintenance.</p>
+      <h3>Full-service landscaping for {{ loc.city }} homes</h3>
+      <ul class="checks">
+        {% for s in collections.services %}
+        <li>{{ ico.svg("check") }} <span><a href="{{ s.url }}">{{ s.data.service.name }}</a> — {{ s.data.service.short }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="card">
+        <h3 style="margin-top:0">Why {{ loc.city }} neighbors choose us</h3>
+        <ul class="checks">
+          <li>{{ ico.svg("star") }} <span><strong>5.0★</strong> Google-rated, {{ site.trust.bbbRating }} with the BBB</span></li>
+          <li>{{ ico.svg("award") }} <span><strong>{{ site.yearsInBusiness }} years</strong> serving Central Texas</span></li>
+          <li>{{ ico.svg("shield") }} <span>Licensed, insured &amp; warranty-backed</span></li>
+          <li>{{ ico.svg("check") }} <span>One crew from design through maintenance</span></li>
+          <li>{{ ico.svg("check") }} <span>10% off for military, first responders, nurses &amp; teachers</span></li>
+        </ul>
+        <a class="btn btn--primary" href="/contact/" style="margin-top:12px">Request Your Free Estimate</a>
+      </div>
+      <div class="card" style="margin-top:22px">
+        <h3 style="margin-top:0">Also serving nearby</h3>
+        <ul class="chips">
+          {% for other in locations.priority %}
+            {% if other.slug != loc.slug %}
+            <li><a class="chip" href="/service-areas/{{ other.slug }}/" style="text-decoration:none">{{ other.city }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set ctaHeading = "Let's transform your " + loc.city + " landscape." %}
+{% set ctaText = "Free, no-pressure consultations for " + loc.city + " homeowners. Talk directly with the owner about your project." %}
+{% include "partials/cta.njk" %}

@@ -1,0 +1,33 @@
+{% import "partials/icons.njk" as ico %}
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <span class="brand__mark">{{ ico.svg("logo") }}</span>
+      <span class="brand__text">
+        <span class="brand__name">Research Turf Management</span>
+        <span class="brand__tag">Growing Green, Living Beauty</span>
+      </span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a href="/service-areas/">Service Areas</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__cta">
+      <a class="nav__phone nav__phone--desktop" href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a>
+      <a class="btn btn--primary" href="/contact/">Free Estimate</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        {{ ico.svg("menu") }}
+      </button>
+    </div>
+  </div>
+</header>
