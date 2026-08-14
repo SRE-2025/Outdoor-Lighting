@@ -4,6 +4,7 @@ title: "About — Family-Owned in Buda Since 1998"
 description: "Research Turf Management is owner Gye Hutson's family-run landscape company — an Austin native serving Central Texas since 1998. Meet the crew behind the work."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -34,7 +35,7 @@ description: "Research Turf Management is owner Gye Hutson's family-run landscap
     </div>
     <div>
       <div class="media media--tall">
-        <div class="media__leaf">{{ ico.svg("leaf") }}</div>
+        {{ scn.scene() }}
         <span class="media__label">Family-owned in Buda, TX</span>
       </div>
       <div class="badges" style="margin-top:22px">

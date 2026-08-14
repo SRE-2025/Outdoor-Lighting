@@ -21,6 +21,7 @@ eleventyComputed:
     description: "{{ service.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -53,7 +54,7 @@ eleventyComputed:
     </div>
     <div>
       <div class="media media--tall">
-        <div class="media__leaf">{{ ico.svg(service.icon) }}</div>
+        {{ scn.scene() }}
         <span class="media__label">{{ service.name }} · Central Texas</span>
       </div>
       <div class="card" style="margin-top:22px">

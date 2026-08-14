@@ -3,8 +3,11 @@
 module.exports = {
   aggregate: {
     rating: "5.0",
-    // Company-wide (Excel Pest + Research Turf share a customer base).
-    reviewCount: 41
+    // Combined across the family of companies (Excel Pest + Research Turf
+    // share one customer base). The turf brand's own Google profile is newer;
+    // present the count as combined so it stays accurate, not inflated.
+    reviewCount: 41,
+    scope: "across Excel Pest & Research Turf"
   },
   featured: [
     {

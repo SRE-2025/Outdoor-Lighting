@@ -19,12 +19,13 @@ description: "Research Turf Management is 5.0-star rated with customers who've s
 
 <section class="section">
   <div class="wrap">
-    <div class="stats" style="max-width:820px;margin:0 auto 48px">
+    <div class="stats" style="max-width:820px;margin:0 auto 24px">
       <div class="stat"><div class="stat__n">5.0★</div><div class="stat__l">Average rating</div></div>
-      <div class="stat"><div class="stat__n">{{ reviews.aggregate.reviewCount }}</div><div class="stat__l">Five-star reviews</div></div>
+      <div class="stat"><div class="stat__n">{{ reviews.aggregate.reviewCount }}</div><div class="stat__l">Five-star reviews, family of companies</div></div>
       <div class="stat"><div class="stat__n">30+</div><div class="stat__l">Years with longest customer</div></div>
       <div class="stat"><div class="stat__n">{{ site.trust.bbbRating }}</div><div class="stat__l">BBB rating</div></div>
     </div>
+    <p class="muted center narrow" style="margin:0 auto 48px;font-size:.9rem">Excel Pest &amp; Research Turf are one family-owned operation with a shared crew and customer base, so our reviews reflect the whole company. Many reviewers name both the landscaping and the pest side of the business.</p>
 
     <div class="grid grid-2">
       {% for r in reviews.featured %}

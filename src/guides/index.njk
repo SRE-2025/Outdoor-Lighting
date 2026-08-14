@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: "Central Texas Landscaping Guides & Lawn Care Tips"
+description: "Local, practical guides on drought-tolerant landscaping, choosing the right grass, and watering within Hays County restrictions — from Research Turf Management."
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">Guides &amp; tips</p>
+      <h1>Central Texas landscaping, explained</h1>
+      <p class="hero__sub">Practical, local advice from 28 years of working Hays County soil — drought-tolerant design, turf selection, watering within restrictions, and more.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Guides</nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-3">
+      {% set sortedGuides = guides | sort(attribute='date', reverse=true) %}
+      {% for g in sortedGuides %}
+      <a class="card card--link" href="/guides/{{ g.slug }}/">
+        <div class="card__icon">{{ ico.svg("leaf") }}</div>
+        <h3>{{ g.title }}</h3>
+        <p class="muted">{{ g.excerpt }}</p>
+        <span class="card__more">Read the guide {{ ico.svg("arrow") }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

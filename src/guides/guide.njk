@@ -1,0 +1,85 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: guides
+  size: 1
+  alias: guide
+  addAllPagesToCollections: true
+permalink: "/guides/{{ guide.slug }}/"
+eleventyComputed:
+  title: "{{ guide.title | safe }}"
+  description: "{{ guide.excerpt | safe }}"
+  schema:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "{{ guide.title | safe }}"
+    datePublished: "{{ guide.date }}"
+    author:
+      "@type": "Organization"
+      name: "Research Turf Management"
+    publisher:
+      "@type": "Organization"
+      name: "Research Turf Management"
+    description: "{{ guide.excerpt | safe }}"
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">Guide · {{ guide.readMins }} min read</p>
+      <h1>{{ guide.title }}</h1>
+      <p class="hero__sub">{{ guide.excerpt }}</p>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span><a href="/guides/">Guides</a><span>/</span>{{ guide.title | truncate(40) }}</nav>
+
+<section class="section">
+  <div class="wrap split" style="align-items:start">
+    <article class="prose">
+      {{ guide.body | safe }}
+    </article>
+    <aside>
+      <div class="card">
+        <h3 style="margin-top:0">Free consultation</h3>
+        <p class="muted">Talk through your project with the owner — no pressure, no call center.</p>
+        <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+        <p class="muted" style="margin:14px 0 0"><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a></p>
+      </div>
+      {% for s in collections.services %}
+        {% if s.data.service.slug == guide.relatedService %}
+        <div class="card" style="margin-top:22px">
+          <h3 style="margin-top:0">Related service</h3>
+          <p class="muted">{{ s.data.service.short }}</p>
+          <a class="btn btn--ghost" href="{{ s.url }}">{{ s.data.service.name }} {{ ico.svg("arrow") }}</a>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </aside>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 36px">
+      <p class="eyebrow">Keep reading</p>
+      <h2>More guides</h2>
+    </div>
+    <div class="grid grid-3">
+      {% for g in guides %}
+        {% if g.slug != guide.slug %}
+        <a class="card card--link" href="/guides/{{ g.slug }}/">
+          <div class="card__icon">{{ ico.svg("leaf") }}</div>
+          <h3>{{ g.title }}</h3>
+          <p class="muted">{{ g.excerpt }}</p>
+          <span class="card__more">Read the guide {{ ico.svg("arrow") }}</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

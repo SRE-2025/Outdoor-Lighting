@@ -121,7 +121,7 @@ li { margin-bottom: .4em; }
 }
 .nav__toggle svg { width: 26px; height: 26px; stroke: var(--ink); }
 
-@media (max-width: 940px) {
+@media (max-width: 1024px) {
   .nav__links {
     position: fixed; inset: 74px 0 auto 0; flex-direction: column; align-items: stretch;
     background: #fff; border-bottom: 1px solid var(--line); padding: 12px 16px 20px;
@@ -203,6 +203,7 @@ li { margin-bottom: .4em; }
 .media--tall { aspect-ratio: 3 / 4; }
 .media__leaf { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: .35; }
 .media__leaf svg { width: 46%; height: 46%; stroke: #fff; fill: none; }
+.media .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
 .media__label {
   position: absolute; left: 16px; bottom: 16px; background: rgba(20,48,26,.7);
   color: #fff; font-size: .8rem; font-weight: 600; padding: 6px 12px; border-radius: 8px;
@@ -259,6 +260,35 @@ li { margin-bottom: .4em; }
   font-weight: 700; font-size: .9rem; color: var(--ink-2); box-shadow: var(--shadow-sm);
 }
 .badge svg { width: 18px; height: 18px; stroke: var(--green-600); }
+
+/* -------------------------------------------------------------- FAQ */
+.faq { max-width: 800px; margin: 0 auto; }
+.faq details {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 4px 22px; margin-bottom: 12px; box-shadow: var(--shadow-sm);
+}
+.faq summary {
+  list-style: none; cursor: pointer; padding: 18px 34px 18px 0; position: relative;
+  font-weight: 700; color: var(--green-800); font-size: 1.06rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: 2px; top: 50%; transform: translateY(-50%);
+  font-size: 1.5rem; font-weight: 400; color: var(--green-600); line-height: 1;
+}
+.faq details[open] summary::after { content: "\2013"; }
+.faq details[open] summary { padding-bottom: 6px; }
+.faq p { margin: 0 0 18px; color: var(--ink-2); }
+
+/* --------------------------------------------------------- process steps */
+.process { counter-reset: step; }
+.process__item { position: relative; padding-top: 8px; }
+.process__num {
+  width: 46px; height: 46px; border-radius: 50%; background: var(--green-600); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem;
+  margin-bottom: 16px; box-shadow: var(--shadow-sm);
+}
+.process__item h3 { color: var(--green-800); }
 
 /* -------------------------------------------------------------- prose */
 .prose { max-width: 760px; }
