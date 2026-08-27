@@ -5,7 +5,6 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
-{% import "partials/photo.njk" as photo %}
 
 <section class="hero">
   <div class="wrap">
@@ -52,10 +51,11 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       </ul>
     </div>
     <div>
-      <figure class="media media--tall">
-        {{ photo.image("landscape", "Water-wise Central Texas landscape planting") }}
-        <span class="media__label">Native Hill Country design · Buda, TX</span>
-      </figure>
+      <div class="feature-panel">
+        <span class="feature-panel__kicker">Central Texas know-how</span>
+        <strong>Built for heat, drought, soil &amp; real life.</strong>
+        <p>Thoughtful planting, reliable turf care, and outdoor spaces that work hard in every season.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -72,9 +72,6 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       {% for s in collections.services %}
         {% if loop.index <= 6 %}
         <a class="card card--link" href="{{ s.url }}">
-          <div class="card__photo">
-            {{ photo.service(s.data.service.slug, s.data.service.name + " project") }}
-          </div>
           <div class="card__body">
           <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
           <h3>{{ s.data.service.name }}</h3>
@@ -107,10 +104,11 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 <section class="section">
   <div class="wrap split">
     <div>
-      <figure class="media">
-        {{ photo.image("outdoor", "Crafted outdoor living area at a Central Texas home") }}
-        <span class="media__label">Pergola &amp; patio extension · Hays County</span>
-      </figure>
+      <div class="feature-panel feature-panel--terracotta">
+        <span class="feature-panel__kicker">Designed to gather</span>
+        <strong>Outdoor rooms made for long Central Texas evenings.</strong>
+        <p>From shade and stonework to practical patios, every detail is planned around how you use the space.</p>
+      </div>
     </div>
     <div>
       <p class="eyebrow">More than mow-and-blow</p>
