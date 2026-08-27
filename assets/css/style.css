@@ -194,8 +194,9 @@ li { margin-bottom: .4em; }
 .hero::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(15, 42, 24, .94) 0%, rgba(15, 42, 24, .80) 43%, rgba(15, 42, 24, .35) 100%),
-    url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=2200&q=88") center / cover no-repeat;
+    radial-gradient(circle at 88% 18%, rgba(119, 166, 94, .30), transparent 30%),
+    radial-gradient(circle at 74% 84%, rgba(180, 86, 44, .16), transparent 38%),
+    linear-gradient(116deg, #163a22 0%, #214d2d 52%, #2f5d3a 100%);
 }
 .hero::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
