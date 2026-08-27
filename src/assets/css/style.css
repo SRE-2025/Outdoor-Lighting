@@ -185,7 +185,9 @@ li { margin-bottom: .4em; }
 }
 .hero::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(90% 120% at 88% -10%, rgba(63,125,58,.38) 0%, rgba(63,125,58,0) 55%);
+  background:
+    linear-gradient(90deg, rgba(19, 48, 27, .91) 0%, rgba(19, 48, 27, .73) 46%, rgba(19, 48, 27, .28) 100%),
+    url("https://images.unsplash.com/photo-1558521958-0a228e77e984?auto=format&fit=crop&w=2200&q=88") center / cover no-repeat;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0; opacity: .10; pointer-events: none;
@@ -232,6 +234,9 @@ li { margin-bottom: .4em; }
   padding: 28px; box-shadow: var(--shadow-sm); transition: transform .18s ease, box-shadow .18s ease;
 }
 .card--link:hover { transform: translateY(-3px); box-shadow: var(--shadow); text-decoration: none; }
+.card__photo { height: 168px; overflow: hidden; margin: -28px -28px 22px; background: var(--green-100); }
+.card__photo .media__image { border-radius: var(--radius) var(--radius) 0 0; }
+.card__body { min-height: 1px; }
 .card__icon {
   width: 52px; height: 52px; border-radius: 13px; background: var(--green-100);
   display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
@@ -248,6 +253,8 @@ li { margin-bottom: .4em; }
   background: linear-gradient(135deg, var(--green-500), var(--green-800));
 }
 .media--tall { aspect-ratio: 3 / 4; }
+.media__image { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform .45s ease; }
+.media:hover .media__image { transform: scale(1.035); }
 .media__leaf { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: .35; }
 .media__leaf svg { width: 46%; height: 46%; stroke: #fff; fill: none; }
 .media .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -413,4 +420,13 @@ li { margin-bottom: .4em; }
 
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
+
+
+/* Photo-led editorial refinements */
+.hero--page::before { background-position: center; }
+@media (max-width: 700px) {
+  .hero::before { background: linear-gradient(90deg, rgba(19,48,27,.92), rgba(19,48,27,.62)), url("https://images.unsplash.com/photo-1558521958-0a228e77e984?auto=format&fit=crop&w=1200&q=82") center / cover no-repeat; }
+  .hero__inner { padding: 76px 0 70px; }
+  .card__photo { height: 190px; }
 }
