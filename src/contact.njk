@@ -24,53 +24,11 @@ description: "Request a free landscape design estimate from Research Turf Manage
       <h2>Get your free consultation</h2>
       <p class="muted">Prefer to talk now? Call or text us at <a href="tel:{{ site.phoneRaw }}"><strong>{{ site.phone }}</strong></a> during business hours.</p>
 
-      <!--
-        FORM SETUP: This form is ready to connect to a form handler.
-        Recommended (no server needed): create a free Formspree form at
-        https://formspree.io and replace the action URL below with your endpoint,
-        e.g. https://formspree.io/f/abcdwxyz . Until then, the phone and email
-        links above/below are fully functional.
-      -->
-      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top:20px">
-        <div class="form__row">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
-          </div>
-        </div>
-        <div class="form__row">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-          <div>
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" list="cities" placeholder="Buda, Kyle, San Marcos…">
-            <datalist id="cities">
-              {% for loc in locations.priority %}<option value="{{ loc.city }}">{% endfor %}
-              {% for city in locations.additional %}<option value="{{ city }}">{% endfor %}
-            </datalist>
-          </div>
-        </div>
-        <div>
-          <label for="service">What can we help with?</label>
-          <select id="service" name="service">
-            <option value="">Select a service…</option>
-            {% for s in collections.services %}<option value="{{ s.data.service.name }}">{{ s.data.service.name }}</option>{% endfor %}
-            <option value="Multiple / Not sure">Multiple / Not sure</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Tell us about your project</label>
-          <textarea id="message" name="message" placeholder="A pergola, a full redesign, ongoing lawn care…"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--lg">Send My Request</button>
-        <p class="form__note">By submitting, you agree to be contacted about your request. We never share your information.</p>
-      </form>
+      <div class="contact-options">
+        <a class="btn btn--primary btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a>
+        <a class="btn btn--ghost btn--lg" href="sms:{{ site.phoneRaw }}">Text {{ site.phone }}</a>
+      </div>
+      <p class="form__note" style="margin-top:18px">Call or text for a free estimate. We’ll confirm a convenient on-site consultation time.</p>
     </div>
 
     <aside>
@@ -78,7 +36,6 @@ description: "Request a free landscape design estimate from Research Turf Manage
         <h3 style="margin-top:0">Get in touch</h3>
         <ul class="checks" style="gap:16px">
           <li>{{ ico.svg("phone") }} <span><strong>Phone / Text</strong><br><a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a></span></li>
-          <li>{{ ico.svg("mail") }} <span><strong>Email</strong><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
           <li>{{ ico.svg("pin") }} <span><strong>Office</strong><br>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</span></li>
           <li>{{ ico.svg("clock") }} <span><strong>Hours</strong><br>{% for h in site.hours %}{{ h.days }}: {{ h.open }}{% if h.close %}–{{ h.close }}{% endif %}<br>{% endfor %}</span></li>
         </ul>
