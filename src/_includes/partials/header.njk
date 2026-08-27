@@ -3,31 +3,13 @@
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="Research Turf Management — home">
-      <span class="brand__mark">{{ ico.svg("logo") }}</span>
-      <span class="brand__text">
-        <span class="brand__name">Research Turf Management</span>
-        <span class="brand__tag">Growing Green, Living Beauty</span>
-      </span>
+      <img class="brand__logo" src="https://speedy.uenicdn.com/c76af982-7c11-4c2e-a0e8-7edf63746682/n300_140a/image/upload/v1738172448/business/6440a4b8bb57409ca92741983ceae6fd.png" alt="Research Turf Management">
     </a>
 
     <nav aria-label="Primary">
       <ul class="nav__links" id="nav-links">
         <li class="nav__call-mobile"><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a></li>
-        <li class="has-dropdown">
-          <a href="/services/">Services <span class="caret" aria-hidden="true">▾</span></a>
-          <div class="dropdown" role="menu">
-            {% for c in serviceCategories %}
-            <div class="dropdown__col">
-              <a class="dropdown__head" href="/services/{{ c.slug }}/">{{ c.name }}</a>
-              {% for slug in c.subs %}
-                {% for s in services %}{% if s.slug == slug %}
-                <a class="dropdown__link" href="/services/{{ s.slug }}/">{{ s.name }}</a>
-                {% endif %}{% endfor %}
-              {% endfor %}
-            </div>
-            {% endfor %}
-          </div>
-        </li>
+        <li><a href="/services/">Services</a></li>
         <li><a href="/service-areas/">Service Areas</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/contact/">Contact</a></li>
