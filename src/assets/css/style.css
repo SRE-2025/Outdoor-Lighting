@@ -440,3 +440,29 @@ li { margin-bottom: .4em; }
   .hero__trust { display: grid; gap: 10px; }
   .card__photo { height: 190px; }
 }
+
+
+/* Purpose-built visual panels prevent recycled stock photography from weakening the work. */
+.feature-panel, .service-visual {
+  min-height: 300px; border-radius: var(--radius-lg); padding: 34px;
+  color: #fff; display: flex; flex-direction: column; justify-content: flex-end;
+  background:
+    radial-gradient(circle at 82% 16%, rgba(216, 201, 174, .32), transparent 26%),
+    linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  box-shadow: var(--shadow);
+}
+.feature-panel--terracotta {
+  background:
+    radial-gradient(circle at 80% 18%, rgba(255,255,255,.13), transparent 28%),
+    linear-gradient(135deg, #8e4021, #b4562c);
+}
+.feature-panel__kicker {
+  color: var(--color-secondary); font-size: .73rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .14em; margin-bottom: 12px;
+}
+.feature-panel strong { font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.4rem); line-height: 1.13; max-width: 18ch; }
+.feature-panel p { color: rgba(255,255,255,.82); max-width: 42ch; margin: 16px 0 0; }
+.service-visual { min-height: 360px; align-items: flex-start; gap: 16px; }
+.service-visual__icon { width: 76px; height: 76px; border-radius: 20px; display: grid; place-items: center; background: rgba(255,255,255,.13); }
+.service-visual__icon svg { width: 42px; height: 42px; stroke: #fff; }
+.service-visual > span { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; }
