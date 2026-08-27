@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: "Frequently Asked Questions — Research Turf Management"
+description: "Answers about landscaping in Central Texas — service areas, estimates, turf types, water-wise design, hardscape, discounts and more. Family-owned since 1998."
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">Good to know</p>
+      <h1>Frequently asked questions</h1>
+      <p class="hero__sub">The questions Central Texas homeowners ask us most. Don't see yours? Just call or send a note.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/contact/">Ask Us Anything</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>FAQs</nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="faq">
+      {% for f in faqs %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ f.q }}</summary>
+        <p>{{ f.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for f in faqs %}
+    { "@type": "Question", "name": {{ f.q | dump | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} } }{{ "," if not loop.last }}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% include "partials/cta.njk" %}

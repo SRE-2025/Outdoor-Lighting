@@ -1,0 +1,19 @@
+version: 1
+# AWS Amplify Hosting build spec for this Eleventy static site.
+# When you connect the repo in the Amplify console, it auto-detects this file,
+# builds on every push to the connected branch, and serves _site at the domain root.
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
