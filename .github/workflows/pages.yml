@@ -1,12 +1,14 @@
 name: Deploy preview to GitHub Pages
 
-# Gives you a free, live preview URL (https://<org>.github.io/<repo>/)
-# while the real domain + AWS hosting are still being set up.
-# Enable once: Repo → Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Publishes a free, live preview at https://<org>.github.io/<repo>/.
+# Triggers on the repo's active development branch (currently the default
+# branch) and self-enables Pages on the first run.
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - claude/website-build-github-924ize
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Enable & configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/setup-node@v4
         with:
