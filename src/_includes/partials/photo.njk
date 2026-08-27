@@ -1,0 +1,17 @@
+{# Cohesive photo system for Research Turf Management.
+   Image links are intentionally centralized so approved crew/project photography
+   can replace them later without touching page templates. #}
+{% macro image(key, alt, className="") %}
+  {% set images = {
+    hero: "https://images.unsplash.com/photo-1558521958-0a228e77e984?auto=format&fit=crop&w=1800&q=85",
+    landscape: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85",
+    outdoor: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+    turf: "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=85",
+    patio: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85",
+    planting: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85",
+    masonry: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85",
+    garden: "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=85",
+    trees: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85"
+  } %}
+  <img class="media__image {{ className }}" src="{{ images[key] or images.landscape }}" alt="{{ alt }}" loading="lazy" decoding="async">
+{% endmacro %}
