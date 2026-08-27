@@ -46,10 +46,10 @@ eleventyComputed:
       <h2>The crew {{ loc.city }} can count on</h2>
       <p class="lead">{{ loc.note }}</p>
       <p>As a family-owned company operating out of nearby Buda since {{ site.parentFounded }}, we know {{ loc.city }} and {{ loc.county }} — the soil, the water restrictions, and the plants that actually survive here. Every project gets the same care whether it's a full landscape build or steady seasonal maintenance.</p>
-      <h3>Full-service landscaping for {{ loc.city }} homes</h3>
+      <h3>Full-service lawn &amp; landscaping for {{ loc.city }} homes</h3>
       <ul class="checks">
-        {% for s in collections.services %}
-        <li>{{ ico.svg("check") }} <span><a href="{{ s.url }}">{{ s.data.service.name }}</a> — {{ s.data.service.short }}</span></li>
+        {% for c in serviceCategories %}
+        <li>{{ ico.svg("check") }} <span><a href="/services/{{ c.slug }}/">{{ c.name }}</a> — {{ c.short }}</span></li>
         {% endfor %}
       </ul>
     </div>

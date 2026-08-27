@@ -69,21 +69,21 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <p class="lead">Whether you need a full landscape transformation or steady, dependable upkeep, it's the same reliable crew from start to finish.</p>
     </div>
     <div class="grid grid-3">
-      {% for s in collections.services %}
-        {% if loop.index <= 6 %}
-        <a class="card card--link" href="{{ s.url }}">
+      {% for c in serviceCategories %}
+        <a class="card card--link" href="/services/{{ c.slug }}/">
           <div class="card__body">
-          <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
-          <h3>{{ s.data.service.name }}</h3>
-          <p class="muted">{{ s.data.service.short }}</p>
-          <span class="card__more">Learn more {{ ico.svg("arrow") }}</span>
+          <div class="card__icon">{{ ico.svg(c.icon) }}</div>
+          <h3>{{ c.name }}</h3>
+          <p class="muted">{{ c.short }}</p>
+          <span class="card__more">
+            {% if c.subs.length > 1 %}{{ c.subs.length }} services{% else %}Learn more{% endif %} {{ ico.svg("arrow") }}
+          </span>
           </div>
         </a>
-        {% endif %}
       {% endfor %}
     </div>
     <div class="center" style="margin-top:32px">
-      <a class="btn btn--ghost" href="/services/">View all {{ collections.services | length }} services {{ ico.svg("arrow") }}</a>
+      <a class="btn btn--ghost" href="/services/">See all our services {{ ico.svg("arrow") }}</a>
     </div>
   </div>
 </section>

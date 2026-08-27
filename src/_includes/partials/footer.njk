@@ -17,12 +17,10 @@
       <div>
         <h4>Services</h4>
         <ul>
-          {% for s in collections.services %}
-            {% if loop.index <= 8 %}
-            <li><a href="{{ s.url }}">{{ s.data.service.name }}</a></li>
-            {% endif %}
+          {% for c in serviceCategories %}
+          <li><a href="/services/{{ c.slug }}/">{{ c.name }}</a></li>
           {% endfor %}
-          <li><a href="/services/"><strong>All {{ collections.services | length }} services &rarr;</strong></a></li>
+          <li><a href="/services/"><strong>All services &rarr;</strong></a></li>
         </ul>
         <h4 style="margin-top:24px">Explore</h4>
         <ul>

@@ -4,13 +4,18 @@ title: "Landscaping & Turf Services in Central Texas"
 description: "Landscape design, installation, hardscape, pergolas, lawn care, tree trimming & irrigation across Buda, Kyle, San Marcos & Central Texas. Free estimates from a family-owned crew."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
     <div class="hero__inner">
-      <p class="hero__tagline">{{ site.tagline }}</p>
-      <h1>Everything your landscape needs, from one trusted crew</h1>
-      <p class="hero__sub">We design it, build it, and keep it thriving — pergolas to plantings, turf to trees. Here's the full range of what Research Turf Management does across Central Texas.</p>
+      <p class="hero__tagline">Our Services</p>
+      <h1>Complete lawn &amp; landscaping services in Central Texas</h1>
+      <p class="hero__sub">Lawn care, misting systems, outdoor living, sprinkler systems and tree care — everything your yard needs, from one trusted local crew.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
+        <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
+      </div>
     </div>
   </div>
 </section>
@@ -20,12 +25,17 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
 <section class="section">
   <div class="wrap">
     <div class="grid grid-3">
-      {% for s in collections.services %}
-      <a class="card card--link" href="{{ s.url }}">
-        <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
-        <h3>{{ s.data.service.name }}</h3>
-        <p class="muted">{{ s.data.service.short }}</p>
-        <span class="card__more">Learn more {{ ico.svg("arrow") }}</span>
+      {% for c in serviceCategories %}
+      <a class="card card--link" href="/services/{{ c.slug }}/">
+        <div class="card__photo">{{ photo.service(c.subs[0], c.name) }}</div>
+        <div class="card__body">
+          <div class="card__icon">{{ ico.svg(c.icon) }}</div>
+          <h3>{{ c.name }}</h3>
+          <p class="muted">{{ c.short }}</p>
+          <span class="card__more">
+            {% if c.subs.length > 1 %}{{ c.subs.length }} services{% else %}Learn more{% endif %} {{ ico.svg("arrow") }}
+          </span>
+        </div>
       </a>
       {% endfor %}
     </div>

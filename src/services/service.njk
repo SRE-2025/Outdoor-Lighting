@@ -37,7 +37,9 @@ eleventyComputed:
   </div>
 </section>
 
-<nav class="wrap crumbs"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span>{{ service.name }}</nav>
+{% set parentCat = null %}
+{% for c in serviceCategories %}{% if service.slug in c.subs %}{% set parentCat = c %}{% endif %}{% endfor %}
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span><a href="/services/">Services</a>{% if parentCat %}<span>/</span><a href="/services/{{ parentCat.slug }}/">{{ parentCat.name }}</a>{% endif %}<span>/</span>{{ service.name }}</nav>
 
 <section class="section">
   <div class="wrap split">

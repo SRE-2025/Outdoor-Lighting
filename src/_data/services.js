@@ -271,5 +271,23 @@ module.exports = [
       "Seasonal bed and mulch refresh"
     ],
     keywords: ["seasonal cleanup", "freeze recovery", "fall cleanup", "yard cleanup"]
+  },
+  {
+    slug: "mosquito-misting-systems",
+    order: 16,
+    icon: "droplet",
+    name: "Mosquito Misting Systems",
+    short: "Automated misting that keeps mosquitoes off your patio all season.",
+    hero: "Take your yard back from mosquitoes.",
+    intro:
+      "An automated misting system quietly treats your yard on a set schedule, knocking down mosquitoes and other biting insects so your patio and outdoor living space are actually usable through a Central Texas summer. We install and service systems sized and zoned for your property and routed cleanly through your landscape.",
+    features: [
+      "Automated, scheduled misting",
+      "Nozzles routed through beds, fences & eaves",
+      "Sized and zoned for your property",
+      "Refills, tuning and seasonal service",
+      "Keeps patios and outdoor living usable"
+    ],
+    keywords: ["mosquito misting", "misting system", "mosquito control", "outdoor misting"]
   }
 ];
