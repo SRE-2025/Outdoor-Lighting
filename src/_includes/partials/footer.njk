@@ -36,12 +36,14 @@
 
       <div>
         <h4>Service Areas</h4>
-        <ul>
+        <ul class="footer-cols">
           {% for loc in locations.priority %}
-          <li><a href="/service-areas/{{ loc.slug }}/">{{ loc.city }}</a></li>
+            {% if loop.index <= 10 %}
+            <li><a href="/service-areas/{{ loc.slug }}/">{{ loc.city }}</a></li>
+            {% endif %}
           {% endfor %}
-          <li><a href="/service-areas/">All {{ (locations.priority | length) + (locations.additional | length) }} cities &rarr;</a></li>
         </ul>
+        <p class="mb-0" style="margin-top:6px"><a href="/service-areas/"><strong>All {{ (locations.priority | length) + (locations.additional | length) }} cities &rarr;</strong></a></p>
       </div>
 
       <div>

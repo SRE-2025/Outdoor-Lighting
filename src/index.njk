@@ -5,6 +5,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero">
   <div class="wrap">
@@ -51,11 +52,10 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       </ul>
     </div>
     <div>
-      <div class="feature-panel">
-        <span class="feature-panel__kicker">Central Texas know-how</span>
-        <strong>Built for heat, drought, soil &amp; real life.</strong>
-        <p>Thoughtful planting, reliable turf care, and outdoor spaces that work hard in every season.</p>
-      </div>
+      <figure class="media media--tall reveal">
+        {{ photo.image("garden", "Water-wise Central Texas landscape by Research Turf Management") }}
+        <span class="media__label">Native Hill Country design · Buda, TX</span>
+      </figure>
     </div>
   </div>
 </section>
@@ -71,6 +71,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
     <div class="grid grid-3">
       {% for c in serviceCategories %}
         <a class="card card--link" href="/services/{{ c.slug }}/">
+          <div class="card__photo">{{ photo.image(c.photo, c.name + " in Central Texas") }}</div>
           <div class="card__body">
           <div class="card__icon">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
@@ -104,11 +105,10 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 <section class="section">
   <div class="wrap split">
     <div>
-      <div class="feature-panel feature-panel--terracotta">
-        <span class="feature-panel__kicker">Designed to gather</span>
-        <strong>Outdoor rooms made for long Central Texas evenings.</strong>
-        <p>From shade and stonework to practical patios, every detail is planned around how you use the space.</p>
-      </div>
+      <figure class="media reveal">
+        {{ photo.image("outdoor", "Outdoor living space and hardscape in Central Texas") }}
+        <span class="media__label">Pergola &amp; patio · Hays County</span>
+      </figure>
     </div>
     <div>
       <p class="eyebrow">More than mow-and-blow</p>

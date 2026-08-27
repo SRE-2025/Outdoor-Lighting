@@ -5,6 +5,7 @@ description: "Drought-tolerant, native landscaping designed for Central Texas â€
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -38,7 +39,7 @@ description: "Drought-tolerant, native landscaping designed for Central Texas â€
       </ul>
     </div>
     <div>
-      <div class="media media--tall">{{ scn.scene() }}<span class="media__label">Native Hill Country design</span></div>
+      <figure class="media media--tall reveal">{{ photo.image("garden", "Native water-wise landscape in Central Texas") }}<span class="media__label">Native Hill Country design</span></figure>
     </div>
   </div>
 </section>

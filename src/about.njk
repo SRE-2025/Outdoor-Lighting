@@ -5,6 +5,7 @@ description: "Research Turf Management is owner Gye Hutson's family-run landscap
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -34,10 +35,10 @@ description: "Research Turf Management is owner Gye Hutson's family-run landscap
       <p>Family and pet safety is the throughline in everything we do. It's why customers stay with us for 13, 20, even 30 years — and why they refer their neighbors.</p>
     </div>
     <div>
-      <div class="media media--tall">
-        {{ scn.scene() }}
+      <figure class="media media--tall reveal">
+        {{ photo.image("garden", "A Research Turf Management landscape in Buda, TX") }}
         <span class="media__label">Family-owned in Buda, TX</span>
-      </div>
+      </figure>
       <div class="badges" style="margin-top:22px">
         <span class="badge">{{ ico.svg("star") }} 5.0★ Google</span>
         <span class="badge">{{ ico.svg("shield") }} BBB {{ site.trust.bbbRating }}</span>
