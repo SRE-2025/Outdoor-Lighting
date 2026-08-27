@@ -1,8 +1,12 @@
-name: Deploy preview to GitHub Pages
+name: Build & publish to gh-pages
 
-# Publishes a free, live preview at https://<org>.github.io/<repo>/.
-# Triggers on the repo's active development branch (currently the default
-# branch) and self-enables Pages on the first run.
+# Builds the Eleventy site and publishes it to the `gh-pages` branch on every
+# push. This uses normal contents:write (which the token has) instead of the
+# Pages enablement API (which the org blocks), so it works without special setup.
+#
+# ONE-TIME: Repo → Settings → Pages → Build and deployment →
+#   Source: "Deploy from a branch"  ·  Branch: gh-pages  ·  Folder: / (root)  → Save
+# After that, the site auto-updates at https://<org>.github.io/<repo>/ on every push.
 
 on:
   push:
@@ -12,24 +16,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: gh-pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Enable & configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/setup-node@v4
         with:
@@ -38,21 +35,17 @@ jobs:
 
       - run: npm ci
 
-      - name: Build site (with repo sub-path)
+      - name: Build site (project sub-path)
         env:
           PATH_PREFIX: /${{ github.event.repository.name }}/
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+      - name: Add .nojekyll
+        run: touch _site/.nojekyll
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
