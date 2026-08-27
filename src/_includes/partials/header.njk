@@ -2,7 +2,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="Research Turf Management — home">
       <span class="brand__mark">{{ ico.svg("logo") }}</span>
       <span class="brand__text">
         <span class="brand__name">Research Turf Management</span>
@@ -13,12 +13,22 @@
     <nav aria-label="Primary">
       <ul class="nav__links" id="nav-links">
         <li class="nav__call-mobile"><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a></li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
+        <li class="has-dropdown">
+          <a href="/services/">Services <span class="caret" aria-hidden="true">▾</span></a>
+          <div class="dropdown" role="menu">
+            {% for c in serviceCategories %}
+            <div class="dropdown__col">
+              <a class="dropdown__head" href="/services/{{ c.slug }}/">{{ c.name }}</a>
+              {% for slug in c.subs %}
+                {% for s in services %}{% if s.slug == slug %}
+                <a class="dropdown__link" href="/services/{{ s.slug }}/">{{ s.name }}</a>
+                {% endif %}{% endfor %}
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+        </li>
         <li><a href="/service-areas/">Service Areas</a></li>
-        <li><a href="/guides/">Guides</a></li>
-        <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>

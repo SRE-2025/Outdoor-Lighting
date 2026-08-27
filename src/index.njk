@@ -14,12 +14,12 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <p class="hero__sub">From native-plant designs and pergolas to turf that stays green through a Hill Country August — Research Turf Management is the family-owned crew Buda has trusted since {{ site.parentFounded }}.</p>
       <div class="hero__actions">
         <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
-        <a class="btn btn--white btn--lg" href="/portfolio/">See Our Work</a>
+        <a class="btn btn--white btn--lg" href="/services/">Our Services</a>
       </div>
       <div class="hero__trust">
         <span>{{ ico.svg("star") }} <b>5.0★</b> Google rated</span>
         <span>{{ ico.svg("shield") }} <b>{{ site.trust.bbbRating }}</b> BBB accredited</span>
-        <span>{{ ico.svg("pin") }} <b>27 cities</b> served</span>
+        <span>{{ ico.svg("pin") }} <b>{{ (locations.priority | length) + (locations.additional | length) }} cities</b> served</span>
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <div class="stat"><div class="stat__n">{{ site.yearsInBusiness }}</div><div class="stat__l">Years serving Central Texas</div></div>
       <div class="stat"><div class="stat__n">5.0★</div><div class="stat__l">Google review rating</div></div>
       <div class="stat"><div class="stat__n">{{ site.trust.bbbRating }}</div><div class="stat__l">BBB accredited since {{ site.trust.bbbAccreditedYear }}</div></div>
-      <div class="stat"><div class="stat__n">27</div><div class="stat__l">Central Texas cities served</div></div>
+      <div class="stat"><div class="stat__n">{{ (locations.priority | length) + (locations.additional | length) }}</div><div class="stat__l">Central Texas cities served</div></div>
     </div>
   </div>
 </section>
@@ -148,28 +148,36 @@ description: "Research Turf Management designs, builds & maintains water-wise la
   </div>
 </section>
 
-<!-- Reviews -->
+<!-- Reviews (scrolling) -->
 <section class="section section--soft">
   <div class="wrap">
-    <div class="center narrow" style="margin:0 auto 40px">
+    <div class="center narrow" style="margin:0 auto 36px">
       <p class="eyebrow">What neighbors say</p>
       <h2>Trusted for decades, not months</h2>
+      <p class="lead">A perfect 5.0★ rating across {{ reviews.aggregate.reviewCount }} reviews — from customers who've stayed with us for 13, 20, even 30 years.</p>
     </div>
-    <div class="grid grid-2">
+  </div>
+  <div class="reviews-marquee" aria-label="Customer reviews">
+    <div class="reviews-track">
       {% for r in reviews.featured %}
-      <figure class="review" style="margin:0">
+      <figure class="review-card">
         <div class="review__stars">★★★★★</div>
-        <blockquote class="review__quote" style="border:0;padding:0;margin:0 0 16px">"{{ r.quote }}"</blockquote>
-        <figcaption>
-          <span class="review__author">{{ r.author }}</span>
-          <span class="review__context"> · {{ r.context }}</span>
-        </figcaption>
+        <blockquote>"{{ r.quote }}"</blockquote>
+        <figcaption><span class="review__author">{{ r.author }}</span><span class="review__context"> · {{ r.context }}</span></figcaption>
+      </figure>
+      {% endfor %}
+      {# duplicate set for seamless looping #}
+      {% for r in reviews.featured %}
+      <figure class="review-card" aria-hidden="true">
+        <div class="review__stars">★★★★★</div>
+        <blockquote>"{{ r.quote }}"</blockquote>
+        <figcaption><span class="review__author">{{ r.author }}</span><span class="review__context"> · {{ r.context }}</span></figcaption>
       </figure>
       {% endfor %}
     </div>
-    <div class="center" style="margin-top:32px">
-      <a class="btn btn--ghost" href="/reviews/">Read more reviews {{ ico.svg("arrow") }}</a>
-    </div>
+  </div>
+  <div class="wrap center" style="margin-top:34px">
+    <a class="btn btn--primary btn--lg" href="{{ site.social.google }}" target="_blank" rel="noopener">{{ ico.svg("star") }} Leave us a Google review</a>
   </div>
 </section>
 
@@ -178,12 +186,13 @@ description: "Research Turf Management designs, builds & maintains water-wise la
   <div class="wrap center">
     <p class="eyebrow">Where we work</p>
     <h2>Proudly serving the Central Texas corridor</h2>
-    <p class="lead narrow" style="margin:0 auto 28px">From our Buda shop out to Kyle, San Marcos, Dripping Springs, Wimberley and beyond — 27 cities across Hays, Travis and the Hill Country.</p>
-    <ul class="chips" style="justify-content:center;max-width:900px;margin:0 auto">
+    {% set totalCities = (locations.priority | length) + (locations.additional | length) %}
+    <p class="lead narrow" style="margin:0 auto 28px">From our Buda shop north to Hutto &amp; Liberty Hill and south to San Marcos — {{ totalCities }} cities across Hays, Travis, Williamson and the Hill Country.</p>
+    <ul class="chips" style="justify-content:center;max-width:940px;margin:0 auto">
       {% for loc in locations.priority %}
       <li><a class="chip chip--strong" href="/service-areas/{{ loc.slug }}/" style="text-decoration:none">{{ loc.city }}</a></li>
       {% endfor %}
-      <li><a class="chip" href="/service-areas/" style="text-decoration:none">+ 19 more cities</a></li>
+      <li><a class="chip" href="/service-areas/" style="text-decoration:none">+ {{ locations.additional | length }} more cities</a></li>
     </ul>
   </div>
 </section>

@@ -123,14 +123,85 @@ module.exports = {
         "West Lake Hills homes deserve landscaping with the same craftsmanship as the architecture. We bring careful design, quality stonework and masonry, and meticulous maintenance to Westlake properties — landscapes that look intentional in every season and hold their value.",
       note:
         "West Lake Hills is a premium market for our design, masonry and maintenance work."
+    },
+    {
+      slug: "round-rock",
+      city: "Round Rock",
+      county: "Williamson County",
+      headline: "Landscaping & Lawn Care in Round Rock, TX",
+      intro:
+        "Round Rock has grown fast, and a lot of its neighborhoods were sodded builder-grade and left to fend for themselves in the clay and heat. We redesign those yards into water-wise landscapes that actually thrive here, and keep established lawns across Round Rock thick, green and healthy year-round.",
+      note:
+        "Round Rock anchors our northern service area in Williamson County — strong for both design-build and ongoing maintenance."
+    },
+    {
+      slug: "cedar-park",
+      city: "Cedar Park",
+      county: "Williamson County",
+      headline: "Landscape Design & Hardscape in Cedar Park, TX",
+      intro:
+        "Cedar Park sits on the rocky edge of the Hill Country, where thin soils and slopes call for smart design — native plantings, retaining walls, and hardscape that works with the grade. We design and build landscapes and outdoor living spaces built for exactly those conditions.",
+      note:
+        "Cedar Park is prime territory for our retaining-wall, hardscape and native-planting work."
+    },
+    {
+      slug: "leander",
+      city: "Leander",
+      county: "Williamson County",
+      headline: "Landscaping & Lawn Care in Leander, TX",
+      intro:
+        "Leander is one of the fastest-growing cities in Texas, which means a wave of new homes with blank-slate yards. We design and install complete landscapes — beds, sod, irrigation and outdoor living — and maintain them so they grow in beautifully instead of struggling through the first summer.",
+      note:
+        "Leander's new-construction growth makes it one of our busiest design-build markets."
+    },
+    {
+      slug: "georgetown",
+      city: "Georgetown",
+      county: "Williamson County",
+      headline: "Landscaping & Turf Management in Georgetown, TX",
+      intro:
+        "From the historic homes near the square to the newer developments and larger lots north of town, Georgetown yards span every style. We bring thoughtful design, quality installation, and dependable lawn and turf care to properties of every size across Georgetown.",
+      note:
+        "Georgetown marks the northern reach of our Williamson County service area."
+    },
+    {
+      slug: "pflugerville",
+      city: "Pflugerville",
+      county: "Travis County",
+      headline: "Lawn Care & Landscaping in Pflugerville, TX",
+      intro:
+        "Pflugerville's family neighborhoods and HOA communities want yards that look sharp and stay that way. We handle everything from scheduled lawn care and seasonal color to full landscape redesigns and irrigation, with one reliable crew you can count on.",
+      note:
+        "Pflugerville is a strong market for our recurring lawn care and HOA-friendly maintenance."
+    },
+    {
+      slug: "hutto",
+      city: "Hutto",
+      county: "Williamson County",
+      headline: "Landscaping & Lawn Care in Hutto, TX",
+      intro:
+        "Hutto has exploded with new subdivisions, and most of those homes need real landscaping — not just the builder's sod. We design water-wise yards, install beds, turf and irrigation, and keep them maintained so your new place looks established fast.",
+      note:
+        "Hutto is the northeastern edge of our service area — new-build landscaping is our bread and butter here."
+    },
+    {
+      slug: "liberty-hill",
+      city: "Liberty Hill",
+      county: "Williamson County",
+      headline: "Landscape Design & Outdoor Living in Liberty Hill, TX",
+      intro:
+        "Liberty Hill's larger, more rural properties are made for the kind of work we love — native, low-water design, stonework and masonry, retaining walls, and outdoor living spaces that make the most of Hill Country acreage. We design and build landscapes that fit the land.",
+      note:
+        "Liberty Hill is the northwestern reach of our service area and ideal for acreage design-build projects."
     }
   ],
 
   // Additional covered cities — listed, not given thin standalone pages.
   additional: [
-    "Austin", "Barton Creek", "Bear Creek", "Blanco", "Briarcliff",
-    "Canyon Lake", "Creedmoor", "Hudson Bend", "Johnson City",
-    "Lost Creek", "Mustang Ridge", "Niederwald", "Point Venture", "Redwood",
-    "Sunset Valley", "Uhland"
+    "Austin", "North Austin", "Barton Creek", "Bear Creek", "Blanco", "Briarcliff",
+    "Brushy Creek", "Canyon Lake", "Coupland", "Creedmoor", "Elgin", "Hudson Bend",
+    "Jarrell", "Johnson City", "Jollyville", "Jonestown", "Lago Vista",
+    "Lost Creek", "Manor", "Mustang Ridge", "Niederwald", "Point Venture", "Redwood",
+    "Serenada", "Sunset Valley", "Taylor", "Uhland", "Wells Branch", "Weir"
   ]
 };

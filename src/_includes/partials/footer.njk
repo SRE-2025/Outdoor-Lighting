@@ -31,7 +31,6 @@
           <li><a href="/why-choose-us/">Why Choose Us</a></li>
           <li><a href="/meet-the-team/">Meet the Team</a></li>
           <li><a href="/faqs/">FAQs</a></li>
-          <li><a href="/guides/">Guides &amp; Tips</a></li>
         </ul>
       </div>
 
@@ -41,7 +40,7 @@
           {% for loc in locations.priority %}
           <li><a href="/service-areas/{{ loc.slug }}/">{{ loc.city }}</a></li>
           {% endfor %}
-          <li><a href="/service-areas/">All 27 cities &rarr;</a></li>
+          <li><a href="/service-areas/">All {{ (locations.priority | length) + (locations.additional | length) }} cities &rarr;</a></li>
         </ul>
       </div>
 

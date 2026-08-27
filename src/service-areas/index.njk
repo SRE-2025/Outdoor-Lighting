@@ -1,16 +1,17 @@
 ---
 layout: layouts/base.njk
 title: "Service Areas — Landscaping Across Central Texas"
-description: "Research Turf Management serves 27 Central Texas cities including Buda, Kyle, San Marcos, Dripping Springs & Wimberley with landscape design, hardscape & turf care."
+description: "Research Turf Management serves the greater Austin metro — Buda, Kyle, San Marcos, Round Rock, Cedar Park, Leander, Hutto, Liberty Hill & more — with landscape design, hardscape & turf care."
 ---
 {% import "partials/icons.njk" as ico %}
+{% set totalCities = (locations.priority | length) + (locations.additional | length) %}
 
 <section class="hero hero--page">
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">{{ site.tagline }}</p>
-      <h1>Landscaping across the Central Texas corridor</h1>
-      <p class="hero__sub">Based in Buda and serving 27 cities across Hays County, South Austin and the Hill Country. Wherever you are in the corridor, you get the same trusted crew.</p>
+      <h1>Landscaping across the greater Austin metro</h1>
+      <p class="hero__sub">Based in Buda and serving {{ totalCities }} cities across Hays, Travis and Williamson counties — from South Austin up to Hutto &amp; Liberty Hill. Wherever you are, you get the same trusted crew.</p>
       <div class="hero__actions">
         <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
       </div>
@@ -43,8 +44,8 @@ description: "Research Turf Management serves 27 Central Texas cities including 
 <section class="section section--soft">
   <div class="wrap center">
     <p class="eyebrow">Full coverage</p>
-    <h2>All 27 cities we serve</h2>
-    <p class="lead narrow" style="margin:0 auto 28px">Don't see your city on the priority list? We likely still serve you. Here's our complete Central Texas service area.</p>
+    <h2>All {{ totalCities }} cities we serve</h2>
+    <p class="lead narrow" style="margin:0 auto 28px">Don't see your city on the priority list? We likely still serve you. Here's our complete greater-Austin service area.</p>
     <ul class="chips" style="justify-content:center;max-width:920px;margin:0 auto">
       {% for loc in locations.priority %}
       <li><a class="chip chip--strong" href="/service-areas/{{ loc.slug }}/" style="text-decoration:none">{{ loc.city }}</a></li>

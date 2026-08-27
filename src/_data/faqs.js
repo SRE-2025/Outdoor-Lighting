@@ -3,7 +3,7 @@
 module.exports = [
   {
     q: "What areas do you serve?",
-    a: "We're based in Buda and serve 27 Central Texas cities — including Kyle, San Marcos, Dripping Springs, Wimberley, Driftwood, Manchaca and Del Valle — across Hays County, South Austin and the Hill Country."
+    a: "We're based in Buda and serve the greater Austin metro — from South Austin, Kyle and San Marcos up through Round Rock, Cedar Park, Leander, Hutto and Liberty Hill — across Hays, Travis and Williamson counties."
   },
   {
     q: "Do you offer free estimates?",
