@@ -22,6 +22,7 @@ eleventyComputed:
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -53,10 +54,10 @@ eleventyComputed:
       </ul>
     </div>
     <div>
-      <div class="media media--tall">
-        {{ scn.scene() }}
+      <figure class="media media--tall">
+        {{ photo.image(service.slug == "turf-management" and "turf" or (service.slug == "pergolas-outdoor-living" and "outdoor" or "landscape"), service.name + " project in Central Texas") }}
         <span class="media__label">{{ service.name }} · Central Texas</span>
-      </div>
+      </figure>
       <div class="card" style="margin-top:22px">
         <h3 style="margin-top:0">Serving your neighborhood</h3>
         <p class="muted">Available across our full 27-city Central Texas service area, including:</p>
