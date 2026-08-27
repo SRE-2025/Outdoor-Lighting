@@ -55,7 +55,7 @@ eleventyComputed:
     </div>
     <div>
       <figure class="media media--tall">
-        {{ photo.image(service.slug == "turf-management" and "turf" or (service.slug == "pergolas-outdoor-living" and "outdoor" or "landscape"), service.name + " project in Central Texas") }}
+        {{ photo.service(service.slug, service.name + " project in Central Texas") }}
         <span class="media__label">{{ service.name }} · Central Texas</span>
       </figure>
       <div class="card" style="margin-top:22px">
