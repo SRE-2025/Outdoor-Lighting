@@ -12,6 +12,7 @@
 
     <nav aria-label="Primary">
       <ul class="nav__links" id="nav-links">
+        <li class="nav__call-mobile"><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/services/">Services</a></li>
         <li><a href="/portfolio/">Portfolio</a></li>
@@ -32,3 +33,7 @@
     </div>
   </div>
 </header>
+<div class="mobile-actions" aria-label="Quick contact actions">
+  <a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call now</a>
+  <a href="/contact/">Free estimate</a>
+</div>
