@@ -83,14 +83,54 @@ module.exports = {
         "Del Valle's growth has brought a wave of new homes that need real landscaping — not just builder sod. We design water-wise yards, install native beds and turf, and keep them maintained so your outdoor space grows in beautifully instead of struggling through the first summer.",
       note:
         "Del Valle rounds out the eastern edge of our Central Texas service area."
+    },
+    {
+      slug: "south-austin",
+      city: "South Austin",
+      county: "Travis County",
+      headline: "Landscaping & Lawn Care in South Austin, TX",
+      intro:
+        "South Austin is where this business started back in 1998, and it's still core territory for us. From established yards off Manchaca and Slaughter to newer builds toward Buda, we design, build and maintain landscapes that fit South Austin's mix of mature trees, tight lots, and Central Texas heat.",
+      note:
+        "South Austin is our original home turf — and one of our fastest-response areas."
+    },
+    {
+      slug: "lakeway",
+      city: "Lakeway",
+      county: "Travis County",
+      headline: "Landscape Design & Hardscape in Lakeway, TX",
+      intro:
+        "Lakeway's hillside lots and lake views call for landscaping that works with the grade, not against it — retaining walls, terracing, native plantings and outdoor living spaces that make the most of the setting. We design and build for exactly that kind of Hill Country property.",
+      note:
+        "Lakeway is prime territory for our retaining-wall, hardscape and outdoor-living work."
+    },
+    {
+      slug: "bee-cave",
+      city: "Bee Cave",
+      county: "Travis County",
+      headline: "Landscaping & Outdoor Living in Bee Cave, TX",
+      intro:
+        "Bee Cave properties tend to be larger, rockier, and beautifully exposed to the Hill Country. That's ideal for the water-wise, native-forward design and high-craft hardscape — pergolas, patios, stonework — that we're known for. We build outdoor spaces that match the setting and the home.",
+      note:
+        "Bee Cave is a strong market for our full design-build and outdoor-living projects."
+    },
+    {
+      slug: "west-lake-hills",
+      city: "West Lake Hills",
+      county: "Travis County",
+      headline: "Landscape Design in West Lake Hills, TX",
+      intro:
+        "West Lake Hills homes deserve landscaping with the same craftsmanship as the architecture. We bring careful design, quality stonework and masonry, and meticulous maintenance to Westlake properties — landscapes that look intentional in every season and hold their value.",
+      note:
+        "West Lake Hills is a premium market for our design, masonry and maintenance work."
     }
   ],
 
   // Additional covered cities — listed, not given thin standalone pages.
   additional: [
-    "Austin", "Barton Creek", "Bear Creek", "Bee Cave", "Blanco", "Briarcliff",
-    "Canyon Lake", "Creedmoor", "Hudson Bend", "Johnson City", "Lakeway",
+    "Austin", "Barton Creek", "Bear Creek", "Blanco", "Briarcliff",
+    "Canyon Lake", "Creedmoor", "Hudson Bend", "Johnson City",
     "Lost Creek", "Mustang Ridge", "Niederwald", "Point Venture", "Redwood",
-    "Sunset Valley", "Uhland", "West Lake Hills"
+    "Sunset Valley", "Uhland"
   ]
 };

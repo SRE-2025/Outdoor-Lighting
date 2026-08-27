@@ -69,13 +69,18 @@ description: "Research Turf Management designs, builds & maintains water-wise la
     </div>
     <div class="grid grid-3">
       {% for s in collections.services %}
-      <a class="card card--link" href="{{ s.url }}">
-        <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
-        <h3>{{ s.data.service.name }}</h3>
-        <p class="muted">{{ s.data.service.short }}</p>
-        <span class="card__more">Learn more {{ ico.svg("arrow") }}</span>
-      </a>
+        {% if loop.index <= 6 %}
+        <a class="card card--link" href="{{ s.url }}">
+          <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
+          <h3>{{ s.data.service.name }}</h3>
+          <p class="muted">{{ s.data.service.short }}</p>
+          <span class="card__more">Learn more {{ ico.svg("arrow") }}</span>
+        </a>
+        {% endif %}
       {% endfor %}
+    </div>
+    <div class="center" style="margin-top:32px">
+      <a class="btn btn--ghost" href="/services/">View all {{ collections.services | length }} services {{ ico.svg("arrow") }}</a>
     </div>
   </div>
 </section>
@@ -106,7 +111,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <h2>We build the backyard, not just the lawn.</h2>
       <p class="lead">Pergolas, patio extensions, masonry, stone borders, fresh sod, mulch and gravel — the high-craft outdoor-living work our long-time customers rave about.</p>
       <p>If you want a backyard you actually spend time in — a shaded pergola, an extended patio for the whole family, stonework that ties it all together — this is exactly the work we love most.</p>
-      <a class="btn btn--primary" href="/services/hardscape-outdoor-living/">Explore Hardscape &amp; Outdoor Living {{ ico.svg("arrow") }}</a>
+      <a class="btn btn--primary" href="/services/pergolas-outdoor-living/">Explore Pergolas &amp; Outdoor Living {{ ico.svg("arrow") }}</a>
     </div>
   </div>
 </section>

@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: "Commercial Landscaping & Grounds Maintenance — Central Texas"
+description: "Reliable commercial landscaping and grounds maintenance for Central Texas properties — HOAs, offices, retail & multi-family. Family-owned since 1998. Request a bid."
+---
+{% import "partials/icons.njk" as ico %}
+
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__tagline">For property managers &amp; businesses</p>
+      <h1>Commercial landscaping &amp; grounds maintenance</h1>
+      <p class="hero__sub">Curb appeal your tenants and customers notice — delivered on schedule by a local, family-owned crew that actually answers the phone.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/contact/">Request a Commercial Bid</a>
+        <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Commercial Landscaping</nav>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <p class="eyebrow">Grounds you don't have to worry about</p>
+      <h2>One accountable crew for the whole property</h2>
+      <p class="lead">Since 1998 we've kept Central Texas properties looking their best. For commercial clients that means dependable schedules, one point of contact, and work that reflects on your business the way you'd want it to.</p>
+      <p>Whether it's an HOA common area, an office park, a retail center, or a multi-family community, we handle it end to end — design and installation through year-round maintenance — with the same reliability our residential customers have trusted for decades.</p>
+    </div>
+    <div>
+      <div class="card">
+        <h3 style="margin-top:0">We serve</h3>
+        <ul class="checks">
+          <li>{{ ico.svg("check") }} <span>HOAs &amp; community common areas</span></li>
+          <li>{{ ico.svg("check") }} <span>Office parks &amp; commercial buildings</span></li>
+          <li>{{ ico.svg("check") }} <span>Retail centers &amp; storefronts</span></li>
+          <li>{{ ico.svg("check") }} <span>Multi-family &amp; apartment communities</span></li>
+        </ul>
+        <h3>What we deliver</h3>
+        <ul class="checks">
+          <li>{{ ico.svg("check") }} <span>Scheduled mowing &amp; grounds maintenance</span></li>
+          <li>{{ ico.svg("check") }} <span>Seasonal color &amp; bed care</span></li>
+          <li>{{ ico.svg("check") }} <span>Irrigation management &amp; repairs</span></li>
+          <li>{{ ico.svg("check") }} <span>Tree care, cleanups &amp; enhancements</span></li>
+        </ul>
+        <a class="btn btn--primary" href="/contact/" style="margin-top:8px">Request a Bid</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set ctaHeading = "Managing a property in Central Texas?" %}
+{% set ctaText = "Tell us about your site and we'll put together a straightforward maintenance proposal — no runaround." %}
+{% include "partials/cta.njk" %}

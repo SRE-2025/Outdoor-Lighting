@@ -42,7 +42,7 @@ module.exports = [
     title: "St. Augustine, Bermuda or Zoysia? Choosing the Right Grass for a Central Texas Lawn",
     date: "2026-06-18",
     readMins: 5,
-    relatedService: "lawn-care-turf-management",
+    relatedService: "lawn-care-mowing",
     excerpt:
       "The three grasses that dominate Central Texas yards, and an honest look at which one fits your sun, soil and watering habits.",
     body: `
@@ -68,7 +68,7 @@ module.exports = [
 <h2>Establishment matters more than the label</h2>
 <p>Whichever grass you choose, the first six weeks decide everything: proper soil prep, good sod-to-soil contact, and the right watering schedule. That's where a lot of DIY installs fail. We assess your yard's sun and soil, recommend the grass that actually fits, and establish it so it takes.</p>
 
-<p><a href="/services/lawn-care-turf-management/">See our turf management services</a> or <a href="/contact/">get a free lawn assessment.</a></p>
+<p><a href="/services/lawn-care-mowing/">See our lawn care &amp; mowing plans</a> or <a href="/contact/">get a free lawn assessment.</a></p>
 `
   },
   {

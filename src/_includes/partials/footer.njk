@@ -18,9 +18,19 @@
         <h4>Services</h4>
         <ul>
           {% for s in collections.services %}
-          <li><a href="{{ s.url }}">{{ s.data.service.name }}</a></li>
+            {% if loop.index <= 8 %}
+            <li><a href="{{ s.url }}">{{ s.data.service.name }}</a></li>
+            {% endif %}
           {% endfor %}
-          <li style="margin-top:6px"><a href="/guides/"><strong>Guides &amp; Tips &rarr;</strong></a></li>
+          <li><a href="/services/"><strong>All {{ collections.services | length }} services &rarr;</strong></a></li>
+        </ul>
+        <h4 style="margin-top:24px">Explore</h4>
+        <ul>
+          <li><a href="/water-wise-native-landscaping/">Water-Wise &amp; Native</a></li>
+          <li><a href="/commercial-landscaping/">Commercial Landscaping</a></li>
+          <li><a href="/process/">Our Process</a></li>
+          <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/guides/">Guides &amp; Tips</a></li>
         </ul>
       </div>
 
