@@ -73,7 +73,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
         {% if loop.index <= 6 %}
         <a class="card card--link" href="{{ s.url }}">
           <div class="card__photo">
-            {{ photo.image(s.data.service.slug == "pergolas-outdoor-living" and "outdoor" or (s.data.service.slug == "turf-management" and "turf" or "landscape"), s.data.service.name) }}
+            {{ photo.service(s.data.service.slug, s.data.service.name + " project") }}
           </div>
           <div class="card__body">
           <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
