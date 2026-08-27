@@ -1,25 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3f7d3a"/>
-      <stop offset="0.55" stop-color="#1e4527"/>
-      <stop offset="1" stop-color="#14301a"/>
-    </linearGradient>
+    <radialGradient id="glow" cx="88%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#3f7d3a" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#3f7d3a" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <g opacity="0.14" fill="none" stroke="#ffffff" stroke-width="2">
-    <circle cx="1050" cy="120" r="220"/>
-    <circle cx="1050" cy="120" r="150"/>
-    <circle cx="1050" cy="120" r="80"/>
+  <rect width="1200" height="630" fill="#14181c"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g opacity="0.10" fill="none" stroke="#ffffff" stroke-width="2">
+    <circle cx="1040" cy="120" r="210"/>
+    <circle cx="1040" cy="120" r="140"/>
   </g>
+  <!-- logo mark -->
   <g transform="translate(90,150)">
-    <circle cx="45" cy="45" r="45" fill="#3f7d3a"/>
-    <path d="M45 78c-13 0-24-9-24-24 0-13 11-24 24-33 13 9 24 20 24 33 0 15-11 24-24 24Z" fill="#e7f2e3"/>
-    <path d="M45 78V33" stroke="#3f7d3a" stroke-width="4" stroke-linecap="round"/>
+    <rect x="0" y="0" width="92" height="92" rx="22" fill="#0f1216" stroke="#3f7d3a" stroke-width="2.5"/>
+    <path d="M46 74V44" stroke="#6aa860" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M46 52c-2-11.5-10.5-16-21-16 0 11.5 6.5 18 21 18Z" fill="#3f7d3a"/>
+    <path d="M46 44c2-10.5 9.5-14.5 19-14.5 0 10.5-5.5 16.5-19 16.5Z" fill="#6aa860"/>
   </g>
-  <text x="200" y="205" font-family="Georgia, serif" font-size="34" fill="#c7e3c0" font-style="italic">Growing Green, Living Beauty</text>
-  <text x="90" y="330" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="76" font-weight="800" fill="#ffffff">Research Turf</text>
-  <text x="90" y="415" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="76" font-weight="800" fill="#ffffff">Management</text>
-  <text x="90" y="490" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="34" fill="#d3e2cf">Landscape design, build &amp; turf care · Central Texas</text>
-  <text x="90" y="548" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="30" font-weight="700" fill="#74b56a">Family-owned in Buda since 1998  ·  5.0★  ·  BBB A+</text>
+  <text x="210" y="196" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="20" letter-spacing="4" fill="#6aa860" font-weight="700">GROWING GREEN, LIVING BEAUTY</text>
+  <text x="88" y="330" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="74" font-weight="800" fill="#ffffff">Research Turf</text>
+  <text x="88" y="414" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="74" font-weight="800" fill="#ffffff">Management</text>
+  <text x="90" y="486" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="32" fill="#cdd5dc">Landscape design, build &amp; turf care · Central Texas</text>
+  <text x="90" y="544" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="700" fill="#6aa860">Family-owned in Buda since 1998 &nbsp;·&nbsp; 5.0★ &nbsp;·&nbsp; BBB A+</text>
 </svg>
