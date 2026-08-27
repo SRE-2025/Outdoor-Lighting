@@ -512,3 +512,8 @@ li { margin-bottom: .4em; }
 .service-visual__icon { width: 76px; height: 76px; border-radius: 20px; display: grid; place-items: center; background: rgba(255,255,255,.13); }
 .service-visual__icon svg { width: 42px; height: 42px; stroke: #fff; }
 .service-visual > span { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; }
+
+
+/* Original brand lockup: keep the business’s established wordmark prominent and uncluttered. */
+.brand__logo { width: 176px; height: auto; max-height: 58px; object-fit: contain; object-position: left center; }
+@media (max-width: 520px) { .brand__logo { width: 142px; max-height: 50px; } }
