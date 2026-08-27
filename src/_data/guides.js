@@ -225,5 +225,148 @@ module.exports = [
 <p>Grouping the plants deer <em>do</em> like closer to the house, keeping the most vulnerable things protected while they establish, and leaning on the deterrent plants at the edges all help. A well-planned deer-country landscape looks lush without becoming a buffet.</p>
 <p>We design Hill Country beds around what actually survives the deer. <a href="/services/flower-beds-planting/">See flower beds &amp; planting</a> or <a href="/contact/">plan a deer-resistant landscape.</a></p>
 `
+  },
+  {
+    slug: "spring-cleanup-checklist-central-texas",
+    title: "Spring Cleanup Checklist for Central Texas Yards",
+    date: "2026-03-05",
+    readMins: 4,
+    relatedService: "seasonal-cleanups-freeze-recovery",
+    excerpt:
+      "A little work in early spring sets up the whole year. Here's the Central Texas checklist that gets your landscape off to a strong start.",
+    body: `
+<p>Spring moves fast in Central Texas. A focused cleanup in late February and March — done in the right order — is the difference between a landscape that struggles all summer and one that hits the season already thriving.</p>
+<h2>Beds and plants</h2>
+<ul>
+  <li><strong>Cut back last year's growth</strong> once the danger of frost has passed — not before, so tender crowns stayed protected through winter.</li>
+  <li><strong>Refresh mulch</strong> to 2–3 inches. It's your cheapest defense against summer heat and weeds.</li>
+  <li><strong>Weed early,</strong> before things go to seed and multiply.</li>
+</ul>
+<h2>Lawn</h2>
+<ul>
+  <li><strong>Get your pre-emergent down</strong> (February into March) before soil warms and weeds germinate.</li>
+  <li><strong>Hold off on heavy fertilizing</strong> until the grass is actively, fully green — feeding too early feeds weeds.</li>
+  <li><strong>Check your mower blade</strong> — a dull blade shreds grass and invites disease.</li>
+</ul>
+<h2>Systems</h2>
+<p>Run each irrigation zone and look for broken heads, leaks and misaligned spray before the heat arrives. Small fixes now save big water bills in July.</p>
+<p>We handle spring cleanups across Central Texas. <a href="/services/seasonal-cleanups-freeze-recovery/">See seasonal cleanups</a> or <a href="/contact/">book a spring visit.</a></p>
+`
+  },
+  {
+    slug: "how-high-to-mow-central-texas-summer",
+    title: "How High Should You Mow in Central Texas Summer?",
+    date: "2026-06-25",
+    readMins: 4,
+    relatedService: "lawn-care-mowing",
+    excerpt:
+      "The single easiest way to a healthier summer lawn costs nothing: raise your mower. Here's the right height for each Central Texas grass.",
+    body: `
+<p>If you change one thing about your lawn this summer, make it mowing height. Taller grass shades its own roots, holds soil moisture, and crowds out weeds — which matters enormously when it's 100 degrees and under water restrictions.</p>
+<h2>Target heights by grass type</h2>
+<ul>
+  <li><strong>St. Augustine:</strong> mow high — around 3 to 4 inches in summer. It loves the extra leaf to shade its roots.</li>
+  <li><strong>Zoysia:</strong> roughly 2 to 3 inches.</li>
+  <li><strong>Bermuda:</strong> lower by nature, about 1.5 to 2.5 inches, but let it run toward the high end in peak heat.</li>
+</ul>
+<h2>The one-third rule</h2>
+<p>Never cut more than a third of the blade in a single mow. Scalping stresses the grass, exposes soil to the sun, and lets weeds move into the bare spots. If it got tall, bring it down over two mowings, not one.</p>
+<h2>Mow sharp, mow dry</h2>
+<p>A sharp blade cuts cleanly; a dull one tears and browns the tips. And mowing a dry lawn avoids clumping and reduces disease spread. Leave the clippings — they feed the lawn.</p>
+<p>Prefer to hand it off? <a href="/services/lawn-care-mowing/">See our mowing plans</a> or <a href="/contact/">get on the schedule.</a></p>
+`
+  },
+  {
+    slug: "fall-pre-emergent-central-texas",
+    title: "Fall Pre-Emergent: Stopping Winter Weeds Before They Start",
+    date: "2026-09-10",
+    readMins: 4,
+    relatedService: "lawn-fertilization-weed-control",
+    excerpt:
+      "Those winter weeds that take over in January are set in motion in fall. A well-timed fall pre-emergent stops them before they ever sprout.",
+    body: `
+<p>Homeowners think about weed prevention in spring and forget the fall — then wonder why henbit and annual bluegrass carpet the lawn all winter. The fix is a second pre-emergent application, timed for early fall.</p>
+<h2>Why fall matters</h2>
+<p>Cool-season weeds germinate as soil temperatures fall, roughly in September and October here. Getting a pre-emergent barrier down before that window keeps those seeds from ever establishing — so you head into winter and early spring with a clean lawn instead of a green mat of weeds.</p>
+<h2>Timing is the whole game</h2>
+<p>Too early and the barrier breaks down before the weeds germinate; too late and they're already up. Early fall, before the first real cool-down, is the target. Watering it in activates the barrier.</p>
+<h2>Part of a year-round rhythm</h2>
+<p>Fall pre-emergent pairs with the February application to bracket the year — spring weeds and winter weeds both blocked before they start. Combined with proper mowing and feeding, it's how lawns stay genuinely low-weed without constant spraying.</p>
+<p>We time applications to the Central Texas calendar. <a href="/services/lawn-fertilization-weed-control/">See fertilization &amp; weed control</a> or <a href="/contact/">start a program.</a></p>
+`
+  },
+  {
+    slug: "brown-patch-st-augustine-central-texas",
+    title: "Brown Patch in St. Augustine: Spotting It and Stopping It",
+    date: "2026-10-01",
+    readMins: 4,
+    relatedService: "lawn-fertilization-weed-control",
+    excerpt:
+      "Those circular brown rings in your St. Augustine each fall are a fungus, not a watering problem. Here's how to spot and stop brown patch.",
+    body: `
+<p>Every fall, Central Texas St. Augustine lawns break out in roughly circular brown or yellow patches — and homeowners reach for more water, which makes it worse. That's brown patch (large patch), a fungal disease, and it's beaten with the opposite of what most people try.</p>
+<h2>How to spot it</h2>
+<p>Look for <strong>roughly circular patches</strong>, often a foot to several feet across, that may have a darker edge and greener center. Tug a blade at the margin — with brown patch it pulls away easily from the runner, and the base looks rotted. It shows up in the cooler, wetter stretches of fall and spring.</p>
+<h2>What actually stops it</h2>
+<ul>
+  <li><strong>Water less, and only in the morning.</strong> The fungus thrives on leaves that stay wet overnight. Deep, infrequent, early watering starves it.</li>
+  <li><strong>Ease off the nitrogen</strong> in fall — lush, over-fed growth is exactly what it feeds on.</li>
+  <li><strong>Improve airflow and drainage</strong> in the affected areas.</li>
+  <li><strong>Apply a fungicide</strong> if it's spreading, and treat preventively next year before the fall window.</li>
+</ul>
+<p>We diagnose and treat lawn disease across Central Texas. <a href="/services/lawn-fertilization-weed-control/">See lawn treatment services</a> or <a href="/contact/">get your lawn looked at.</a></p>
+`
+  },
+  {
+    slug: "converting-lawn-to-water-wise-landscape",
+    title: "Is It Worth Converting Your Lawn to a Water-Wise Landscape?",
+    date: "2026-05-15",
+    readMins: 5,
+    relatedService: "landscape-design",
+    excerpt:
+      "Trading some thirsty turf for native beds can cut your water bill and your weekend chores. Here's an honest look at whether it's worth it.",
+    body: `
+<p>Every Central Texas summer, more homeowners look at a struggling, water-hungry lawn and ask the same question: is it worth replacing some of it with a water-wise landscape? Usually the honest answer is yes — but it depends on what you want from the space.</p>
+<h2>The case for converting</h2>
+<ul>
+  <li><strong>Lower water bills.</strong> Native and adapted beds use a fraction of the water turf demands in July and August.</li>
+  <li><strong>Less maintenance.</strong> No weekly mowing on the converted areas, and established natives largely take care of themselves.</li>
+  <li><strong>It stays beautiful in drought,</strong> when a traditional lawn goes crispy and restrictions bite.</li>
+  <li><strong>More life</strong> — pollinators, birds, and year-round color and structure.</li>
+</ul>
+<h2>Where to keep some lawn</h2>
+<p>Turf still earns its place where you actually use it — a play area for kids and dogs, a soft spot to gather. The smart move usually isn't ripping out all the grass; it's <strong>keeping a functional lawn and converting the parts you only ever mowed and watered</strong> — side yards, hot strips, hard-to-water slopes.</p>
+<h2>Design makes or breaks it</h2>
+<p>A thoughtless conversion looks sparse; a designed one looks lush and intentional from year one. That's the difference between "xeriscape" as a compliment and as a complaint — and it's the part we're here for.</p>
+<p><a href="/services/landscape-design/">See our landscape design</a> or <a href="/contact/">talk through a conversion.</a></p>
+`
+  },
+  {
+    slug: "best-trees-to-plant-central-texas-fall",
+    title: "The Best Trees to Plant in Central Texas This Fall",
+    date: "2026-11-01",
+    readMins: 5,
+    relatedService: "tree-care-trimming",
+    excerpt:
+      "Fall — not spring — is the best time to plant trees in Central Texas. Here are the toughest, most rewarding choices for our climate.",
+    body: `
+<p>The best time to plant a tree in Central Texas isn't spring — it's fall. Cooler air and warm soil let roots establish through winter, so the tree is ready to thrive before its first brutal summer. Plant now and you're years ahead.</p>
+<h2>Great shade trees for our climate</h2>
+<ul>
+  <li><strong>Live Oak</strong> — the iconic, drought-tough evergreen shade tree, though give it room and mind oak-wilt timing on pruning.</li>
+  <li><strong>Cedar Elm</strong> — a tough native that handles our clay and heat and gives real fall color.</li>
+  <li><strong>Bur Oak</strong> — fast-establishing, big-canopy shade with dramatic leaves.</li>
+  <li><strong>Chinquapin Oak</strong> — handsome, adaptable, and well-suited to alkaline soils.</li>
+</ul>
+<h2>Smaller and ornamental</h2>
+<ul>
+  <li><strong>Texas Redbud</strong> — spring color and a manageable size for smaller yards.</li>
+  <li><strong>Mexican Plum</strong> — native, fragrant early bloom, great for wildlife.</li>
+  <li><strong>Desert Willow</strong> — long bloom, extremely drought-tough.</li>
+</ul>
+<h2>Plant it right</h2>
+<p>Dig wide, not deep; keep the root flare at grade; water deeply but infrequently to push roots down; and mulch the root zone (not against the trunk). Those few things decide whether a tree merely survives or truly thrives.</p>
+<p>We help you choose and place the right trees, and care for the ones you have. <a href="/services/tree-care-trimming/">See tree care services</a> or <a href="/contact/">plan a fall planting.</a></p>
+`
   }
 ];
