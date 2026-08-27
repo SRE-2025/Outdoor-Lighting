@@ -15,3 +15,21 @@
   } %}
   <img class="media__image {{ className }}" src="{{ images[key] or images.landscape }}" alt="{{ alt }}" loading="lazy" decoding="async">
 {% endmacro %}
+
+{% macro service(slug, alt) %}
+  {% set key = "landscape" %}
+  {% if slug == "lawn-care-mowing" %}{% set key = "turf" %}{% endif %}
+  {% if slug == "lawn-fertilization-weed-control" %}{% set key = "planting" %}{% endif %}
+  {% if slug == "sod-installation" %}{% set key = "garden" %}{% endif %}
+  {% if slug == "irrigation-sprinkler-systems" %}{% set key = "patio" %}{% endif %}
+  {% if slug == "drainage-erosion-control" %}{% set key = "masonry" %}{% endif %}
+  {% if slug == "flower-beds-planting" %}{% set key = "planting" %}{% endif %}
+  {% if slug == "mulch-rock-gravel" %}{% set key = "garden" %}{% endif %}
+  {% if slug == "patios-patio-extensions" %}{% set key = "patio" %}{% endif %}
+  {% if slug == "pergolas-outdoor-living" %}{% set key = "outdoor" %}{% endif %}
+  {% if slug == "masonry-stonework" or slug == "retaining-walls" %}{% set key = "masonry" %}{% endif %}
+  {% if slug == "tree-care-trimming" %}{% set key = "trees" %}{% endif %}
+  {% if slug == "landscape-lighting" %}{% set key = "outdoor" %}{% endif %}
+  {% if slug == "seasonal-cleanups-freeze-recovery" %}{% set key = "garden" %}{% endif %}
+  {{ image(key, alt) }}
+{% endmacro %}
