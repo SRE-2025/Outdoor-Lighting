@@ -20,7 +20,6 @@ eleventyComputed:
     description: "{{ cat.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -50,7 +49,6 @@ eleventyComputed:
         {% for s in services %}
           {% if s.slug == slug %}
           <a class="card card--link" href="/services/{{ s.slug }}/">
-            <div class="card__photo">{{ photo.service(s.slug, s.name + " in Central Texas") }}</div>
             <div class="card__body">
               <div class="card__icon">{{ ico.svg(s.icon) }}</div>
               <h3>{{ s.name }}</h3>

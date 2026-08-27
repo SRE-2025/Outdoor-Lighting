@@ -4,7 +4,6 @@ title: "Landscaping & Turf Services in Central Texas"
 description: "Landscape design, installation, hardscape, pergolas, lawn care, tree trimming & irrigation across Buda, Kyle, San Marcos & Central Texas. Free estimates from a family-owned crew."
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -27,7 +26,6 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
     <div class="grid grid-3">
       {% for c in serviceCategories %}
       <a class="card card--link" href="/services/{{ c.slug }}/">
-        <div class="card__photo">{{ photo.service(c.subs[0], c.name) }}</div>
         <div class="card__body">
           <div class="card__icon">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
