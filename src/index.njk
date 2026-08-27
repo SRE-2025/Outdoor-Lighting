@@ -5,6 +5,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
+{% import "partials/photo.njk" as photo %}
 
 <section class="hero">
   <div class="wrap">
@@ -51,10 +52,10 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       </ul>
     </div>
     <div>
-      <div class="media media--tall">
-        {{ scn.scene() }}
+      <figure class="media media--tall">
+        {{ photo.image("landscape", "Water-wise Central Texas landscape planting") }}
         <span class="media__label">Native Hill Country design · Buda, TX</span>
-      </div>
+      </figure>
     </div>
   </div>
 </section>
@@ -71,10 +72,15 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       {% for s in collections.services %}
         {% if loop.index <= 6 %}
         <a class="card card--link" href="{{ s.url }}">
+          <div class="card__photo">
+            {{ photo.image(s.data.service.slug == "pergolas-outdoor-living" and "outdoor" or (s.data.service.slug == "turf-management" and "turf" or "landscape"), s.data.service.name) }}
+          </div>
+          <div class="card__body">
           <div class="card__icon">{{ ico.svg(s.data.service.icon) }}</div>
           <h3>{{ s.data.service.name }}</h3>
           <p class="muted">{{ s.data.service.short }}</p>
           <span class="card__more">Learn more {{ ico.svg("arrow") }}</span>
+          </div>
         </a>
         {% endif %}
       {% endfor %}
@@ -101,10 +107,10 @@ description: "Research Turf Management designs, builds & maintains water-wise la
 <section class="section">
   <div class="wrap split">
     <div>
-      <div class="media">
-        {{ scn.scene() }}
+      <figure class="media">
+        {{ photo.image("outdoor", "Crafted outdoor living area at a Central Texas home") }}
         <span class="media__label">Pergola &amp; patio extension · Hays County</span>
-      </div>
+      </figure>
     </div>
     <div>
       <p class="eyebrow">More than mow-and-blow</p>
