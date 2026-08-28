@@ -4,6 +4,7 @@ title: "Outdoor Lighting Services in Buda & Hays County, TX"
 description: "Permanent outdoor lighting, landscape lighting, outdoor living space lighting, holiday lighting & commercial lighting across Buda, Kyle, San Marcos & Hays County. Free consultations."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -26,6 +27,7 @@ description: "Permanent outdoor lighting, landscape lighting, outdoor living spa
     <div class="grid grid-3 grid--center">
       {% for c in serviceCategories %}
       <a class="card card--link" href="/services/{{ c.slug }}/">
+        <figure class="card__photo">{{ media.image("services-category-" + c.slug, c.name + " by Excel Outdoor Lighting") }}</figure>
         <div class="card__body">
           <div class="card__icon card__icon--lg">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
