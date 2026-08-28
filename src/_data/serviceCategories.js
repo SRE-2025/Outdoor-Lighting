@@ -1,226 +1,298 @@
-// The 5 main service categories — matching the company's actual service menu.
+// The 5 main lighting service categories for Excel Outdoor Lighting Co.
 // Detailed service pages (from services.js) are nested under each category by slug.
 // Order here is the order shown in menus, the services index, and the home page.
+// Rich `body` and `faqs` are added per entry for SEO/AEO.
 module.exports = [
   {
-    slug: "lawn-care",
-    name: "Lawn Care Services",
-    icon: "grass",
-    photo: "lawn",
-    short: "Mowing, feeding and turf health that keep your lawn thick and green all year.",
+    slug: "permanent-outdoor-lighting",
+    name: "Permanent Outdoor Lighting",
+    icon: "bulb",
+    short: "Year-round, app-controlled architectural lighting that's always installed and ready.",
     intro:
-      "Dependable, science-backed lawn care from one consistent crew — mowing on schedule, feeding and weed control timed for Central Texas, and everything it takes to keep St. Augustine, Bermuda and Zoysia lawns healthy through our seasons.",
+      "Permanent outdoor lighting mounts discreetly under your eaves and rooflines and stays up all year — invisible by day, stunning by night. Controlled from an app, it delivers warm everyday accent light, security lighting, and full-color scenes for game days and holidays, all without ever climbing a ladder again.",
     subs: [
-      "lawn-care-mowing",
-      "lawn-fertilization-weed-control",
-      "sod-installation",
-      "seasonal-cleanups-freeze-recovery"
+      "permanent-roofline-lighting",
+      "app-controlled-lighting",
+      "year-round-accent-lighting"
     ],
     body: [
       {
-        h: "A healthy lawn here is managed, not just mowed",
+        h: "One system, installed once, ready every night",
         p: [
-          "Keeping turf green in Central Texas is genuinely hard. Our warm-season grasses face months of triple-digit heat, watering restrictions that limit when you can help them, clay and caliche soils that fight root growth, and a whole roster of pests and diseases that thrive in our climate. A lawn that just gets cut every couple of weeks doesn't stand a chance against all that.",
-          "Our lawn care brings the whole picture together: mowing at the right height, feeding and weed control timed for our seasons, fresh sod where the lawn is beyond saving, and seasonal cleanups that carry the turf through the extremes. It's one coordinated program from one consistent crew, not a handful of disconnected visits."
+          "Permanent outdoor lighting is a single, integrated system we install once and you never take down. A slim channel of individually addressable LEDs mounts under your eaves and rooflines, disappears in daylight, and comes to life on command at night. It replaces the yearly cycle of hanging and removing lights with something that is simply always there and always ready.",
+          "Because it is app-controlled from day one, the same hardware does several jobs — quiet warm-white curb appeal on a normal Tuesday, dusk-to-dawn security lighting, team colors on game day, and full holiday scenes in December — with nothing to swap out or reinstall between them."
         ]
       },
       {
         h: "How the pieces fit together",
         p: [
-          "Mowing and edging keep the lawn at the correct height for its grass type and season, which by itself does more for turf health than most people realize. Fertilization and weed control build density from the roots so the lawn crowds weeds out instead of you chasing them with a spray bottle. When turf is too far gone, new sod, properly prepped, resets the lawn. And seasonal cleanups clear leaves, refresh beds, and handle freeze recovery so nothing gets smothered or lost to the cold.",
-          "Each service supports the others. A well-mowed lawn responds better to feeding, a well-fed lawn resists disease, and a clean, cared-for yard shows fewer problems in the first place. Run together, they compound."
+          "This category covers three sides of one system. The roofline and eave lighting is the physical installation — the channel and LEDs that outline your home. The app control is the brain, letting you set scenes, colors, brightness, and schedules from your phone and run it all automatically. And the year-round accent lighting is the everyday payoff — the warm architectural glow you actually use most nights of the year.",
+          "You do not choose between them; they are three parts of the same install. The result is a home that looks intentional and cared-for every single night, with the flexibility to become a holiday showpiece whenever you want."
         ]
       },
       {
-        h: "One reliable crew that knows your yard",
+        h: "Built for Central Texas and backed to last",
         p: [
-          "The biggest advantage of putting your whole lawn program with us is continuity. The same insured crew comes back on schedule, learns your property's quirks, its dry corners, its shady patches, its problem weeds, and catches small issues while they're still small. There's no rotating cast of subcontractors and no starting over every visit.",
-          "That consistency, plus real agronomic know-how for our specific grasses and soils, is what keeps a lawn thick and green through a Central Texas year instead of just barely surviving it."
+          "Our long, hot summers and the occasional hard freeze are exactly why a permanent system makes sense here — nobody should be on a ladder over a two-story eave in July or December. Installed once and weather-rated for our climate, it takes that risk off your hands for good, and low-voltage LEDs keep nightly operation efficient.",
+          "Every permanent system carries a 5-year parts warranty through Gemstone Lights plus our own 1-year labor warranty, installed by a family-owned, fully insured and bonded local team right here in Buda."
         ]
       }
     ],
     faqs: [
-      { q: "What does a full lawn care program include?", a: "Ours brings together scheduled mowing and edging at the right height, timed fertilization and weed control, sod installation when a lawn needs replacing, and seasonal cleanups and freeze recovery. Managed together as one program, these keep St. Augustine, Bermuda, and Zoysia lawns healthy through our heat, drought, and occasional freezes." },
-      { q: "Do I need all the services or can I pick some?", a: "You can start with what you need most, mowing, a feeding and weed program, a sod install, and add from there. That said, the services reinforce each other: mowing height, feeding, and cleanups all affect how well the lawn resists weeds and disease, so a coordinated program gets better results than any one piece alone." },
-      { q: "Which grasses do you care for?", a: "The warm-season grasses common across Central Texas, primarily St. Augustine, Bermuda, and Zoysia. Each has different mowing heights, water needs, and disease risks, and we tailor the care to your specific turf rather than treating every lawn the same." },
-      { q: "Will the same crew handle my lawn each time?", a: "Yes. You get one consistent, insured crew rather than rotating subcontractors, which means they learn your property and catch problems early. That continuity is a big part of why our long-time customers stay with us for years." },
-      { q: "Can you keep my lawn healthy within watering restrictions?", a: "That's exactly what the program is built for. Correct mowing height, root-building fertilization, and healthy soil all help turf hold up on limited watering days, and we can coordinate with efficient irrigation so the lawn gets the most from every drop it's allowed." }
-    ]
-  },
-  {
-    slug: "misting-systems",
-    name: "Misting Systems",
-    icon: "droplet",
-    photo: "care",
-    short: "Automated mosquito misting that makes your yard comfortable again.",
-    intro:
-      "Take your outdoor space back from mosquitoes. We install and service automated misting systems, sized and zoned for your property, so your patio and yard stay usable all through a Central Texas summer.",
-    subs: [
-      "mosquito-misting-systems"
-    ],
-    body: [
       {
-        h: "Comfort that lets you actually use your yard",
-        p: [
-          "There's no point building a beautiful patio if the mosquitoes own it after sundown. In Central Texas the biting starts right when the evenings finally cool off enough to be outside, and our warm, humid stretches after a rain send the population soaring. A misting system exists to solve exactly that, so the outdoor space you invested in is comfortable and usable, not surrendered every night.",
-          "This category is focused: automated misting systems, designed, installed, and serviced to keep mosquitoes and other biting insects off your patio, seating areas, and yard throughout the season, without candles, sprays, or a fight."
-        ]
+        q: "What makes permanent lighting different from holiday lights?",
+        a: "Permanent lighting is installed once and stays up year-round, disappearing by day and doing everything from warm nightly accent light to security and full holiday color from an app. Traditional holiday lighting goes up and comes down each season. Many homeowners use the permanent system's warm-white mode far more than the holiday scenes."
       },
       {
-        h: "Designed and installed for your property",
-        p: [
-          "Every yard is different, so we size the reservoir and pump to your property and lay out the zones around where you actually spend time. The tubing and nozzles are routed discreetly through beds, along fences, and under eaves so the system nearly disappears while still reaching the shady, humid spots where mosquitoes gather. Then it runs on an automatic schedule, typically short bursts when the insects are most active.",
-          "Because we're a landscape company first, we install misting so it fits the whole yard rather than getting stapled onto a fence. The result is coverage where it counts and a system you barely notice."
-        ]
+        q: "Do the three services in this category come separately?",
+        a: "They are three parts of one system, not separate purchases. The roofline install is the hardware, the app is the control, and the year-round accent light is the everyday use. You get all three from a single installation."
       },
       {
-        h: "Serviced by family, alongside pest control",
-        p: [
-          "A misting system keeps working only if the reservoir is refilled, the nozzles stay clear, and the timing is tuned as the season changes. We handle that ongoing service so it performs all summer instead of quietly running dry. And our sister company, Excel Pest & Lawn Control, is the same family and the same crews, so your misting and broader pest control come from one team that already knows your property.",
-          "That means one trusted point of contact for keeping the biting insects handled, indoors and out."
-        ]
+        q: "Can I still use it for holidays and game days?",
+        a: "Absolutely. The individually addressable, full-color LEDs mean the same system that gives you warm everyday light can switch to team colors or a full holiday scene in a couple of taps, with preset themes built into the app."
+      },
+      {
+        q: "What warranty comes with a permanent system?",
+        a: "Our permanent lighting carries a 5-year parts warranty through Gemstone Lights, and we back our own labor for one year. Because we are based in Buda, any service call across Hays County and the surrounding area is quick and local."
+      },
+      {
+        q: "Is it energy-efficient to run every night?",
+        a: "Yes. The system uses low-voltage LEDs, so running warm-white accent light nightly has a minimal effect on your power bill. That efficiency is part of what makes year-round use practical."
       }
-    ],
-    faqs: [
-      { q: "How well does a misting system control mosquitoes?", a: "A properly sized and placed system makes a real, noticeable difference in the treated zones, knocking down mosquitoes and other biting insects on an automatic schedule so your patio and seating areas stay usable. The keys are correct sizing, smart nozzle placement, and ongoing service, all of which we handle." },
-      { q: "Is a misting system better than sprays or candles?", a: "For a permanent outdoor living space, generally yes. Candles and sprays are a nightly chore that only cover the spot you're standing in, while a misting system treats your whole seating area automatically on schedule. You set it once and the yard stays comfortable without you thinking about it." },
-      { q: "Will the system be visible in my landscape?", a: "Not much. We route the tubing and tuck the nozzles discreetly through beds, along fence lines, and under eaves, so the system blends into the landscape rather than standing out. Clean, hidden lines are a mark of a proper install and something we take care to get right." },
-      { q: "Do you service the system after installation?", a: "Yes. We refill the reservoir, keep the nozzles clear, and tune the timing through the season so the system keeps performing. With our sister company Excel Pest & Lawn Control handling broader pest control, one family team can keep the biting insects managed for your whole property." },
-      { q: "When should I have a misting system installed?", a: "Ideally before mosquito season ramps up, so it's running before the warm, humid months peak. We install year-round though, and adding one mid-season still hands you the rest of the summer back on your patio." }
     ]
   },
   {
-    slug: "outdoor-living",
-    name: "Outdoor Living",
-    icon: "wall",
-    photo: "outdoor",
-    short: "Design, hardscape and planting that turn your yard into a room you actually use.",
-    intro:
-      "This is the high-craft work our long-time customers rave about — landscape design, patios, pergolas, masonry, retaining walls, plantings and lighting that transform a plain yard into a true outdoor living space built for how you live.",
-    subs: [
-      "landscape-design",
-      "patios-patio-extensions",
-      "pergolas-outdoor-living",
-      "masonry-stonework",
-      "retaining-walls",
-      "flower-beds-planting",
-      "mulch-rock-gravel",
-      "landscape-lighting"
-    ],
-    body: [
-      {
-        h: "Turning a yard into a room you live in",
-        p: [
-          "Outdoor living is our signature work, the high-craft side of the business our long-time customers rave about. It's the difference between a yard you mow and a yard you actually spend your evenings in: a shaded patio, a fire feature for the cooler months, stonework that anchors the space, beds that soften it, and lighting that keeps it working after dark. In a climate where the best hours are often after sunset, that outdoor room earns its keep.",
-          "This category pulls together everything it takes to build that space, design, patios, pergolas, masonry, retaining walls, planting, mulch and stone, and lighting, as one coordinated project rather than a pile of separate jobs."
-        ]
-      },
-      {
-        h: "It starts with design, and it stays together",
-        p: [
-          "Every outdoor living project begins on paper with Gye walking your property, because the patio, the shade, the plantings, and the lighting all have to work as one composition. A pergola has to shade the patio where the afternoon sun actually hits. The retaining wall has to create the flat ground the patio sits on. The beds and stonework frame it, and the lighting brings it alive at night. Designed together, the pieces reinforce each other.",
-          "Because we're a design-build company, the same team designs and builds all of it, no handoff, no gap between the vision and the crew. That's how the finished space feels intentional instead of assembled from parts that don't quite match."
-        ]
-      },
-      {
-        h: "Built for our soil, weather, and stone",
-        p: [
-          "High-craft outdoor work has to survive Central Texas to be worth anything. Patios and walls are based to handle expansive clay that swells and shrinks. Structures are anchored for our sun and wind. Stonework ties into native Hill Country limestone, and plantings lean native and low-water so the space looks lush within our restrictions. This is the craftsmanship customers name in their reviews years later.",
-          "The payoff is an outdoor space that holds up for decades and gets better as the plantings mature, not one that looks dated or cracked in a few seasons."
-        ]
-      }
-    ],
-    faqs: [
-      { q: "What counts as outdoor living work?", a: "It's the whole toolkit for turning a yard into a usable outdoor room: landscape design, patios and patio extensions, pergolas and shade structures, masonry and stonework, retaining walls, flower beds and planting, mulch and stone, and landscape lighting. We design and build these together so they read as one cohesive space." },
-      { q: "Do I have to do the whole project at once?", a: "No, and many clients phase it. Because we design the full outdoor space up front, you can start with the patio and pergola, then add a fire feature, stonework, or lighting in a later season, and each phase fits the master plan instead of looking bolted on." },
-      { q: "Why design the space before building it?", a: "Because the elements depend on each other, the pergola shades the patio, the wall creates the level ground, the lighting brings it all to life after dark. Designing them together is what makes the finished space feel intentional rather than assembled piecemeal, and it lets you phase the work without conflicts." },
-      { q: "Will an outdoor living space hold up in Central Texas?", a: "It will when it's built for our conditions, which is the whole point of doing it right. We base patios and walls for expansive clay, anchor structures for our sun and wind, and lean on native, low-water plantings, so the space lasts for decades and matures beautifully rather than cracking or fading fast." },
-      { q: "Do you handle both the hardscape and the plantings?", a: "Yes, that's the advantage of a design-build company. One team designs and builds the patio, pergola, and stonework and installs the beds, mulch, and lighting, so the hard and soft elements are coordinated and there's a single company accountable for the whole result." }
-    ]
-  },
-  {
-    slug: "sprinkler-systems",
-    name: "Sprinkler Systems",
-    icon: "water",
-    photo: "garden",
-    short: "Efficient irrigation and drainage for a healthy, water-wise landscape.",
-    intro:
-      "Water smarter, not more. We install, tune and repair sprinkler and drip irrigation, and solve drainage and erosion, so every drop goes where it's needed and stays inside Hays County restrictions.",
-    subs: [
-      "irrigation-sprinkler-systems",
-      "drainage-erosion-control"
-    ],
-    body: [
-      {
-        h: "Two sides of the same problem: water",
-        p: [
-          "In Central Texas, water is either the thing you can't get enough of or the thing you can't get rid of fast enough, and often both in the same year. Months of drought under watering restrictions give way to a flash-flood downpour that our clay soil sheds straight toward the foundation. Managing your landscape's water well means handling both extremes, which is why irrigation and drainage belong together.",
-          "This category covers the whole water picture: efficient sprinkler and drip irrigation that keeps plants alive on limited watering days, and drainage and erosion control that moves storm runoff safely away from your home. Get both right and your landscape thrives while your foundation stays protected."
-        ]
-      },
-      {
-        h: "Efficient irrigation for a restricted region",
-        p: [
-          "With allowed watering days limited across Hays and Travis counties, efficiency isn't optional. We install and tune systems that zone turf, beds, and trees separately, put beds and trees on drip to nearly eliminate evaporation, and run on smart, weather-based controllers that skip watering after rain and stay inside the rules. We also repair and re-tune existing systems, since a cracked head or stuck valve can waste an astonishing amount of water quietly.",
-          "The goal is the least water your landscape needs to thrive, delivered exactly where the roots are and only on the days you're allowed to use it."
-        ]
-      },
-      {
-        h: "Drainage that protects the biggest thing you own",
-        p: [
-          "When the downpour comes, our clay soil doesn't absorb it, it runs, and it heads for the lowest point, which is too often your foundation. We solve standing water, soggy beds, and eroding slopes with regrading, French drains, catch basins, dry creek beds, and swales, routing water away from the house and off your slopes before it does damage.",
-          "On our expansive clay, water pooling against a slab is a real long-term threat. Establishing positive drainage away from the home is some of the highest-value work we do, and it pairs naturally with getting the irrigation right so you're neither over-watering nor letting storms run wild."
-        ]
-      }
-    ],
-    faqs: [
-      { q: "Why group irrigation and drainage together?", a: "Because they're two halves of managing your landscape's water. Irrigation gets water to your plants efficiently during our droughts and restrictions, while drainage moves storm runoff safely away from your home during our downpours. A yard needs both to stay healthy and protect the foundation, so we handle them as one water strategy." },
-      { q: "How can I keep my landscape healthy within watering restrictions?", a: "An efficient, well-zoned system is the answer. Putting beds and trees on drip, separating sun and shade zones, and running a smart weather-based controller lets your landscape get what it needs on the limited days you're allowed to water. We design and tune systems specifically for that constraint." },
-      { q: "How do I know if I have a drainage problem?", a: "Common signs are standing water or soggy beds after rain, a spot that stays green and mushy, erosion channels on a slope, or water pooling near the foundation. Any of those is worth addressing, especially near the house, since our expansive clay makes foundation drainage a real priority." },
-      { q: "Do you fix existing sprinkler systems or only install new ones?", a: "Both. A large share of our irrigation work is repairing and re-tuning existing systems, finding broken heads, leaks, and stuck valves, and correcting inefficient zoning and scheduling. We're glad to bring a neglected system back to working efficiently, whoever installed it." },
-      { q: "Can drainage issues really threaten my foundation?", a: "Yes, and it's why we treat it seriously. Our clay swells and shrinks with moisture, and water pooling against a slab worsens that movement over time. Grading and drainage that carry water away from the house are among the most protective investments you can make in the property." }
-    ]
-  },
-  {
-    slug: "tree-care",
-    name: "Tree Care",
+    slug: "landscape-lighting",
+    name: "Landscape Lighting",
     icon: "tree",
-    photo: "care",
-    short: "Trimming and health care for the trees that anchor your landscape.",
+    short: "Path, uplighting and garden lighting that make your yard beautiful and safe after dark.",
     intro:
-      "Trees are the most valuable living thing in most Central Texas yards. We trim for health and structure, clear deadwood, and shape canopies so your trees stay strong through drought, storms and oak-wilt season.",
+      "Professionally designed landscape lighting turns a dark yard into an outdoor space you actually use at night. We light paths and steps for safety, uplight your best trees and architecture for drama, and layer warm, low-voltage LED fixtures so the whole property looks intentional — never harsh or spotty.",
     subs: [
-      "tree-care-trimming"
+      "path-walkway-lighting",
+      "uplighting-trees-architecture",
+      "garden-bed-lighting",
+      "security-lighting"
     ],
     body: [
       {
-        h: "The most valuable living thing in your yard",
+        h: "Lighting a yard is about layers",
         p: [
-          "The live oaks, red oaks, cedar elms, and pecans that shade Central Texas properties are usually worth more than anything else growing there, and the hardest to replace. A mature shade tree is decades of growth you can't buy back, it cools the house and the yard, and it anchors the whole landscape. It's also the easiest thing on the property to damage with a careless cut, because trees don't heal wounds, they seal around them permanently.",
-          "Our tree care exists to protect that investment: trimming for health and structure, clearing deadwood and hazard limbs, and shaping canopies so your trees stay strong through drought, storms, and oak-wilt season."
+          "The difference between a professionally lit landscape and a few scattered fixtures comes down to layers. Good landscape lighting builds depth by combining several kinds of light — light on the ground for safety, light up your best features for drama, soft fill through the beds, and purposeful coverage for security — so the eye moves naturally across the yard and the whole property reads as one intentional composition.",
+          "A single type of light on its own looks flat or spotty. Layered together, they create the shadow, contrast, and richness that make a landscape look like it belongs in a magazine after dark."
         ]
       },
       {
-        h: "Oak wilt makes local knowledge essential",
+        h: "The four layers, and how they work together",
         p: [
-          "You can't do tree care in Central Texas without accounting for oak wilt, the fungal disease that spreads through the region and can kill oaks, sometimes whole connected stands of them, quickly. It's introduced through fresh wounds by beetles drawn to the sap, so timing and technique aren't optional details, they're the whole game. We avoid pruning oaks during the high-risk period and seal every oak cut immediately, every single time.",
-          "This is exactly the kind of thing a crew from out of the area gets wrong. Trimming your oaks at the wrong time of year or leaving cuts unsealed can introduce the very disease you were trying to protect them from. Doing it right takes local knowledge, and we've been at it here since 1998."
+          "This category brings four services into one design. Path and walkway lighting is the safety layer, washing walks, steps, and drives so people move confidently after dark. Uplighting is the drama layer, turning signature live oaks, stonework, and architecture into glowing focal points. Garden and bed lighting is the connective layer, filling the middle ground so the whole yard reads as continuous. And security lighting is the protective layer, removing dark corners and blind spots.",
+          "Designed together, they do more than the sum of their parts — the uplit tree has soft bed light beneath it, the lit path leads toward a lit entry, and the dark gaps simply disappear."
         ]
       },
       {
-        h: "Trimming that makes trees stronger",
+        h: "Made for Hill Country properties",
         p: [
-          "Good trimming is about the tree's long-term health, not just making it smaller this week. We shape young trees for strong structure early, remove deadwood and hazard limbs before a storm or ice event brings them down on your roof, and thin canopies thoughtfully to let light and wind pass through, without topping, gutting, or lion-tailing the tree. Then we haul off the debris and leave the yard clean.",
-          "Thinning done right helps a tree ride out our flash-flood downpours and rare hard freezes. Done wrong, it stresses the tree and invites decay. We're also honest about scope and will tell you plainly when a job is better left to a specialist or left alone."
+          "Central Texas gives landscape lighting a lot to work with — mature live oaks, limestone and stonework, sloped and terraced lots, and everything from tight HOA yards in Kyle and Buda to wide acreage in Dripping Springs, Driftwood, and Wimberley. The right design changes with the property, and larger, darker lots especially are transformed by good lighting.",
+          "It is all warm, glare-controlled, low-voltage LED, weather-rated for our climate, with buried wiring and a dusk schedule — installed by a family-owned local team and backed by our 1-year labor warranty."
         ]
       }
     ],
     faqs: [
-      { q: "Why is timing so important for trimming oaks here?", a: "Because of oak wilt. The disease spreads through fresh wounds by beetles that are most active in the spring, so we avoid pruning oaks during that high-risk window and seal every oak cut immediately year-round. Getting the timing and sealing right is the single most important part of caring for Central Texas oaks." },
-      { q: "What is oak wilt and can it be prevented?", a: "Oak wilt is a fungal disease that can kill oaks quickly and spread between trees through connected roots. It's largely preventable with proper pruning practices: trimming at low-risk times, sealing every cut, and using clean technique. Using a crew that understands local trees is the best protection there is." },
-      { q: "How often should trees be trimmed?", a: "Most established shade trees benefit from attention every few years, while young trees are worth shaping more often to build strong structure early. We recommend based on the tree's actual health, deadwood, and canopy rather than a fixed schedule, since over-trimming can harm a tree as much as neglect." },
-      { q: "Can you remove limbs that threaten my house before a storm?", a: "Yes, and it's one of the smartest preventive steps you can take. We clear deadwood and hazard limbs that could fall on your roof, car, or fence during one of our downpours or a rare ice event. Handling it ahead of time is far cheaper than dealing with the damage afterward." },
-      { q: "Do you do large tree removals?", a: "Our focus is trimming, shaping, and tree health care that keeps your trees thriving, and we're always straight about scope. If a job calls for a large removal or specialized equipment, we'll tell you honestly rather than take on work better suited to a dedicated removal crew." }
+      {
+        q: "Do I need all four types of landscape lighting?",
+        a: "Not necessarily, but they are designed to work as layers. Path lighting handles safety, uplighting adds drama, garden lighting fills the middle ground, and security lighting protects — and combining them is what makes a yard look professionally designed rather than spotty. We tailor the mix to your property during the free consultation."
+      },
+      {
+        q: "Will it look harsh or like a floodlit yard?",
+        a: "No. We use warm, low-glare, low-voltage LED fixtures and aim them carefully so you see the effect and not the bulbs. The goal is soft, layered depth that looks intentional, never a harsh wash of light across the yard."
+      },
+      {
+        q: "Is landscape lighting worth it on a large rural lot?",
+        a: "Very much so. Larger, darker lots in areas like Dripping Springs, Driftwood, and Wimberley are often the most transformed by good lighting, because uplit oaks, lit drives, and warm accents give all that acreage definition and make it feel finished and safe at night."
+      },
+      {
+        q: "Are the fixtures built for Texas weather?",
+        a: "Yes. Everything is weather-rated low-voltage LED with buried, concealed wiring, made to handle our long summers, UV, and the occasional hard freeze. Our labor is backed for a year, with fast local service from Buda."
+      },
+      {
+        q: "Can the lighting run on a schedule?",
+        a: "Yes. We put landscape lighting on a dusk schedule so it comes on automatically each evening, and you choose whether it runs to a set hour or dusk-to-dawn — especially useful for the security and path layers."
+      }
+    ]
+  },
+  {
+    slug: "outdoor-living-space-lighting",
+    name: "Outdoor Living Space Lighting",
+    icon: "wall",
+    short: "Patios, pergolas, pools and kitchens lit for comfort, ambiance and everyday use.",
+    intro:
+      "Your patio, deck, pergola and pool are where life happens after work — but only if you can see. We light outdoor living spaces for warmth and comfort: soft overhead glow for pergolas and pavilions, step and rail lighting for safety, and feature lighting for pools and water features that make the whole space feel finished.",
+    subs: [
+      "patio-deck-lighting",
+      "pergola-pavilion-lighting",
+      "pool-water-feature-lighting",
+      "outdoor-kitchen-lighting"
+    ],
+    body: [
+      {
+        h: "The rooms you built to live in outdoors",
+        p: [
+          "In Central Texas, the patio, deck, pergola, pool, and outdoor kitchen are genuine living rooms for much of the year — but every one of them empties out the moment the sun drops and you cannot see. Outdoor living space lighting is what keeps those rooms open past sunset, turning the money you invested in the backyard into space you actually use in the evening, which is when most people finally have time to enjoy it.",
+          "Our long, warm evenings make this one of the highest-value places to add lighting. A well-lit outdoor living space can add hours to how much of the year and how much of each day you get out of it."
+        ]
+      },
+      {
+        h: "Comfort, ambiance, and safe footing",
+        p: [
+          "This category covers the four anchors of an outdoor living space, each lit for how it is used. Patios and decks get layered overhead, accent, and step-and-rail lighting for comfort and safe footing. Pergolas and pavilions get warm light integrated into the structure so a frame becomes a room. Pools and water features get glowing feature light with safe, even coverage at the water's edge. And outdoor kitchens get both bright task light for cooking and warm ambiance for gathering.",
+          "The common thread is balance — enough light to move and work safely, warm and dimmable enough to actually want to linger, and never a harsh fixture glaring in anyone's eyes."
+        ]
+      },
+      {
+        h: "Matched to your space and built for the weather",
+        p: [
+          "We design each space to its own materials and use, matching fixtures to wood, composite, stone, steel, or masonry so the lighting looks original to the space rather than added on, and concealing wiring for a clean result. Zones and dimming let the same space shift from a lively cookout to a quiet nightcap.",
+          "It is all weather- and moisture-rated LED built for our heat, humidity, and occasional freeze, tied to a schedule or the app, and backed by our 1-year labor warranty with quick local service from Buda."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "Which outdoor living spaces can you light?",
+        a: "We light patios and decks, pergolas and pavilions, pools and water features, and outdoor kitchens and bars. Most projects combine a few of these into one cohesive design so the whole backyard works together after dark rather than in isolated pieces."
+      },
+      {
+        q: "Can the same space be bright for cooking and soft for relaxing?",
+        a: "Yes. We build in dimmable zones so an area can run bright task light when you are grilling or prepping and then drop to warm ambiance once everyone settles in. Tuning the space to the moment is central to how we design outdoor living lighting."
+      },
+      {
+        q: "Is lighting near a pool or water feature safe?",
+        a: "Yes, when it is installed correctly. We use weather- and moisture-rated fixtures installed to the proper standards for wet areas, and safe, even light around the water's edge is one of the main reasons to add it. It also makes the water a beautiful centerpiece at night."
+      },
+      {
+        q: "Will the fixtures match my deck, pergola, or patio materials?",
+        a: "We select and mount fixtures to suit your specific materials — wood, composite, stone, steel, or masonry — and conceal the wiring, so the lighting looks like it was always part of the space rather than bolted on afterward."
+      },
+      {
+        q: "How much longer can I use my patio with lighting?",
+        a: "With our warm evenings, well-designed lighting effectively adds hours to your usable outdoor time and extends the season, since the space stays comfortable and inviting well past sunset instead of going dark and empty."
+      }
+    ]
+  },
+  {
+    slug: "holiday-lighting",
+    name: "Holiday Lighting",
+    icon: "star",
+    short: "Professional Christmas & holiday lighting — installed, maintained, taken down and stored.",
+    intro:
+      "Skip the ladder and the tangled boxes. We design, install, maintain, take down and store professional-grade holiday lighting so your home is the best-lit on the block from Thanksgiving through New Year's. Crisp rooflines, wrapped trees and wreaths — all done safely, and all yours to enjoy without lifting a finger.",
+    subs: [
+      "christmas-roofline-lighting",
+      "tree-wrapping-wreaths",
+      "install-takedown-storage"
+    ],
+    body: [
+      {
+        h: "The whole holiday, handled",
+        p: [
+          "Our holiday lighting is a full-service experience, not a product you buy and figure out yourself. We design the display, install it with commercial-grade product, keep it working through the season, then take it all down and store it until next year. Your only job is to enjoy the best-lit house on the block from Thanksgiving through New Year's.",
+          "That means no hauling boxes from the attic, no untangling last year's knots, and no standing on an icy ladder over a two-story eave in December. For the many two-story homes and steep rooflines around Hays County, handing that off is worth it for the safety alone."
+        ]
+      },
+      {
+        h: "A complete look, from roofline to yard",
+        p: [
+          "This category brings together everything that makes a home feel fully decorated. Christmas roofline lighting traces your eaves and peaks with crisp, even lines. Tree wrapping and wreaths fill in the yard-level details — wrapped trunks, lit canopies, wreaths, and garland — so the display reads from the roof all the way to the ground. And the install, takedown, and storage service is the promise that ties it together: we handle the entire cycle for you.",
+          "Coordinated as one design, the pieces share a consistent bulb color, greenery, and style, so the whole property looks intentional rather than assembled from mismatched boxes."
+        ]
+      },
+      {
+        h: "Local, reliable, and worth booking early",
+        p: [
+          "Because we install, maintain, remove, and store your display, returning clients get a fast, easy rebooking each year — and priority scheduling. In-season maintenance is built in, so if a section goes out during the coldest, busiest stretch of the year, we come make it right rather than leaving you to climb up after it.",
+          "We are a family-owned, fully insured and bonded crew based in Buda, so scheduling and service stay quick and close. Spots fill fast heading into the season, so it pays to reach out early."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "Do you handle everything, or just the install?",
+        a: "Everything. We design and install the display, maintain it through the season, then take it down and store it until next year. You never deal with the ladder, the tangled boxes, or finding storage space — you simply enjoy the display."
+      },
+      {
+        q: "What does a full holiday display include?",
+        a: "Most displays combine crisp roofline lighting along the eaves and peaks with yard-level details like wrapped tree trunks, lit canopies, wreaths, and garland. We coordinate all of it into one consistent look so the home reads as fully decorated from the roof to the ground."
+      },
+      {
+        q: "What if a light goes out during the holidays?",
+        a: "In-season maintenance is part of the service. If a section stops working or a strand comes loose in the wind, we come out and fix it, so the display looks its best through the whole season and not just on install day."
+      },
+      {
+        q: "When should I book holiday lighting?",
+        a: "As early as you can. Schedules fill quickly heading into the season, and booking early secures the install date you want. As a local Buda crew, we keep scheduling and service quick across Hays County, and returning clients get priority."
+      },
+      {
+        q: "Do you provide the lights and greenery?",
+        a: "Yes. We install custom-fit, commercial-grade lights and greenery that hold their color and shape all season, so you get a crisp, consistent look rather than store-bought strands. It is all detailed in your written estimate, and we store it for you afterward."
+      }
+    ]
+  },
+  {
+    slug: "commercial-lighting",
+    name: "Commercial Lighting Solutions",
+    icon: "shield",
+    short: "Architectural, landscape and security lighting that lifts curb appeal and safety for businesses.",
+    intro:
+      "For businesses, lighting is curb appeal, safety and branding all at once. We design and install commercial exterior lighting — architectural accent lighting, landscape lighting, and parking and security lighting — that makes your property look sharp after dark, keeps customers and staff safe, and stands up to daily commercial use.",
+    subs: [
+      "architectural-accent-lighting",
+      "commercial-landscape-lighting",
+      "parking-security-lighting"
+    ],
+    body: [
+      {
+        h: "After dark, your lighting is your brand",
+        p: [
+          "For a business, exterior lighting does three jobs at once: it is curb appeal that draws customers in, safety that protects staff and visitors, and branding that signals the business is open, established, and worth stopping for. A dark, flat property reads as closed and forgettable no matter how sharp it looks by day, while a well-lit one works for you every night.",
+          "Around the growing commercial corridors of San Marcos, Kyle, and Buda, that visibility and professionalism after dark is increasingly what tenants, customers, and property managers expect."
+        ]
+      },
+      {
+        h: "Three layers that cover the whole property",
+        p: [
+          "This category brings together the three sides of a complete commercial exterior. Architectural accent lighting makes the building itself a marketing asset, grazing facades and highlighting entrances and signage. Commercial landscape lighting keeps the grounds attractive and safe, with lit entrances, monument signs, trees, and walkways. And parking and security lighting delivers even, glare-controlled coverage across lots and perimeters so customers and staff feel safe coming and going.",
+          "Designed together, they give a property one cohesive, professional presence from the entrance sign to the far corner of the lot — the building, the grounds, and the parking all reading as part of the same intentional whole."
+        ]
+      },
+      {
+        h: "Built for commercial demands",
+        p: [
+          "Commercial lighting has to survive daily use and stay easy to keep sharp, so we specify durable, consistent commercial-grade fixtures, control glare and light spill to stay neighborly and code-friendly, and lay systems out for reliable dusk-to-dawn operation and straightforward service. Consistency matters — a few dead or mismatched fixtures undercut the whole effect.",
+          "We are a family-owned company that is fully insured and bonded, we plan the work to keep disruption to your operations minimal, and we back our labor for a year with quick service from our Buda shop."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "What kinds of commercial properties do you light?",
+        a: "We work with a range of commercial and mixed-use properties — offices, retail centers, HOAs, and multi-tenant sites — across Hays County and the surrounding area. The design is tailored to the property, combining building, grounds, and parking lighting as needed."
+      },
+      {
+        q: "Are you insured for commercial work?",
+        a: "Yes. We are a family-owned company that is fully insured and bonded, and we use durable commercial-grade fixtures built for daily use. We also back our labor for a year, with fast service from our shop in Buda."
+      },
+      {
+        q: "Will installation interrupt our operations?",
+        a: "We plan the work to keep disruption to a minimum and coordinate timing with you. Most of the installation happens around the building and grounds rather than inside your space, so business can typically carry on as usual."
+      },
+      {
+        q: "Can the lighting run automatically every night?",
+        a: "Yes. We put commercial systems on a reliable dusk-to-dawn schedule so the building, grounds, and parking areas light up automatically each night with no staff involvement, and we design the layout for easy ongoing service."
+      },
+      {
+        q: "How do you keep parking lighting from bothering neighbors?",
+        a: "We control glare and light spill by choosing the right fixtures and aiming them to light your property without throwing light onto adjacent properties or roadways. That keeps the lot safe and well-lit while staying neighborly and code-friendly."
+      }
     ]
   }
 ];

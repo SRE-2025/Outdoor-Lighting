@@ -9,20 +9,18 @@ permalink: "/services/{{ service.slug }}/"
 tags: service
 eleventyComputed:
   title: "{{ service.name | safe }} in Buda, Kyle & Central Texas"
-  description: "{{ service.short | safe }} Family-owned, licensed & insured. Serving Buda, Kyle, San Marcos & Central Texas. Free estimates from Excel Lawn Care."
+  description: "{{ service.short | safe }} Family-owned, insured & bonded. Serving Buda, Kyle, San Marcos & Hays County. Free consultations from Excel Outdoor Lighting Co."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
     serviceType: "{{ service.name | safe }}"
     provider:
-      "@type": "LandscapingBusiness"
-      name: "Excel Lawn Care"
+      "@type": "HomeAndConstructionBusiness"
+      name: "Excel Outdoor Lighting Co."
     areaServed: "Central Texas"
     description: "{{ service.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/scene.njk" as scn %}
-{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -67,13 +65,13 @@ eleventyComputed:
       <div class="card card--accent">
         <p class="eyebrow">Free estimate</p>
         <h3 style="margin-top:4px">Get {{ service.name | lower }} done right</h3>
-        <p class="muted">Family-owned since {{ site.parentFounded }}, licensed &amp; insured, and 5.0★ Google-rated. Talk directly with the owner about your project.</p>
+        <p class="muted">Family-owned, fully insured &amp; bonded, and 5.0★ Google-rated — with 20+ years of lighting experience. Free, no-pressure consultation.</p>
         <a class="btn btn--primary" href="/contact/" style="margin-top:6px">Get a Free Estimate</a>
         <a class="btn btn--ghost" href="tel:{{ site.phoneRaw }}" style="margin-top:10px">{{ ico.svg("phone") }} {{ site.phone }}</a>
       </div>
       <div class="card" style="margin-top:22px">
         <h3 style="margin-top:0">Serving your neighborhood</h3>
-        <p class="muted">Available across our full greater-Austin service area, including:</p>
+        <p class="muted">Available across our full Hays County service area, including:</p>
         <ul class="chips">
           {% for loc in locations.priority %}
           <li><a class="chip" href="/service-areas/{{ loc.slug }}/" style="text-decoration:none">{{ loc.city }}</a></li>

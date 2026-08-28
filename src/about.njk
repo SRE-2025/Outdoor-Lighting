@@ -1,18 +1,16 @@
 ---
 layout: layouts/base.njk
-title: "About — Family-Owned in Buda Since 1998"
-description: "Excel Lawn Care is owner Gye Hutson's family-run landscape company — an Austin native serving Central Texas since 1998. Meet the crew behind the work."
+title: "About — Family-Owned Outdoor Lighting in Buda, TX"
+description: "Excel Outdoor Lighting Co. is a family-owned outdoor lighting company in Buda, TX, serving Hays County. Insured, bonded, and backed by 20+ years of lighting experience."
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/scene.njk" as scn %}
-{% import "partials/photo.njk" as photo %}
 
 <section class="hero hero--page">
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">Family-owned &amp; locally operated</p>
-      <h1>The crew Central Texas has trusted since 1998</h1>
-      <p class="hero__sub">Not a franchise. Not a call center. A local, family-run company that treats every yard like its own.</p>
+      <h1>The lighting team Hays County trusts</h1>
+      <p class="hero__sub">Not a franchise. Not a call center. A local, family-run lighting company that treats every property like its own.</p>
     </div>
   </div>
 </section>
@@ -23,67 +21,44 @@ description: "Excel Lawn Care is owner Gye Hutson's family-run landscape company
   <div class="wrap split">
     <div class="prose">
       <p class="eyebrow">Our story</p>
-      <h2>Born and raised in Central Texas</h2>
-      <p class="lead">Owner Gye Hutson grew up in Austin near Lake Travis — Leander High School, then Austin Community College, then Southwestern University in Georgetown. He's spent his whole life in Central Texas, and it shows in the work.</p>
-      <p>In {{ site.parentFounded }}, Gye started the family business in South Austin. As the landscaping and turf side grew into serious design-build work, it earned its own name — <strong>Excel Lawn Care</strong>, launched in {{ site.founded }}, the same year the company earned its BBB accreditation. Today both sides of the business run out of one warehouse in Buda, with the same office team and the same crews.</p>
-      <p>That local knowledge is the whole point. Gye knows Central Texas soil, Central Texas heat, and Central Texas drought firsthand — so the landscapes we design are built to actually thrive here, not just look good on install day.</p>
+      <h2>Built on craftsmanship and follow-through</h2>
+      <p class="lead">Excel Outdoor Lighting Co. is a family-owned company based in Buda, Texas. We design and install outdoor lighting across Hays County — and we back it with the kind of warranties and service you can only get from a local team that plans to be here for the long haul.</p>
+      <p>The business is family-owned and trusted locally since 2021, but the experience behind it runs much deeper — our team brings over 20 years of exterior-lighting know-how to every project. That shows up in the details: clean fixture placement, concealed wiring, warm color temperatures that flatter a home, and a system that's aimed and dialed in properly before we ever call a job done.</p>
+      <p>We're fully insured and bonded, and we treat every install like it's on our own street — because a lot of the time, it nearly is.</p>
 
-      <h3>Our philosophy</h3>
+      <h3>Our promise</h3>
       <blockquote class="review" style="font-style:italic">
-        We treat every home as if it were our own — and every customer, including their four-legged family members, like neighbors.
+        We light every property like it's our own — and we stand behind the work long after the install is done.
       </blockquote>
-      <p>Family and pet safety is the throughline in everything we do. It's why customers stay with us for 13, 20, even 30 years — and why they refer their neighbors.</p>
+      <p>That's why customers call us back season after season for holiday lighting, and refer their neighbors for permanent and landscape lighting.</p>
     </div>
     <div>
-      <figure class="media media--tall reveal">
-        {{ photo.image("lawn", "A Excel Lawn Care landscape in Buda, TX") }}
-        <span class="media__label">Family-owned in Buda, TX</span>
-      </figure>
+      <div class="glowpanel reveal">
+        <span class="glowpanel__icon">{{ ico.svg("bulb") }}</span>
+        <p class="glowpanel__title">Family-owned in Buda, TX</p>
+        <p class="glowpanel__sub">Insured &amp; bonded · 20+ years experience</p>
+      </div>
       <div class="badges" style="margin-top:22px">
         <span class="badge">{{ ico.svg("star") }} 5.0★ Google</span>
-        <span class="badge">{{ ico.svg("shield") }} BBB {{ site.trust.bbbRating }}</span>
-        <span class="badge">{{ ico.svg("award") }} Since {{ site.parentFounded }}</span>
+        <span class="badge">{{ ico.svg("shield") }} Insured &amp; bonded</span>
+        <span class="badge">{{ ico.svg("award") }} 1-yr labor · 5-yr parts</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Timeline -->
+<!-- What sets us apart -->
 <section class="section section--soft">
   <div class="wrap">
     <div class="center narrow" style="margin:0 auto 40px">
-      <p class="eyebrow">The journey</p>
-      <h2>28 years, one family, one community</h2>
+      <p class="eyebrow">Why homeowners choose us</p>
+      <h2>Local, insured, and in it for the long haul</h2>
     </div>
     <div class="grid grid-4">
-      <div class="card"><div class="stat__n">{{ site.parentFounded }}</div><h3 style="margin-top:8px">The beginning</h3><p class="muted">The family business opens in South Austin.</p></div>
-      <div class="card"><div class="stat__n">{{ site.founded }}</div><h3 style="margin-top:8px">Excel Lawn Care</h3><p class="muted">The landscaping division earns its own name — and BBB accreditation.</p></div>
-      <div class="card"><div class="stat__n">Today</div><h3 style="margin-top:8px">Buda HQ</h3><p class="muted">Both brands operate from one warehouse with shared crews.</p></div>
-      <div class="card"><div class="stat__n">5.0★</div><h3 style="margin-top:8px">Still earning it</h3><p class="muted">A perfect rating and customers who've stayed for decades.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Team -->
-<section class="section">
-  <div class="wrap">
-    <div class="center narrow" style="margin:0 auto 40px">
-      <p class="eyebrow">Meet the team</p>
-      <h2>The people behind the work</h2>
-    </div>
-    <div class="grid grid-2" style="max-width:820px;margin:0 auto">
-      <div class="card center">
-        <div class="card__icon" style="margin:0 auto 16px;width:64px;height:64px;border-radius:50%">{{ ico.svg("compass") }}</div>
-        <h3>{{ site.owner.name }}</h3>
-        <p class="muted">{{ site.owner.title }}</p>
-        <p>Austin native, lifelong Central Texan, and the designer behind every project. Gye leads with the belief that your yard should be treated like his own.</p>
-      </div>
-      <div class="card center">
-        <div class="card__icon" style="margin:0 auto 16px;width:64px;height:64px;border-radius:50%">{{ ico.svg("mail") }}</div>
-        <h3>{{ site.officeManager.name }}</h3>
-        <p class="muted">{{ site.officeManager.title }}</p>
-        <p>The voice you'll hear when you call — customers name-check Megan in their reviews for keeping everything running smoothly.</p>
-      </div>
+      <div class="card"><div class="card__icon">{{ ico.svg("bulb") }}</div><h3>Design-first</h3><p class="muted">Every system is designed around your property — not sold off a truck.</p></div>
+      <div class="card"><div class="card__icon">{{ ico.svg("shield") }}</div><h3>Insured &amp; bonded</h3><p class="muted">Fully insured and bonded, with a 1-year labor warranty on our work.</p></div>
+      <div class="card"><div class="card__icon">{{ ico.svg("clock") }}</div><h3>Fast &amp; responsive</h3><p class="muted">Free consultations within 24–48 hours and estimates within 24–72.</p></div>
+      <div class="card"><div class="card__icon">{{ ico.svg("star") }}</div><h3>5.0★ rated</h3><p class="muted">A perfect Google rating from Hays County homeowners and businesses.</p></div>
     </div>
   </div>
 </section>
@@ -91,9 +66,9 @@ description: "Excel Lawn Care is owner Gye Hutson's family-run landscape company
 <!-- Sister company -->
 <section class="section section--pest">
   <div class="wrap center narrow" style="margin:0 auto">
-    <p class="eyebrow">Two brands, one family</p>
+    <p class="eyebrow">Part of the Excel family</p>
     <h2>Also need pest control?</h2>
-    <p class="lead" style="color:var(--dark-ink)">Our sister company, {{ site.sister.name }}, handles pest control, termite letters for home closings, rodent exclusion and lawn-pest treatment — with the same family, the same crews, and the same standards. Many of our customers use both.</p>
+    <p class="lead" style="color:var(--dark-ink)">Our sister company, {{ site.sister.name }}, handles pest control, termite letters for home closings, rodent exclusion and lawn-pest treatment — same family, same standards. Many of our customers use both.</p>
     <a class="btn btn--white btn--lg" href="{{ site.sister.url }}" rel="noopener">Visit Excel Pest &amp; Lawn Control {{ ico.svg("arrow") }}</a>
   </div>
 </section>

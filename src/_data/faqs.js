@@ -1,36 +1,36 @@
-// Homepage FAQ — answers real buyer questions AND feeds FAQPage schema for
-// rich results. Keep answers locally specific (Central Texas / Hays County).
+// Sitewide FAQ set for Excel Outdoor Lighting Co. — used on the FAQs page
+// and emitted as FAQPage structured data for SEO/AEO.
 module.exports = [
   {
     q: "What areas do you serve?",
-    a: "We're based in Buda and serve the greater Austin metro — from South Austin, Kyle and San Marcos up through Round Rock, Cedar Park, Leander, Hutto and Liberty Hill — across Hays, Travis and Williamson counties."
+    a: "We're based in Buda and serve Hays County and the surrounding communities — including Kyle, San Marcos, Dripping Springs, Wimberley, Driftwood, Manchaca, South Austin, Lakeway, Bee Cave and West Lake Hills. If you're nearby and not listed, just ask."
   },
   {
-    q: "Do you offer free estimates?",
-    a: "Yes. Every project starts with a free, no-pressure on-site consultation — and you'll talk directly with the owner, not a call center."
+    q: "Is Excel Outdoor Lighting insured?",
+    a: "Yes. We're a fully insured and bonded, family-owned company, and our team brings over 20 years of exterior-lighting experience to every install."
   },
   {
-    q: "What type of grass grows best in Central Texas?",
-    a: "It depends on your yard. St. Augustine handles shade and looks lush but drinks more water; Bermuda thrives in full sun and shrugs off drought; Zoysia is a durable middle ground. We assess your sun, soil and watering habits and recommend the right turf for your lot."
+    q: "How does the free consultation work?",
+    a: "We schedule a free in-home consultation, usually within 24 to 48 hours of your call. We walk the property, learn what you want to light and why, and then send a detailed written estimate — typically within 24 to 72 hours of the visit."
   },
   {
-    q: "Can you design a low-water or drought-tolerant landscape?",
-    a: "Absolutely — it's one of our specialties. We design native and xeriscape landscapes that stay beautiful on far less water and work comfortably within Hays County watering restrictions."
+    q: "What is permanent outdoor lighting?",
+    a: "Permanent outdoor lighting is a discreet channel of individually addressable LEDs installed under your eaves and rooflines. It stays up year-round and hides in daylight. From an app you can run warm-white accent light every night, switch to team or holiday colors, and set schedules — with no ladders and no seasonal takedown."
   },
   {
-    q: "Do you build pergolas, patios and other hardscape?",
-    a: "Yes. Beyond planting and lawn care, we build pergolas, patio extensions, masonry, stone borders and full outdoor-living spaces — the high-craft work our long-time customers rave about."
+    q: "Do you install and take down holiday lighting?",
+    a: "Yes — it's full service. We design and install professional-grade holiday lighting at the start of the season, maintain it if anything goes out, then take it all down after the holidays and store it for you until next year. All you do is enjoy it."
   },
   {
-    q: "Are you licensed and insured?",
-    a: "Yes — we're a fully licensed and insured, family-owned company operating in Central Texas since 1998, and we back our work with a workmanship warranty."
+    q: "Do you offer a warranty?",
+    a: "We back our installations with a one-year labor warranty, and our permanent lighting carries a five-year parts warranty through Gemstone Lights."
+  },
+  {
+    q: "Do you do commercial lighting?",
+    a: "Yes. We design and install commercial exterior lighting — architectural accent lighting, landscape lighting, and parking and security lighting — built to lift curb appeal, improve safety, and stand up to daily commercial use."
   },
   {
     q: "Do you offer any discounts?",
-    a: "We appreciate our service members, first responders, nurses and teachers — if that's you, ask us when you schedule and we'll take care of you. It isn't combinable with other offers."
-  },
-  {
-    q: "Do you also handle pest control?",
-    a: "Our sister company, Excel Pest & Lawn Control, handles pest control, termite letters for home closings, rodent exclusion and lawn-pest treatment — same family, same crews. Many customers use both."
+    a: "We're glad to take care of veterans, first responders, medical professionals, educators and seniors — just mention it when you schedule your consultation."
   }
 ];

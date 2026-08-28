@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: "Free Landscape Design Consultation — Central Texas"
-description: "Book a free, no-pressure landscape design consultation with Excel Lawn Care. Talk to the owner about your Central Texas project. Family-owned since 1998."
+title: "Free Outdoor Lighting Consultation — Hays County, TX"
+description: "Book a free, no-pressure outdoor lighting consultation with Excel Outdoor Lighting Co. In-home visit within 24–48 hours and a detailed estimate. Serving Buda & Hays County."
 ---
 {% import "partials/icons.njk" as ico %}
 
@@ -9,8 +9,8 @@ description: "Book a free, no-pressure landscape design consultation with Excel 
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">No pressure. No call center.</p>
-      <h1>Book your free design consultation</h1>
-      <p class="hero__sub">Tell us about your yard and we'll set up a free on-site visit with the owner — a real plan and a clear estimate before you commit to anything.</p>
+      <h1>Book your free lighting consultation</h1>
+      <p class="hero__sub">Tell us about your property and we'll set up a free in-home visit — a real design and a clear written estimate before you commit to anything.</p>
       <div class="hero__actions">
         <a class="btn btn--primary btn--lg" href="/contact/">Get My Free Consultation</a>
         <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
@@ -19,7 +19,7 @@ description: "Book a free, no-pressure landscape design consultation with Excel 
   </div>
 </section>
 
-<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Free Design Consultation</nav>
+<nav class="wrap crumbs"><a href="/">Home</a><span>/</span>Free Consultation</nav>
 
 <section class="section">
   <div class="wrap split">
@@ -27,22 +27,24 @@ description: "Book a free, no-pressure landscape design consultation with Excel 
       <p class="eyebrow">What to expect</p>
       <h2>How the consultation works</h2>
       <ul class="checks">
-        <li>{{ ico.svg("check") }} <span><strong>We come to you.</strong> We walk your property, look at sun, soil and drainage, and listen to how you want to use the space.</span></li>
-        <li>{{ ico.svg("check") }} <span><strong>You talk to the owner.</strong> Not a salesperson — the person who'll actually design the project.</span></li>
-        <li>{{ ico.svg("check") }} <span><strong>You get a plan and a clear estimate.</strong> No surprises, no obligation.</span></li>
+        <li>{{ ico.svg("check") }} <span><strong>We come to you</strong> — usually within 24–48 hours. We walk the property and look at what's worth lighting after dark.</span></li>
+        <li>{{ ico.svg("check") }} <span><strong>You get a real design.</strong> We plan a system around your home or business, not a package off a truck.</span></li>
+        <li>{{ ico.svg("check") }} <span><strong>You get a clear written estimate</strong>, typically within 24–72 hours. No surprises, no obligation.</span></li>
         <li>{{ ico.svg("check") }} <span><strong>It's genuinely free.</strong> If we're not the right fit, we'll say so.</span></li>
       </ul>
-      <p class="muted" style="margin-top:14px">Serving Buda, Kyle, San Marcos, Dripping Springs, Wimberley and the whole Central Texas corridor — with the same family-owned crews we've run since {{ site.parentFounded }}.</p>
+      <p class="muted" style="margin-top:14px">Serving Buda, Kyle, San Marcos, Dripping Springs, Wimberley and all of Hays County — from a family-owned team that's fully insured and bonded.</p>
     </div>
     <div>
       <div class="card">
-        <div class="brandbar brandbar--turf" style="background:var(--color-accent)"></div>
+        <div class="brandbar" style="background:var(--color-accent);height:4px;border-radius:4px;margin-bottom:16px"></div>
         <h3 style="margin-top:0">Two easy ways to start</h3>
         <p class="muted">Call or text us, or send a few details and we'll reach out to schedule.</p>
         <a class="btn btn--primary btn--block" href="/contact/" style="width:100%;margin-bottom:12px">Request My Consultation</a>
         <a class="btn btn--ghost btn--block" href="tel:{{ site.phoneRaw }}" style="width:100%">{{ ico.svg("phone") }} {{ site.phone }}</a>
-        <p class="muted" style="margin-top:16px;font-size:.9rem">Mon–Fri 8am–5pm · office@excelpest-lawncontrol.com</p>
+        <p class="muted" style="margin-top:16px;font-size:.9rem">Mon–Fri 8am–5pm · {{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }}</p>
       </div>
     </div>
   </div>
 </section>
+
+{% include "partials/cta.njk" %}

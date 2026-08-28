@@ -1,19 +1,20 @@
 {
-  "name": "Excel Lawn Care",
-  "shortName": "Excel Lawn Care",
-  "tagline": "Growing Green, Living Beauty",
-  "url": "https://researchturfmgmt.com",
-  "description": "Excel Lawn Care provides lawn care, landscape design, hardscape and sprinkler systems across Buda, Kyle, San Marcos and Central Texas. Family-owned since 1998.",
-  "founded": 2007,
-  "parentFounded": 1998,
-  "yearsInBusiness": 28,
-  "phone": "(512) 233-6300",
-  "phoneRaw": "+15122336300",
+  "name": "Excel Outdoor Lighting Co.",
+  "shortName": "Excel Outdoor Lighting",
+  "tagline": "Beautifully Lit, Every Night",
+  "url": "https://www.exceloutdoorlightingtx.com",
+  "description": "Excel Outdoor Lighting Co. designs and installs permanent outdoor lighting, landscape lighting, holiday lighting and commercial lighting across Buda, Kyle, San Marcos and Hays County. Family-owned, fully insured & bonded.",
+  "founded": 2021,
+  "parentFounded": 2021,
+  "yearsInBusiness": 4,
+  "experience": "20+",
+  "phone": "(512) 291-5900",
+  "phoneRaw": "+15122915900",
   "address": {
-    "street": "175 Warehouse Dr, Ste A",
+    "street": "175 Warehouse Dr, Ste C",
     "city": "Buda",
     "state": "TX",
-    "zip": "78610-3547",
+    "zip": "78610",
     "county": "Hays County"
   },
   "geo": {
@@ -22,41 +23,32 @@
   },
   "hours": [
     { "days": "Monday – Friday", "open": "8:00 AM", "close": "5:00 PM" },
-    { "days": "Saturday – Sunday", "open": "Closed", "close": "" }
+    { "days": "Saturday – Sunday", "open": "By appointment", "close": "" }
   ],
   "openingHoursSpec": [
     { "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" }
   ],
-  "owner": {
-    "name": "Gye Hutson",
-    "title": "Owner & Lead Landscape Designer"
-  },
-  "officeManager": {
-    "name": "Megan Avery",
-    "title": "Director of Office Operations"
-  },
   "trust": {
     "googleRating": "5.0",
-    "bbbRating": "A+",
-    "bbbAccreditedYear": 2007
+    "reviewCount": 4,
+    "insured": "Fully insured & bonded",
+    "warranty": "1-year labor · 5-year parts"
   },
-  "discount": "10% off for military, veterans, first responders, nurses & teachers",
+  "discount": "Discounts for veterans, first responders, medical professionals, educators & seniors",
   "offers": [
-    "Free design consultations & estimates",
-    "Licensed & fully insured",
-    "Workmanship warranties",
-    "Family-owned & locally operated"
+    "Free in-home consultations within 24–48 hours",
+    "Detailed estimates within 24–72 hours",
+    "Fully insured & bonded",
+    "1-year labor & 5-year parts warranty"
   ],
   "sister": {
     "name": "Excel Pest & Lawn Control",
     "url": "https://excelpest-lawncontrol.com",
     "phone": "(737) 201-3059",
-    "blurb": "Our sister company for pest control, termite letters, rodent exclusion & lawn pest treatment."
+    "blurb": "Our sister company for pest control, termite letters, rodent exclusion & lawn-pest treatment."
   },
   "social": {
-    "facebook": "https://www.facebook.com/ExcelPestandLawnControl/",
-    "youtube": "https://www.youtube.com/@excelpestlawncontrol",
-    "google": "https://www.google.com/search?q=Excel+Lawn+Care+Buda+TX"
+    "google": "https://www.google.com/search?q=Excel+Outdoor+Lighting+Co+Buda+TX"
   },
-  "author": "Excel Lawn Care"
+  "author": "Excel Outdoor Lighting Co."
 }

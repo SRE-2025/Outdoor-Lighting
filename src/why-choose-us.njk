@@ -1,27 +1,27 @@
 ---
 layout: layouts/base.njk
-title: "Why Choose Excel Lawn Care — Family-Owned Since 1998"
-description: "Family-owned since 1998, 5.0-star rated, licensed & insured. One crew for design, build & maintenance across Central Texas. Here's why neighbors choose us."
+title: "Why Choose Excel Outdoor Lighting — Buda, TX"
+description: "Family-owned, insured & bonded, 5.0-star rated, and backed by 20+ years of experience. One local team for outdoor lighting design, install & service across Hays County."
 ---
 {% import "partials/icons.njk" as ico %}
 
 {% set reasons = [
-  { i: "award", t: "Family-owned since 1998", d: "Not a franchise, not a call center. One local owner who has spent his whole life reading Central Texas soil, sun and drought." },
-  { i: "star", t: "5.0★ and customers who stay", d: "A perfect Google rating and reviewers who casually mention being with us for 13, 20, even 30 years. That loyalty is the whole story." },
-  { i: "shield", t: "Licensed, insured & warrantied", d: "Fully licensed and insured, with a workmanship warranty behind our builds. You're covered." },
-  { i: "check", t: "One crew, start to finish", d: "We design it, build it, and maintain it — no handoffs to subcontractors, no finger-pointing when something needs fixing." },
-  { i: "leaf", t: "Water-wise, built for here", d: "Native and drought-tolerant design that thrives in our climate and respects Hays County water restrictions." },
-  { i: "pin", t: "Truly local", d: "Based in Buda, serving the greater Austin metro across Hays, Travis &amp; Williamson counties. Fast response, and a crew that knows your neighborhood." }
+  { i: "award", t: "Family-owned & local", d: "Not a franchise, not a call center. A Buda-based, family-run team that treats every property like it's on our own street." },
+  { i: "star", t: "5.0★ and glowing reviews", d: "A perfect Google rating from Hays County homeowners and businesses who trusted us to light their properties." },
+  { i: "shield", t: "Insured, bonded & warrantied", d: "Fully insured and bonded, with a 1-year labor warranty and a 5-year parts warranty on permanent lighting." },
+  { i: "bulb", t: "20+ years of experience", d: "Two decades of exterior-lighting know-how in every design — clean placement, concealed wiring, and warm, flattering light." },
+  { i: "check", t: "One team, start to finish", d: "We design it, install it, and service it in-house — no subcontractors, no finger-pointing when something needs attention." },
+  { i: "clock", t: "Fast & responsive", d: "Free in-home consultations within 24–48 hours and detailed written estimates within 24–72 hours." }
 ] %}
 
 <section class="hero hero--page">
   <div class="wrap">
     <div class="hero__inner">
-      <p class="hero__tagline">The crew Central Texas trusts</p>
-      <h1>Why choose Excel Lawn Care</h1>
-      <p class="hero__sub">There are plenty of landscapers in Central Texas. Here's what makes a 28-year, family-owned, 5.0-star crew different.</p>
+      <p class="hero__tagline">The lighting team Hays County trusts</p>
+      <h1>Why choose Excel Outdoor Lighting</h1>
+      <p class="hero__sub">There are plenty of ways to light a property. Here's what makes a local, family-owned, 5.0-star lighting team different.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
+        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Consultation</a>
       </div>
     </div>
   </div>
@@ -46,10 +46,10 @@ description: "Family-owned since 1998, 5.0-star rated, licensed & insured. One c
 <section class="section section--soft">
   <div class="wrap">
     <div class="stats" style="max-width:820px;margin:0 auto">
-      <div class="stat"><div class="stat__n">{{ site.yearsInBusiness }}</div><div class="stat__l">Years in business</div></div>
+      <div class="stat"><div class="stat__n">{{ site.experience }}</div><div class="stat__l">Years of experience</div></div>
       <div class="stat"><div class="stat__n">5.0★</div><div class="stat__l">Google rating</div></div>
-      <div class="stat"><div class="stat__n">{{ site.trust.bbbRating }}</div><div class="stat__l">BBB accredited</div></div>
-      <div class="stat"><div class="stat__n">27</div><div class="stat__l">Cities served</div></div>
+      <div class="stat"><div class="stat__n">5-yr</div><div class="stat__l">Parts warranty</div></div>
+      <div class="stat"><div class="stat__n">{{ (locations.priority | length) + (locations.additional | length) }}</div><div class="stat__l">Communities served</div></div>
     </div>
   </div>
 </section>

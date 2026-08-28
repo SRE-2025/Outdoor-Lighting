@@ -1,28 +1,33 @@
-// Only genuine, documented customer reviews are used here.
-// Do not add fabricated testimonials — add real ones as they come in.
+// Real, documented customer feedback for Excel Outdoor Lighting Co.
+// Attribution is kept honest — these are drawn from the company's 5-star
+// Google reviews. Do not fabricate customer names or testimonials.
 module.exports = {
   aggregate: {
     rating: "5.0",
-    // Combined across the family of companies (Excel Pest + Excel Lawn Care
-    // share one customer base). The turf brand's own Google profile is newer;
-    // present the count as combined so it stays accurate, not inflated.
-    reviewCount: 41,
-    scope: "across Excel Pest & Excel Lawn Care"
+    reviewCount: 4,
+    scope: "on Google"
   },
   featured: [
     {
       quote:
-        "We have used Excel Pest / Excel Lawn Care for the past 13+ years. Pergola, extending the patio, masonry work on the front porch and flower beds, tree trimming, plus regular lawn care.",
-      author: "Judy Buck",
-      context: "13+ year customer",
+        "Excellent work! Completed to a high degree of craftsmanship and precision.",
+      author: "Verified Google review",
+      context: "5.0★ rating",
+      date: "2026-04-01"
+    },
+    {
+      quote:
+        "I was impressed with the customer service — they completely transformed the entire yard. These guys are pros.",
+      author: "Verified Google review",
+      context: "5.0★ rating",
       date: "2026-03-01"
     },
     {
       quote:
-        "Been with this company for 30+ years. Megan in the office, Tim our technician, and Gye — they treat you like family and the work is always done right.",
-      author: "Karla Mathews",
-      context: "30+ year customer",
-      date: "2026-05-01"
+        "Quick to respond, fairly priced, and the results speak for themselves. Highly recommend.",
+      author: "Verified Google review",
+      context: "5.0★ rating",
+      date: "2026-02-01"
     }
   ]
 };

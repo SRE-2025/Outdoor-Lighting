@@ -8,17 +8,17 @@ pagination:
 permalink: "/service-areas/{{ loc.slug }}/"
 eleventyComputed:
   title: "{{ loc.headline | safe }}"
-  description: "Lawn care, landscape design, hardscape & sprinkler services in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Excel Lawn Care."
+  description: "Outdoor lighting design & installation in {{ loc.city | safe }}, TX — permanent, landscape, holiday & commercial lighting. Family-owned, insured & bonded. Free consultations from Excel Outdoor Lighting Co."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
-    serviceType: "Lawn Care and Landscaping"
+    serviceType: "Outdoor Lighting"
     areaServed:
       "@type": "City"
       name: "{{ loc.city }}, TX"
     provider:
-      "@type": "LandscapingBusiness"
-      name: "Excel Lawn Care"
+      "@type": "HomeAndConstructionBusiness"
+      name: "Excel Outdoor Lighting Co."
       telephone: "{{ site.phone }}"
 ---
 {% import "partials/icons.njk" as ico %}
@@ -30,7 +30,7 @@ eleventyComputed:
       <h1>{{ loc.headline }}</h1>
       <p class="hero__sub">{{ loc.intro }}</p>
       <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="/contact/">Free {{ loc.city }} Estimate</a>
+        <a class="btn btn--primary btn--lg" href="/contact/">Free {{ loc.city }} Consultation</a>
         <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
       </div>
     </div>
@@ -42,11 +42,11 @@ eleventyComputed:
 <section class="section">
   <div class="wrap split">
     <div class="prose">
-      <p class="eyebrow">Local landscaping in {{ loc.city }}</p>
+      <p class="eyebrow">Local outdoor lighting in {{ loc.city }}</p>
       <h2>The crew {{ loc.city }} can count on</h2>
       <p class="lead">{{ loc.note }}</p>
-      <p>As a family-owned company operating out of nearby Buda since {{ site.parentFounded }}, we know {{ loc.city }} and {{ loc.county }} — the soil, the water restrictions, and the plants that actually survive here. Every project gets the same care whether it's a full landscape build or steady seasonal maintenance.</p>
-      <h3>Full-service lawn &amp; landscaping for {{ loc.city }} homes</h3>
+      <p>As a family-owned company based in nearby Buda, we know {{ loc.city }} and {{ loc.county }} — the neighborhoods, the architecture, and the kinds of properties that light beautifully after dark. Whether it's a full permanent-lighting install, a landscape lighting design, or a holiday display, {{ loc.city }} homes and businesses get the same craftsmanship and follow-up service.</p>
+      <h3>Full-service outdoor lighting for {{ loc.city }} homes</h3>
       <ul class="checks">
         {% for c in serviceCategories %}
         <li>{{ ico.svg("check") }} <span><a href="/services/{{ c.slug }}/">{{ c.name }}</a> — {{ c.short }}</span></li>
@@ -65,13 +65,13 @@ eleventyComputed:
       <div class="card">
         <h3 style="margin-top:0">Why {{ loc.city }} neighbors choose us</h3>
         <ul class="checks">
-          <li>{{ ico.svg("star") }} <span><strong>5.0★</strong> Google-rated, {{ site.trust.bbbRating }} with the BBB</span></li>
-          <li>{{ ico.svg("award") }} <span><strong>{{ site.yearsInBusiness }} years</strong> serving Central Texas</span></li>
-          <li>{{ ico.svg("shield") }} <span>Licensed, insured &amp; warranty-backed</span></li>
-          <li>{{ ico.svg("check") }} <span>One crew from design through maintenance</span></li>
-          <li>{{ ico.svg("check") }} <span>Free, no-pressure estimates from the owner</span></li>
+          <li>{{ ico.svg("star") }} <span><strong>5.0★</strong> Google-rated, fully insured &amp; bonded</span></li>
+          <li>{{ ico.svg("award") }} <span><strong>{{ site.experience }} years</strong> of lighting experience</span></li>
+          <li>{{ ico.svg("shield") }} <span>Insured, bonded &amp; warranty-backed</span></li>
+          <li>{{ ico.svg("check") }} <span>One team from design through install &amp; service</span></li>
+          <li>{{ ico.svg("check") }} <span>Free, no-pressure in-home consultations</span></li>
         </ul>
-        <a class="btn btn--primary" href="/contact/" style="margin-top:12px">Request Your Free Estimate</a>
+        <a class="btn btn--primary" href="/contact/" style="margin-top:12px">Request Your Free Consultation</a>
       </div>
       <div class="card" style="margin-top:22px">
         <h3 style="margin-top:0">Also serving nearby</h3>
@@ -92,7 +92,7 @@ eleventyComputed:
   <div class="wrap narrow" style="margin:0 auto">
     <div class="center" style="margin-bottom:32px">
       <p class="eyebrow">{{ loc.city }} questions</p>
-      <h2>Landscaping in {{ loc.city }}: FAQs</h2>
+      <h2>Outdoor Lighting in {{ loc.city }}: FAQs</h2>
     </div>
     <div class="faq">
       {% for item in loc.faqs %}
@@ -119,6 +119,6 @@ eleventyComputed:
 </script>
 {% endif %}
 
-{% set ctaHeading = "Let's transform your " + loc.city + " landscape." %}
+{% set ctaHeading = "Let's light up your " + loc.city + " property." %}
 {% set ctaText = "Free, no-pressure consultations for " + loc.city + " homeowners. Talk directly with the owner about your project." %}
 {% include "partials/cta.njk" %}

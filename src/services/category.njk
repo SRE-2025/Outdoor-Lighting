@@ -8,20 +8,18 @@ pagination:
 permalink: "/services/{{ cat.slug }}/"
 eleventyComputed:
   title: "{{ cat.name | safe }} in Buda, Kyle & Central Texas"
-  description: "{{ cat.short | safe }} Family-owned, licensed & insured. Serving Buda, Kyle, San Marcos & Central Texas. Free estimates from Excel Lawn Care."
+  description: "{{ cat.short | safe }} Family-owned, insured & bonded. Serving Buda, Kyle, San Marcos & Central Texas. Free consultations from Excel Outdoor Lighting Co."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
     serviceType: "{{ cat.name | safe }}"
     provider:
-      "@type": "LandscapingBusiness"
-      name: "Excel Lawn Care"
+      "@type": "HomeAndConstructionBusiness"
+      name: "Excel Outdoor Lighting Co."
     areaServed: "Central Texas"
     description: "{{ cat.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/photo.njk" as photo %}
-{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">

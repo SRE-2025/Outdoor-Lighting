@@ -1,20 +1,18 @@
 ---
 layout: layouts/base.njk
-title: "Landscaping & Turf Services in Central Texas"
-description: "Landscape design, installation, hardscape, pergolas, lawn care, tree trimming & irrigation across Buda, Kyle, San Marcos & Central Texas. Free estimates from a family-owned crew."
+title: "Outdoor Lighting Services in Buda & Hays County, TX"
+description: "Permanent outdoor lighting, landscape lighting, outdoor living space lighting, holiday lighting & commercial lighting across Buda, Kyle, San Marcos & Hays County. Free consultations."
 ---
 {% import "partials/icons.njk" as ico %}
-{% import "partials/photo.njk" as photo %}
-{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">Our Services</p>
-      <h1>Complete lawn &amp; landscaping services in Central Texas</h1>
-      <p class="hero__sub">Lawn care, misting systems, outdoor living, sprinkler systems and tree care — everything your yard needs, from one trusted local crew.</p>
+      <h1>Outdoor lighting for every part of your property</h1>
+      <p class="hero__sub">Permanent lighting, landscape lighting, outdoor living spaces, holiday displays and commercial lighting — designed, installed and serviced by one trusted local team.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
+        <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Consultation</a>
         <a class="btn btn--white btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a>
       </div>
     </div>
@@ -45,26 +43,27 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
 <section class="section section--soft">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Design → Build → Maintain</p>
-      <h2>Why one crew for all of it matters</h2>
-      <p>When the people who design your landscape are also the ones who build and maintain it, nothing gets lost in translation. We plant what we know we can keep alive, build what we know we can service, and stand behind all of it with a workmanship warranty.</p>
+      <p class="eyebrow">Design → Install → Enjoy</p>
+      <h2>Why one team for all of it matters</h2>
+      <p>When the people who design your lighting are also the ones who install and service it, nothing gets lost in translation. We design a system around your property, install it cleanly with weatherproof fixtures and concealed wiring, and stand behind all of it with real warranties.</p>
       <ul class="checks mt-2">
-        <li>{{ ico.svg("check") }} <span>Free, on-site consultation with the owner</span></li>
-        <li>{{ ico.svg("check") }} <span>Residential &amp; light commercial properties welcome</span></li>
-        <li>{{ ico.svg("check") }} <span>Native &amp; water-wise recommendations for Hays County</span></li>
-        <li>{{ ico.svg("check") }} <span>Licensed, insured &amp; warranty-backed work</span></li>
-        <li>{{ ico.svg("check") }} <span>One reliable crew from design through maintenance</span></li>
+        <li>{{ ico.svg("check") }} <span>Free in-home consultation within 24–48 hours</span></li>
+        <li>{{ ico.svg("check") }} <span>Residential &amp; commercial properties welcome</span></li>
+        <li>{{ ico.svg("check") }} <span>Warm, low-glare, energy-efficient LED fixtures</span></li>
+        <li>{{ ico.svg("check") }} <span>Fully insured &amp; bonded, warranty-backed work</span></li>
+        <li>{{ ico.svg("check") }} <span>One team from design through install &amp; service</span></li>
       </ul>
     </div>
     <div>
-      <div class="card">
-        <div class="brandbar brandbar--pest"></div>
-        <h3>Need pest or termite service too?</h3>
-        <p class="muted">Many of our customers use both of our family companies. For pest control, termite letters for home closings, rodent exclusion and lawn-pest treatment, our sister company has you covered.</p>
-        <a class="btn btn--navy" href="{{ site.sister.url }}" rel="noopener">Visit Excel Pest &amp; Lawn Control {{ ico.svg("arrow") }}</a>
+      <div class="glowpanel reveal">
+        <span class="glowpanel__icon">{{ ico.svg("bulb") }}</span>
+        <p class="glowpanel__title">One team, start to finish</p>
+        <p class="glowpanel__sub">Design · Install · Service · Warranty</p>
       </div>
     </div>
   </div>
 </section>
 
+{% set ctaHeading = "Not sure which lighting is right for you?" %}
+{% set ctaText = "Book a free consultation and we'll design the right system for your property — permanent, landscape, holiday or commercial." %}
 {% include "partials/cta.njk" %}

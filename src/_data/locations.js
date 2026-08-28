@@ -1,625 +1,494 @@
-// Priority-corridor cities get full, differentiated landing pages.
-// The remaining service-area cities are listed on the service-area page
-// without thin duplicate pages (per SEO best practice).
+// Priority cities get full, differentiated landing pages for Excel Outdoor Lighting Co.
+// Focused on Hays County and the immediately surrounding communities we serve.
+// Rich `body` and `faqs` are added per entry for SEO/AEO.
 module.exports = {
-  // Full landing pages — unique copy per city.
   priority: [
     {
       slug: "buda",
       city: "Buda",
       county: "Hays County",
-      headline: "Lawn Care & Landscaping in Buda, TX",
+      headline: "Outdoor Lighting in Buda, TX",
       intro:
-        "Buda is home. Our warehouse sits on Warehouse Dr, our crews live here, and we've been designing and maintaining Buda landscapes since long before the subdivisions filled in. From Garlic Creek to Whispering Hollow to the older homes off Main Street, we know the caliche, the clay, and exactly which plants survive a Buda August.",
+        "Buda is home. Our shop is on Warehouse Dr, and Buda neighborhoods — from Garlic Creek to Whispering Hollow to the homes off Main Street — are where a lot of our permanent, landscape and holiday lighting installs live. Local means our fastest response times and a crew that knows the area.",
       note:
-        "Because we're based in Buda, our response times here are the fastest in our service area — and our long-time Buda customers are the ones who've stayed with us for 13, 20, even 30 years.",
+        "Based right here in Buda, we're minutes from your door for design, installation and service.",
       body: [
         {
-          h: "We know Buda because we live here",
+          h: "Your hometown outdoor lighting company",
           p: [
-            "Our warehouse sits on Warehouse Dr, our crews are your neighbors, and we've watched Buda grow from a small town into the string of neighborhoods it is today. From the established homes off Main Street to Garlic Creek, Whispering Hollow, Shadow Creek, and the newer builds out toward the interstate, we know which yards were scraped flat and sodded on the cheap and which ones have real soil to work with.",
-            "That local knowledge is specific and hard-won. We know the caliche seams that stop a shovel cold, the black clay that swells and cracks with the seasons, and exactly which plants survive a Buda August under watering restrictions. It's the difference between a landscape that's designed for this town and one that's just dropped on top of it."
+            "There is a real difference in hiring the crew that is actually based in your town. Our shop sits on Warehouse Dr, so for Buda homeowners we are not driving in from somewhere else — we are minutes from your door for the consultation, the install, and any service call down the road. That closeness is why Buda gets our fastest response times.",
+            "It also means we know the area. From the master-planned streets of Garlic Creek and Whispering Hollow to the established homes off Main Street, we understand the neighborhoods, the HOA expectations, and the kinds of homes we are lighting."
           ]
         },
         {
-          h: "The right work for Buda yards",
+          h: "Lighting that suits Buda homes",
           p: [
-            "Buda's mix of housing means we do a bit of everything here. Newer subdivision lots often need a real redesign, turning builder-grade sod and a lonely tree into a water-wise landscape with proper beds, irrigation, and drainage that handles our clay. Established homes lean more toward mature-tree care, turf renovation, hardscape, and the outdoor living spaces that make a backyard usable through the summer.",
-            "Whatever the project, being minutes from the shop means we can be responsive, whether that's a quick irrigation repair or a full design-build."
+            "Buda's mix of newer HOA subdivisions and older homes near downtown is a natural fit for our full range of work. In the newer neighborhoods, permanent roofline lighting is popular because it lifts curb appeal every night and turns into a holiday showpiece without anyone hanging a strand. Landscape lighting — uplit live oaks, lit paths, and warm garden accents — gives yards depth after dark, and holiday lighting makes a home the best-lit on the block.",
+            "Because homes sit close together in many Buda neighborhoods, we design with restraint and glare control so your lighting looks refined and stays neighborly, exactly what an HOA street calls for."
           ]
         }
       ],
       faqs: [
-        { q: "Do you offer landscaping and lawn care in Buda?", a: "Yes, Buda is our home base, so we offer the full range here, landscape design, lawn care, irrigation, drainage, hardscape, outdoor living, and tree care. Our warehouse is right on Warehouse Dr, and Buda is where our longest-tenured customers are." },
-        { q: "How fast can you get to my Buda property?", a: "Faster than anywhere else we serve, since we're based right here in Buda. That means quick response for repairs and service calls and easy scheduling for larger design-build projects. Being local is a real advantage for Buda homeowners." },
-        { q: "Can you fix a builder-grade yard in a new Buda subdivision?", a: "That's one of the most common things we do in Buda. We redesign scraped-flat, cheaply sodded lots into water-wise landscapes with proper beds, irrigation, and drainage suited to our caliche and clay, so the yard actually thrives instead of struggling through its first summer." },
-        { q: "How long have you worked in Buda?", a: "The business has served Central Texas since 1998, and Buda specifically for decades, some of our Buda customers have stayed with us for 13, 20, even 30 years. We've grown up alongside the town." }
+        {
+          q: "Are you actually based in Buda?",
+          a: "Yes. Our shop is on Warehouse Dr in Buda, so we are a true local company, not a crew driving in from out of town. That is why Buda gets our fastest response for design, installation, and service."
+        },
+        {
+          q: "Do you work in Buda HOA neighborhoods like Garlic Creek?",
+          a: "We do, regularly. We design with restraint and glare control so your lighting looks refined and stays neighborly, which suits the HOA expectations in Garlic Creek, Whispering Hollow, and similar Buda neighborhoods."
+        },
+        {
+          q: "How quickly can you get out for a Buda consultation?",
+          a: "Being based right here in Buda, we are usually able to schedule a free in-home consultation within 24 to 48 hours, then follow up with a detailed written estimate. Local means quick."
+        }
       ]
     },
     {
       slug: "kyle",
       city: "Kyle",
       county: "Hays County",
-      headline: "Landscape Design & Lawn Care in Kyle, TX",
+      headline: "Outdoor Lighting in Kyle, TX",
       intro:
-        "Kyle has grown fast, and a lot of its newer yards were scraped flat and sodded on the cheap. We fix that — redesigning builder-grade yards into water-wise landscapes that actually fit the Hill Country, and keeping established Plum Creek and Steeplechase lawns thick and healthy year-round.",
+        "Kyle has grown fast, and its newer neighborhoods like Plum Creek and Steeplechase are perfect for permanent roofline lighting and landscape lighting that make a house stand out. We design and install lighting that lifts curb appeal and makes yards usable after dark.",
       note:
-        "Kyle sits minutes from our Buda shop, so full-service design-build and ongoing maintenance are both easy for us to deliver here.",
+        "Kyle is minutes from our Buda shop, so installs and service calls are quick and easy.",
       body: [
         {
-          h: "Kyle grew fast, and it shows in the yards",
+          h: "Lighting for one of Central Texas's fastest-growing cities",
           p: [
-            "Kyle has been one of the fastest-growing cities in the state, and a lot of that growth came as subdivisions of builder homes with yards that were scraped flat and sodded on the cheap. Those lawns tend to struggle, thin turf over compacted clay, no real beds, irrigation that wasn't designed for our restrictions. We fix exactly that, redesigning builder-grade yards into water-wise landscapes that fit the Hill Country instead of fighting it.",
-            "At the same time, established neighborhoods like Plum Creek and Steeplechase have maturing landscapes that need ongoing care to stay thick and healthy. We keep those lawns dense and green and refresh the beds and hardscape as they age."
+            "Kyle has grown quickly, and with that growth came neighborhoods full of newer homes on similar lots — which is exactly where good lighting helps a house stand out. In master-planned communities like Plum Creek and Steeplechase, permanent roofline lighting is a favorite because it gives a home a distinct, cared-for look every night and doubles as a holiday display.",
+            "When the homes on a street all share a builder's palette, thoughtful lighting is one of the clearest ways to make yours feel like yours after dark."
           ]
         },
         {
-          h: "Design-build and maintenance, both close by",
+          h: "Curb appeal and usable yards",
           p: [
-            "Because Kyle sits just minutes down the road from our Buda shop, it's easy for us to deliver both sides of the business here: full design-build projects and dependable recurring maintenance. That proximity means responsive service and simple scheduling, whether you want a one-time redesign or a crew that shows up on a set rhythm.",
-            "Kyle's clay soil, summer heat, and watering limits are the same conditions we design around every day, so the water-wise plantings and efficient irrigation we build here are made to last through a Kyle summer."
+            "We focus on two things for Kyle homeowners: curb appeal from the street and yards you can actually use once the sun goes down. Landscape lighting — path and step lighting, uplit trees, and warm garden accents — turns a dark backyard into usable outdoor space, while permanent and accent lighting keeps the front of the home looking sharp every night of the year.",
+            "Kyle sits just minutes from our Buda shop, so installs and any later service calls are quick and easy, and we know the local neighborhoods and their HOA expectations well."
           ]
         }
       ],
       faqs: [
-        { q: "Do you provide lawn care and landscaping in Kyle?", a: "Yes, Kyle is one of our core markets and just minutes from our Buda shop. We handle everything from scheduled lawn care and turf renovation to full landscape redesigns, irrigation, drainage, and outdoor living for Kyle homes." },
-        { q: "Can you redo my builder-grade Kyle yard?", a: "Definitely, it's some of our most common work in Kyle. We redesign scraped-flat, cheaply sodded subdivision yards into water-wise landscapes with proper beds, irrigation, and drainage built for our clay and heat, so the yard thrives instead of just surviving." },
-        { q: "Do you maintain established Kyle neighborhoods like Plum Creek?", a: "We do. We keep established Kyle lawns thick and healthy with scheduled mowing, feeding, and weed control, and refresh maturing beds and hardscape as they age. One consistent crew that learns your property." },
-        { q: "How quickly can you get to Kyle?", a: "Very quickly, Kyle is just minutes from our Buda base, which makes both fast service calls and larger design-build projects easy for us to deliver here." }
+        {
+          q: "Do you install in Kyle neighborhoods like Plum Creek and Steeplechase?",
+          a: "Yes, those newer Kyle communities are a big part of our work. Permanent roofline and landscape lighting are especially popular there for helping a home stand out on a street of similar builder homes."
+        },
+        {
+          q: "How far is your crew from Kyle?",
+          a: "Kyle is just minutes from our Buda shop, so installs and service calls are quick and easy. Being close by also means we can usually schedule a free consultation within 24 to 48 hours."
+        },
+        {
+          q: "Will lighting help my Kyle home stand out on a street of similar houses?",
+          a: "That is one of the best reasons to add it. When homes share a builder's look, thoughtful permanent and landscape lighting gives yours a distinct, cared-for presence after dark that sets it apart from the neighbors."
+        }
       ]
     },
     {
       slug: "san-marcos",
       city: "San Marcos",
       county: "Hays County",
-      headline: "Landscaping & Hardscape in San Marcos, TX",
+      headline: "Outdoor Lighting in San Marcos, TX",
       intro:
-        "From the neighborhoods around Texas State to the newer developments off Wonder World, San Marcos yards deal with heat, slope, and thin soils. We design for it — native plantings, smart irrigation, and hardscape like patios and retaining walls that hold up on Central Texas grades.",
+        "From the neighborhoods around Texas State to the newer developments off Wonder World, San Marcos homes and businesses want lighting that looks sharp and works reliably. We handle permanent lighting, landscape lighting, holiday displays and commercial lighting across San Marcos.",
       note:
-        "San Marcos anchors the south end of our service corridor, and it's one of our strongest markets for full landscape build-outs.",
+        "San Marcos anchors the south end of our service area and is a strong market for both residential and commercial lighting.",
       body: [
         {
-          h: "Heat, slope, and thin soils",
+          h: "Residential and commercial lighting across San Marcos",
           p: [
-            "San Marcos yards deal with a tough combination: real summer heat, sloped lots as the land rolls toward the river, and thin soils over rock in a lot of neighborhoods. From the older streets around Texas State to the newer developments off Wonder World, the same conditions keep coming up, water runs off fast, turf bakes on the exposed grades, and beds dry out without the right plants and mulch.",
-            "We design for exactly that. Native and adapted plantings that handle the heat and thin soil, smart irrigation that makes the most of limited water, and mulch or stone ground cover that keeps roots cool and holds moisture where the sun is relentless."
+            "San Marcos anchors the south end of our service area, and it is one of our strongest markets for both homes and businesses. From the established neighborhoods around Texas State to the newer developments off Wonder World, homeowners want lighting that looks sharp and runs reliably, and we deliver the full range — permanent roofline lighting, landscape lighting, and holiday displays.",
+            "The city's mix of residential streets and busy commercial corridors means we do a lot of both here, often for property managers and business owners as well as homeowners."
           ]
         },
         {
-          h: "Hardscape that holds on the grades",
+          h: "Built to look good and hold up",
           p: [
-            "San Marcos's slopes are why hardscape is such a big part of our work here. Patios need proper base prep to stay level, and retaining walls do double duty on grade, stopping erosion while turning steep, unusable slope into flat, planted, usable yard. Built with real drainage and footing, those walls hold for decades on Central Texas grades that would wash out a cheaper install.",
-            "As the south anchor of our service corridor, San Marcos is one of our strongest markets for full landscape build-outs, design, planting, irrigation, and hardscape delivered as one project."
+            "Whether it is a home near campus or a commercial building along a main corridor, San Marcos properties need lighting that keeps looking its best in real Texas weather. We use warm, glare-controlled, weather-rated fixtures and design for reliable dusk-to-dawn operation, so the result holds its look and keeps working season after season.",
+            "For businesses, that means architectural accent lighting, commercial landscape lighting, and parking and security lighting installed by a fully insured and bonded local team. For homeowners, it means curb appeal and usable outdoor space every night."
           ]
         }
       ],
       faqs: [
-        { q: "Do you do landscaping and hardscape in San Marcos?", a: "Yes, San Marcos is one of our strongest markets for full landscape build-outs. We handle design, native planting, irrigation, drainage, patios, and retaining walls, all suited to the heat, slope, and thin soils common in San Marcos yards." },
-        { q: "Can you build a retaining wall on a sloped San Marcos lot?", a: "Absolutely, it's some of our most valuable work here. On San Marcos grades a proper retaining wall stops erosion and turns steep slope into flat, usable yard. We build with the footing and drainage that keep walls standing for decades on our soils." },
-        { q: "What landscaping works best for San Marcos conditions?", a: "Native and adapted plantings, efficient irrigation, and mulch or stone ground cover, all designed for heat, slope, and thin soils. That combination gives you a landscape that looks lush without fighting the exposed grades and relentless San Marcos sun." },
-        { q: "Do you serve the neighborhoods around Texas State?", a: "Yes, we work throughout San Marcos, from the established streets near Texas State to the newer developments off Wonder World. As the south anchor of our corridor, San Marcos is an easy, well-served area for us." }
+        {
+          q: "Do you do commercial lighting in San Marcos, not just homes?",
+          a: "Yes. San Marcos is a strong commercial market for us, and we handle architectural accent lighting, commercial landscape lighting, and parking and security lighting for businesses, alongside residential work. We are fully insured and bonded for commercial projects."
+        },
+        {
+          q: "Can you light homes near Texas State or off Wonder World?",
+          a: "Absolutely. We work throughout San Marcos, from the established neighborhoods around Texas State to the newer developments off Wonder World, handling permanent, landscape, and holiday lighting."
+        },
+        {
+          q: "Is San Marcos within your normal service area?",
+          a: "Yes. San Marcos anchors the south end of our Hays County service area, so it is a regular route for us. We are based in Buda, just up the interstate, which keeps installs and service straightforward."
+        }
       ]
     },
     {
       slug: "dripping-springs",
       city: "Dripping Springs",
       county: "Hays County",
-      headline: "Landscape Design in Dripping Springs, TX",
+      headline: "Outdoor Lighting in Dripping Springs, TX",
       intro:
-        "Dripping Springs properties tend to be bigger, rockier, and more exposed — which makes thoughtful, drought-tolerant design essential. We specialize in native and xeriscape landscapes that look lush without fighting the land, plus pergolas and outdoor living spaces built for Hill Country entertaining.",
+        "Dripping Springs properties tend to be larger and darker at night, which makes good lighting transformative — uplit oaks, lit drives and entries, and warm accents that make big Hill Country lots feel finished and safe after dark.",
       note:
-        "Larger Dripping Springs lots are ideal for the design-build and hardscape work our crews are known for.",
+        "Larger Dripping Springs lots are ideal for the landscape and architectural lighting we're known for.",
       body: [
         {
-          h: "Bigger, rockier, more exposed",
+          h: "Made for larger Hill Country lots",
           p: [
-            "Dripping Springs properties tend to be larger, rockier, and more open to the Hill Country sky than the tight subdivision lots closer to Austin. That setting is beautiful, but it's demanding, shallow soil over limestone, full exposure to sun and wind, and acreage where a thirsty, high-maintenance landscape simply doesn't make sense. Thoughtful, drought-tolerant design isn't a preference here, it's a necessity.",
-            "We specialize in exactly that: native and xeriscape landscapes that look lush without fighting the land. Grouping plants by water need, working with the natural stone instead of against it, and designing beds and ground cover that thrive on limited water are how we make a big Dripping Springs lot look intentional and stay maintainable."
+            "Dripping Springs is Hill Country in the best sense — larger lots, mature live oaks, stonework, and genuinely dark rural nights. That combination makes good lighting transformative here in a way it rarely is on a small city lot. A big property that disappears into the black at sunset can become something finished and grand with the right design.",
+            "This is exactly the kind of work we are known for. Uplit oaks that glow from within, lit drives and entries that welcome you in, and warm accents that give all that acreage definition after dark."
           ]
         },
         {
-          h: "Room for outdoor living",
+          h: "Lighting long drives, big trees, and outdoor living",
           p: [
-            "The larger lots out here are ideal for the design-build and hardscape work our crews are known for. There's space for real outdoor living, pergolas and shade structures, patios sized for entertaining, fire features, and stonework that ties into the limestone already on the property. It's the kind of high-craft work that makes a Hill Country backyard somewhere you actually spend your evenings.",
-            "Because we design and build the whole thing, the plantings, hardscape, and structures come together as one cohesive space built for the way Dripping Springs living actually happens, outdoors and around the view."
+            "On Dripping Springs acreage, the details are bigger. A long, dark driveway needs a real lighting plan so it leads you in evenly without gaps, and the specimen oaks and limestone that give these properties their character are ideal subjects for dramatic uplighting. Outdoor living spaces — patios, pergolas, and pools — get plenty of use out here and come alive with the right lighting.",
+            "We respect the darker rural setting with warm, glare-controlled fixtures that light what matters without washing out the Hill Country night, and everything is weather-rated for the exposure that comes with an open lot."
           ]
         }
       ],
       faqs: [
-        { q: "Do you design landscapes in Dripping Springs?", a: "Yes, Dripping Springs is a favorite market for us. We specialize in native and xeriscape design suited to the larger, rockier, more exposed lots out here, plus the hardscape and outdoor living work our crews are known for." },
-        { q: "What kind of landscaping suits Dripping Springs acreage?", a: "Drought-tolerant, native-forward design is the right fit, plants grouped by water need, stone and mulch ground cover, and efficient irrigation, all of which look lush without fighting the shallow soil and full exposure. On larger lots we add pergolas, patios, and outdoor living to make the most of the setting." },
-        { q: "Can you build outdoor living spaces on a Dripping Springs property?", a: "Definitely, the larger lots here are ideal for it. We design and build pergolas, patios, fire features, and stonework that tie into the natural limestone and frame the Hill Country view, all as one cohesive outdoor space." },
-        { q: "Do you travel to Dripping Springs?", a: "Yes, Dripping Springs is well within our Hays County service area, and its larger properties are prime territory for our design-build and hardscape work. We're set up to handle acreage projects here." }
+        {
+          q: "Can you light a long driveway on a Dripping Springs property?",
+          a: "Yes, and we do it often. A long acreage drive needs a proper plan so the light leads you in evenly without dark gaps. Lit drives and entries are one of the most transformative things we add on larger Dripping Springs lots."
+        },
+        {
+          q: "Will lighting overwhelm the dark, rural feel out here?",
+          a: "No. We use warm, glare-controlled fixtures that light your trees, drive, and home without washing out the Hill Country night. The goal in Dripping Springs is drama and safety where you want it, while respecting the darker rural setting."
+        },
+        {
+          q: "Are big live oaks good candidates for uplighting?",
+          a: "They are ideal. The mature live oaks common on Dripping Springs properties are some of the best uplighting subjects anywhere — lit from a few angles, a large oak becomes the glowing centerpiece of the whole property."
+        }
       ]
     },
     {
       slug: "wimberley",
       city: "Wimberley",
       county: "Hays County",
-      headline: "Native Landscaping in Wimberley, TX",
+      headline: "Outdoor Lighting in Wimberley, TX",
       intro:
-        "Wimberley wears its Hill Country character proudly, and the best landscapes here lean into it — native plants, stone, and low-water design that blends with the cedar and limestone instead of fighting it. That's exactly the kind of work we love: beautiful, sustainable, and built to last through drought.",
+        "Wimberley's Hill Country character shines under the right lighting — warm, low-glare fixtures that respect the dark-sky feel while lighting paths, trees and outdoor living spaces so you can enjoy the property at night.",
       note:
-        "We bring native-plant expertise and water-wise design to Wimberley properties of every size.",
+        "We bring tasteful, low-glare landscape and outdoor-living lighting to Wimberley properties of every size.",
       body: [
         {
-          h: "Landscaping that leans into the Hill Country",
+          h: "Lighting that respects the dark-sky feel",
           p: [
-            "Wimberley wears its Hill Country character proudly, cedar, limestone, spring-fed creeks, and big open sky, and the best landscapes here don't fight that, they belong to it. Formal, thirsty, manicured yards look out of place and struggle against the thin soil and drought. Native plants, natural stone, and low-water design blend into the setting and hold up through the dry stretches, which is exactly the work we love.",
-            "We build with what thrives here: natives and adapted perennials, ornamental grasses, and stone that echoes the limestone already in the ground. The result reads as though it grew out of the landscape rather than being imposed on it."
+            "Wimberley has a distinct Hill Country character, and part of that is the quality of its nights — dark, quiet, and worth protecting. The right lighting works with that rather than against it. We use warm, low-glare fixtures aimed carefully to light your paths, trees, and living spaces while keeping stray light and glare out of the sky and off your neighbors.",
+            "The result is lighting you notice for its effect, not its brightness. Your property becomes usable and beautiful after dark without turning the yard into a floodlit island in an otherwise dark landscape."
           ]
         },
         {
-          h: "Water-wise, and built to last through drought",
+          h: "Tasteful landscape and outdoor-living lighting",
           p: [
-            "Water is precious in Wimberley, and drought is a fact of life, so everything we design here is water-wise by default. We group plants by need, put beds on efficient drip, use mulch and stone to hold moisture, and choose species that can ride out a dry summer without constant watering. That's not a compromise on beauty, it's how you get a landscape that still looks alive when the rains don't come.",
-            "We bring that native-plant expertise and water-wise design to Wimberley properties of every size, from a modest home garden to acreage, and to hardscape and outdoor living that make the most of the Hill Country setting."
+            "Wimberley properties range from cozy lots to sprawling acreage, and we bring the same tasteful, restrained approach to every size. Landscape lighting picks out the best trees and stonework and lights paths for safe footing, while outdoor-living lighting makes patios, decks, and pergolas comfortable places to gather on a mild Hill Country evening.",
+            "Everything is weather-rated low-voltage LED, warm in tone and efficient to run, installed by a family-owned local team and backed by our 1-year labor warranty."
           ]
         }
       ],
       faqs: [
-        { q: "Do you do native landscaping in Wimberley?", a: "Yes, native and water-wise design is exactly what we love doing in Wimberley. We work with native plants, ornamental grasses, and natural stone that blend into the Hill Country setting and hold up through drought, on properties of every size." },
-        { q: "What plants survive Wimberley's drought and thin soils?", a: "Native and adapted species, tough perennials, ornamental grasses, and drought-tolerant shrubs, are the backbone of a Wimberley landscape. Paired with efficient drip irrigation and mulch or stone ground cover, they stay lush without constant watering even in a dry summer." },
-        { q: "Can you match my landscape to the Hill Country look?", a: "That's our specialty in Wimberley. We design with natives and natural stone that echo the cedar and limestone already there, so the landscape reads as if it grew out of the setting rather than being dropped on top of it." },
-        { q: "Do you serve Wimberley from Buda?", a: "Yes, Wimberley is within our Hays County service area. We bring native-plant expertise and water-wise design to Wimberley homes and acreage, along with hardscape and outdoor living work." }
+        {
+          q: "Can you light my Wimberley property without ruining the dark-sky feel?",
+          a: "Yes, that is exactly our approach here. We use warm, low-glare fixtures aimed to light your paths, trees, and living spaces while keeping stray light and glare out of the sky. You get usable, beautiful lighting that respects Wimberley's dark, quiet nights."
+        },
+        {
+          q: "Do you work on both small lots and large acreage in Wimberley?",
+          a: "We do. We bring the same tasteful, restrained landscape and outdoor-living lighting to Wimberley properties of every size, from cozy lots to sprawling acreage, scaling the design to fit the property."
+        },
+        {
+          q: "What lighting suits a Wimberley Hill Country home best?",
+          a: "Warm landscape lighting that highlights trees and stonework and lights paths for safety, paired with outdoor-living lighting for patios and pergolas, tends to suit Wimberley homes best. It makes the property usable at night while keeping the low-glare, natural feel."
+        }
       ]
     },
     {
       slug: "driftwood",
       city: "Driftwood",
       county: "Hays County",
-      headline: "Landscaping & Outdoor Living in Driftwood, TX",
+      headline: "Outdoor Lighting in Driftwood, TX",
       intro:
-        "Driftwood's larger acreage and open skies are made for outdoor living — pergolas, patios, fire features, and native plantings that frame the view. We design and build outdoor spaces that make the most of Driftwood's country setting while staying easy to maintain and light on water.",
+        "Driftwood's acreage and open skies are made for outdoor living — and for lighting that makes it usable after dark. We light patios, pergolas, pools and long drives so Driftwood properties feel as good at night as they do at sunset.",
       note:
-        "Driftwood is prime territory for our hardscape and outdoor-living work.",
+        "Driftwood is prime territory for our outdoor-living and landscape lighting work.",
       body: [
         {
-          h: "Acreage made for outdoor living",
+          h: "Acreage built for outdoor living",
           p: [
-            "Driftwood's larger acreage and open skies are made for spending time outside. With room to work and views worth framing, it's ideal for the outdoor living projects our crews are known for, pergolas and shade structures for the long summers, patios sized for real entertaining, fire features for the cooler evenings, and native plantings that frame the view instead of blocking it.",
-            "On a Driftwood property the landscape isn't just around the house, it's a series of outdoor rooms. We design and build those spaces to make the most of the country setting while staying easy to maintain and light on water, so the land works for you rather than becoming a chore."
+            "Driftwood is all about space and sky — larger lots, open views, and the kind of outdoor living that Central Texas does so well. Lighting is what keeps that lifestyle going after the sun drops. We light patios, pergolas, pavilions, and pools so a Driftwood backyard stays open and inviting late into a warm evening instead of emptying out at dusk.",
+            "With the acreage out here, there is room for real design — layered outdoor-living lighting that turns a big open property into a series of comfortable, usable spaces after dark."
           ]
         },
         {
-          h: "Beautiful and low-maintenance on the land",
+          h: "Long drives, big trees, and safe footing",
           p: [
-            "Big lots reward smart, low-water design. Rather than fighting the Hill Country with thirsty turf and high-maintenance beds, we lean on native and adapted plantings, stone, and mulch that thrive on Driftwood's thin soils and hold up through drought. Efficient irrigation gets water where it's needed and nowhere it isn't, keeping the acreage looking intentional without a punishing upkeep or water bill.",
-            "That balance, striking outdoor living and plantings that basically take care of themselves, is exactly what makes Driftwood prime territory for our hardscape and design-build work."
+            "The scale of Driftwood properties makes landscape lighting especially worthwhile. Long drives and entries benefit from a proper lighting plan so you are not navigating acreage in the dark, mature trees make dramatic uplighting subjects, and path and step lighting adds safe footing across a large lot.",
+            "We use warm, weather-rated, glare-controlled fixtures that respect the darker rural setting while lighting exactly what you want, all installed by a family-owned local team and backed by our labor warranty."
           ]
         }
       ],
       faqs: [
-        { q: "Do you build outdoor living spaces in Driftwood?", a: "Yes, Driftwood is prime territory for it. The larger acreage and open views are ideal for pergolas, patios, fire features, and native plantings, and we design and build the whole outdoor space to make the most of the country setting." },
-        { q: "What landscaping works best on Driftwood acreage?", a: "Low-water, native-forward design paired with well-placed hardscape. Native plantings, stone, and mulch thrive on Driftwood's thin soils and drought, while patios, pergolas, and fire features turn the acreage into usable outdoor rooms, all kept easy to maintain." },
-        { q: "Can you keep a large Driftwood landscape low-maintenance?", a: "That's the goal on acreage. We use native and adapted plants, efficient irrigation, and stone or mulch ground cover so the property looks intentional without punishing upkeep or water use. Smart design is what keeps a big lot from becoming a chore." },
-        { q: "Do you serve Driftwood?", a: "Yes, Driftwood is within our Hays County service area, and its open, country properties are some of our favorite canvases for hardscape and outdoor-living projects." }
+        {
+          q: "Is Driftwood good for outdoor living space lighting?",
+          a: "It is prime territory for it. Driftwood's acreage and warm evenings are made for outdoor living, and we light patios, pergolas, pavilions, and pools so those spaces stay usable and inviting well after sunset."
+        },
+        {
+          q: "Can you handle the scale of a large Driftwood property?",
+          a: "Yes. The acreage out here is exactly where we like to work — long drives, big trees, and multiple outdoor living areas give us room for real layered design that makes the whole property feel finished at night."
+        },
+        {
+          q: "Do you light long driveways and entries in Driftwood?",
+          a: "We do. Long drives and entries on Driftwood acreage benefit from a proper plan so the light leads you in evenly and safely, without dark gaps across a big lot."
+        }
       ]
     },
     {
       slug: "manchaca",
       city: "Manchaca",
       county: "Travis County",
-      headline: "Lawn Care & Landscaping in Manchaca, TX",
+      headline: "Outdoor Lighting in Manchaca, TX",
       intro:
-        "Manchaca (Menchaca) sits right in our northern corridor between Buda and South Austin. Its mix of established homes and newer builds means everything from mature-tree care and turf renovation to full redesigns — all of which we handle with a single, reliable crew.",
+        "Manchaca (Menchaca) sits right in our northern corridor between Buda and South Austin. Its mix of established homes and newer builds is a great fit for permanent lighting, landscape lighting and holiday displays from one reliable local crew.",
       note:
-        "Manchaca is an easy, close-in service area for both maintenance and design-build projects.",
+        "Manchaca is an easy, close-in service area for installs and seasonal holiday lighting.",
       body: [
         {
-          h: "Close-in, between Buda and South Austin",
+          h: "Right in our northern corridor",
           p: [
-            "Manchaca, spelled Menchaca on the newer signs, sits right in our northern corridor between Buda and South Austin, which makes it one of the easiest, closest-in areas we serve. That proximity means responsive service for everything from a quick lawn visit to a full design-build, and it's a big part of why Manchaca is such a comfortable fit for us.",
-            "The area's a mix of established homes with mature trees and newer builds filling in the gaps, so the work here runs the full range: mature-tree care and turf renovation on the older lots, and complete redesigns and fresh installs on the newer ones."
+            "Manchaca — you will also see it spelled Menchaca — sits right in the corridor between our Buda shop and South Austin, which makes it an easy, close-in service area for us. That proximity means quick installs, easy service calls, and reliable seasonal holiday scheduling from one local crew that is genuinely nearby.",
+            "It is the kind of area where being close by really pays off, especially for holiday lighting, where you want a crew that can install on time and come back fast if anything needs attention during the season."
           ]
         },
         {
-          h: "One crew for whatever the yard needs",
+          h: "A fit for established homes and new builds alike",
           p: [
-            "Because Manchaca yards span so many styles and ages, we like that a single reliable crew can handle all of it, mowing and feeding to keep established lawns thick, tree care for the mature canopies, drainage and irrigation fixes, and full landscape redesigns where a yard needs a reset. No juggling multiple companies, just one team that knows your property.",
-            "With Manchaca sitting so close to our Buda shop, both recurring maintenance and larger projects are simple for us to schedule and deliver here."
+            "Manchaca's mix of established homes and newer builds suits our full range of work. Older properties often have mature trees and character worth showing off with landscape lighting, while newer homes are naturals for permanent roofline lighting that lifts curb appeal every night and turns into a holiday display on command.",
+            "Whichever it is, you get the same family-owned, fully insured and bonded team, warm and glare-controlled fixtures, and our 1-year labor warranty with quick local service."
           ]
         }
       ],
       faqs: [
-        { q: "Do you offer lawn care and landscaping in Manchaca?", a: "Yes, Manchaca (Menchaca) is a close-in, easy service area for us, sitting right between Buda and South Austin. We handle everything from recurring lawn care and tree care to full landscape redesigns and irrigation here." },
-        { q: "How fast can you get to Manchaca?", a: "Quickly, Manchaca is in our northern corridor just up the road from our Buda base, which makes both fast service calls and larger design-build projects easy to schedule." },
-        { q: "Can you care for the mature trees on my older Manchaca lot?", a: "Yes, tree care is a big part of our work in Manchaca's established neighborhoods. We trim for health and structure, clear deadwood and hazard limbs, and handle oaks with the timing and sealing that protect against oak wilt." },
-        { q: "Do you handle both maintenance and full redesigns in Manchaca?", a: "We do, and one consistent crew handles both. Manchaca's mix of established and newer homes means we do everything from ongoing lawn and tree care to complete yard redesigns and fresh installs." }
-      ]
-    },
-    {
-      slug: "del-valle",
-      city: "Del Valle",
-      county: "Travis County",
-      headline: "Lawn Care & Landscaping in Del Valle, TX",
-      intro:
-        "Del Valle's growth has brought a wave of new homes that need real landscaping — not just builder sod. We design water-wise yards, install native beds and turf, and keep them maintained so your outdoor space grows in beautifully instead of struggling through the first summer.",
-      note:
-        "Del Valle rounds out the eastern edge of our Central Texas service area.",
-      body: [
         {
-          h: "New homes that need real landscaping",
-          p: [
-            "Del Valle's growth has brought a wave of new construction east of Austin, and most of those homes came with the usual builder package, a patch of sod, maybe a single tree, and not much else. That's a blank slate that needs real landscaping to become a yard you're proud of, not just green space that struggles through its first summer.",
-            "We design water-wise yards for exactly these lots: proper beds with native and adapted plants, turf that's prepped and installed to actually take, irrigation designed for our restrictions, and drainage that handles the clay when the downpours come. Done right from the start, a new Del Valle yard grows in beautifully instead of fighting the heat."
-          ]
+          q: "Do you serve Manchaca even though it's in Travis County?",
+          a: "Yes. Manchaca sits right in our northern corridor between Buda and South Austin, making it an easy, close-in service area despite being just over the county line. Installs and service calls here are quick for us."
         },
         {
-          h: "Installed right, then kept that way",
-          p: [
-            "A new landscape's first year is the fragile one, so we don't just install and disappear. We set things up to establish, then keep them maintained with scheduled lawn care and seasonal attention so the yard fills in and matures instead of thinning out. That continuity is how a fresh install becomes an established-looking landscape fast.",
-            "Del Valle rounds out the eastern edge of our Central Texas service area, and its new-build growth makes it a natural fit for our design, install, and maintenance work."
-          ]
+          q: "Can you handle holiday lighting in Manchaca?",
+          a: "Absolutely, and being close by helps. Seasonal holiday lighting is easy for us to schedule and service in Manchaca, so your display goes up on time and we can come back fast if anything needs attention."
+        },
+        {
+          q: "What kind of homes do you light in Manchaca?",
+          a: "Both established homes and newer builds. Older properties often suit landscape lighting that shows off mature trees, while newer homes are great candidates for permanent roofline lighting. We tailor the design to your home either way."
         }
-      ],
-      faqs: [
-        { q: "Do you landscape new construction homes in Del Valle?", a: "Yes, that's much of our work in Del Valle. We turn the bare builder package, a bit of sod and one tree, into a complete water-wise landscape with real beds, turf, irrigation, and drainage suited to our clay and heat." },
-        { q: "Will you maintain my Del Valle yard after installing it?", a: "We can, and it's the best way to protect a new landscape. We keep freshly installed yards maintained with scheduled lawn care and seasonal attention so they establish and fill in rather than thinning out in the first year." },
-        { q: "What landscaping holds up in Del Valle's conditions?", a: "Water-wise, native-forward design with efficient irrigation and good drainage. Native and adapted plants handle the heat, prepped-and-installed turf actually takes, and proper drainage manages the clay when the downpours hit, so the yard thrives instead of struggling." },
-        { q: "Do you serve Del Valle?", a: "Yes, Del Valle rounds out the eastern edge of our Travis County service area. Its new-home growth makes it a natural fit for our design, install, and ongoing maintenance work." }
       ]
     },
     {
       slug: "south-austin",
       city: "South Austin",
       county: "Travis County",
-      headline: "Landscaping & Lawn Care in South Austin, TX",
+      headline: "Outdoor Lighting in South Austin, TX",
       intro:
-        "South Austin is where this business started back in 1998, and it's still core territory for us. From established yards off Manchaca and Slaughter to newer builds toward Buda, we design, build and maintain landscapes that fit South Austin's mix of mature trees, tight lots, and Central Texas heat.",
+        "South Austin's mix of mature trees, tight lots and character homes is ideal for landscape lighting and permanent accent lighting. We design lighting that shows off the architecture and makes yards usable at night, all across South Austin.",
       note:
-        "South Austin is our original home turf — and one of our fastest-response areas.",
+        "South Austin is core territory and one of our fastest-response areas.",
       body: [
         {
-          h: "Where this business started",
+          h: "Lighting for character homes and mature yards",
           p: [
-            "South Austin is where it all began back in 1998, and it's still core territory for us. We know these neighborhoods, the established yards off Manchaca and Slaughter, the mature-tree streets, and the newer builds filling in toward Buda, because we've been working them for decades. That history shows up in the details: we know the soil, the drainage quirks, and the plants that have proven themselves here over the years.",
-            "It's also one of our fastest-response areas. Being just down the road means we're quick to a service call and easy to schedule for a bigger project."
+            "South Austin has a character all its own — mature trees, tighter lots, and homes with real architectural personality. That mix is ideal for the kind of lighting we love to do. Landscape lighting picks out established oaks and shows off stonework and facades, while permanent accent lighting traces a home's best lines and lifts curb appeal every night.",
+            "On the smaller, closer lots common in South Austin, thoughtful design and glare control matter even more, so your lighting looks refined and stays friendly with the neighbors right next door."
           ]
         },
         {
-          h: "Mature trees, tight lots, and real heat",
+          h: "Usable yards and one of our fastest responses",
           p: [
-            "South Austin's older neighborhoods come with their own character, mature live oaks and pecans worth protecting, tighter lots that reward smart design, and the same Central Texas heat everyone fights. We work with all of it: careful tree care that respects oak-wilt timing, thoughtful designs that make small yards feel bigger, and water-wise plantings and irrigation that keep a landscape lush without a runaway water bill.",
-            "Whether it's reviving a tired established yard or building out a new one, South Austin is home turf, and we treat these yards the way you'd treat a neighbor's."
+            "South Austin's mature trees and cozy yards are perfect for landscape lighting that makes outdoor space usable after dark — lit paths, uplit trees, and warm garden and patio accents that turn a small yard into an inviting evening retreat.",
+            "It is core territory for us and one of our fastest-response areas, so from the free consultation through installation and any later service, we are quick to reach South Austin. Everything is warm, weather-rated LED, backed by our 1-year labor warranty."
           ]
         }
       ],
       faqs: [
-        { q: "Do you offer landscaping and lawn care in South Austin?", a: "Yes, South Austin is where this business started in 1998 and remains core territory. We handle the full range here, design, lawn care, tree care, irrigation, drainage, and outdoor living, and it's one of our fastest-response areas." },
-        { q: "Can you care for the mature trees on my South Austin lot?", a: "Definitely. South Austin's older neighborhoods have mature live oaks and pecans worth protecting, and we trim for health and structure while handling oaks with the timing and sealing that guard against oak wilt." },
-        { q: "How fast can you get to South Austin?", a: "Fast, South Austin is our original home turf and just down the road from our Buda base, so we're quick to service calls and easy to schedule for larger projects." },
-        { q: "Do you work on both established and newer South Austin homes?", a: "Yes. We revive tired established yards with tree care, turf renovation, and redesigns, and we build out newer lots toward Buda with complete landscapes. We know both sides of South Austin well." }
+        {
+          q: "Do you cover South Austin from your Buda shop?",
+          a: "Yes. South Austin is core territory for us and one of our fastest-response areas, so we reach it quickly for consultations, installs, and service despite being based in Buda."
+        },
+        {
+          q: "What lighting works best for South Austin's older homes and trees?",
+          a: "Landscape lighting that shows off mature trees and character architecture, paired with permanent accent lighting that traces the home's best lines, tends to suit South Austin homes best. It highlights the personality these properties already have."
+        },
+        {
+          q: "Can you light a small South Austin lot without bothering neighbors?",
+          a: "Yes. On the tighter lots common in South Austin, we design with careful glare control and aiming so your lighting looks refined and stays neighborly, putting light where you want it and not into the house next door."
+        }
+      ]
+    },
+    {
+      slug: "del-valle",
+      city: "Del Valle",
+      county: "Travis County",
+      headline: "Outdoor Lighting in Del Valle, TX",
+      intro:
+        "Del Valle's wave of new homes need lighting that turns a blank-slate yard into something special — permanent roofline lighting, landscape lighting and holiday displays that make a new place feel finished.",
+      note:
+        "Del Valle rounds out the eastern edge of our service area.",
+      body: [
+        {
+          h: "Finishing touches for new-build yards",
+          p: [
+            "Del Valle has seen a wave of new homes, and new construction often comes with a blank-slate yard — a fresh house on a bare lot with lots of potential and not much yet to enjoy after dark. Lighting is one of the fastest ways to make a new place feel finished and cared-for, giving a brand-new home real presence at night.",
+            "Permanent roofline lighting is a popular choice for new builds because it lifts curb appeal every night and doubles as a holiday display, all installed once with nothing to hang or take down."
+          ]
+        },
+        {
+          h: "Growing with your property",
+          p: [
+            "As a new-build yard fills in over time, landscape lighting gives it depth — lit paths and entries for safe footing, and uplighting ready to make the most of trees as they mature. And when the holidays come around, a professionally installed display makes a new home the best-lit on the block without you climbing a single ladder.",
+            "Del Valle rounds out the eastern edge of our service area, and new customers here get the same family-owned, fully insured and bonded service and warranty as everyone else we serve."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "Is my new-construction home in Del Valle ready for lighting?",
+          a: "Yes. New homes are some of the best candidates, because lighting is one of the quickest ways to turn a blank-slate yard into something that feels finished. Permanent roofline and landscape lighting both give a new Del Valle home real presence after dark."
+        },
+        {
+          q: "Do you serve Del Valle from Buda?",
+          a: "We do. Del Valle rounds out the eastern edge of our service area, and new customers there get the same design, installation, and warranty as everyone else we serve across the region."
+        },
+        {
+          q: "What lighting should I start with on a new Del Valle home?",
+          a: "Many new-build owners start with permanent roofline lighting for nightly curb appeal that doubles as a holiday display, then add landscape lighting as the yard fills in. We can plan it in phases during your free consultation."
+        }
       ]
     },
     {
       slug: "lakeway",
       city: "Lakeway",
       county: "Travis County",
-      headline: "Landscape Design & Hardscape in Lakeway, TX",
+      headline: "Outdoor Lighting in Lakeway, TX",
       intro:
-        "Lakeway's hillside lots and lake views call for landscaping that works with the grade, not against it — retaining walls, terracing, native plantings and outdoor living spaces that make the most of the setting. We design and build for exactly that kind of Hill Country property.",
+        "Lakeway's hillside lots and lake views are made for lighting that works with the grade — uplit trees, lit steps and terraces, and outdoor-living lighting that makes the most of the setting after dark.",
       note:
-        "Lakeway is prime territory for our retaining-wall, hardscape and outdoor-living work.",
+        "Lakeway is prime territory for our landscape and outdoor-living lighting.",
       body: [
         {
-          h: "Hillside lots and lake views",
+          h: "Lighting that works with the grade",
           p: [
-            "Lakeway's setting is its defining feature and its challenge: hillside lots that step down toward the water, dramatic grades, and views worth designing around. Landscaping here has to work with the slope, not against it, which is why retaining walls, terracing, and hardscape are such a big part of the work. A well-built wall turns a steep, unusable grade into flat, planted, usable yard, and stops the erosion that eats away at hillside lots every time it storms.",
-            "We build those walls with the footing and drainage that keep them standing for decades on Central Texas grades, and we terrace steeper slopes into a series of stable, plantable levels that look far better than one tall wall."
+            "Lakeway's hillside lots and lake views make for beautiful properties, and they call for lighting designed around the grade. Sloped and terraced yards are where careful step and path lighting really earns its keep, marking every level change so footing is safe as you move up and down the property after dark.",
+            "Those same slopes are an opportunity, not just a challenge. Terraces, retaining walls, and hillside plantings all take light well, and lighting them turns the natural topography into a layered, dramatic scene at night."
           ]
         },
         {
-          h: "Outdoor living built for the setting",
+          h: "Making the most of the setting",
           p: [
-            "Those same lots are made for outdoor living that frames the view. Patios positioned to catch the breeze and the water, pergolas for shade through the long summers, native plantings that soften the hardscape without blocking the sightlines, and stonework that ties into the Hill Country terrain. We design and build for exactly that kind of property, high-craft outdoor spaces that make the most of a Lakeway setting.",
-            "It's the work our crews are known for, and Lakeway's terrain and homes are ideal for it."
+            "Lakeway is prime territory for our landscape and outdoor-living work. Uplit trees and lit terraces give a hillside property depth, while patio, deck, and pergola lighting make the most of the views and the mild evenings, keeping outdoor living spaces usable long after sunset.",
+            "We use warm, glare-controlled, weather-rated fixtures placed to light the property without spilling into the view or the neighbors', all installed by a family-owned local team and backed by our 1-year labor warranty."
           ]
         }
       ],
       faqs: [
-        { q: "Do you build retaining walls in Lakeway?", a: "Yes, Lakeway's hillside lots make retaining walls and terracing some of our most valuable work here. We build walls with the footing and drainage that hold for decades on our grades, turning steep slope into usable, plantable yard while stopping erosion." },
-        { q: "Can you design a landscape that works with my Lakeway slope?", a: "That's our specialty here. We work with the grade, using retaining walls, terracing, and hardscape to create usable space, and position patios and plantings to frame the lake views rather than fight the hillside." },
-        { q: "Do you do outdoor living projects in Lakeway?", a: "Definitely, Lakeway is prime territory for it. We design and build patios, pergolas, stonework, and native plantings that make the most of the hillside setting and the views, all as one cohesive outdoor space." },
-        { q: "Do you serve Lakeway from Buda?", a: "Yes, Lakeway is within our Travis County service area, and its hillside terrain and homes are ideal for the retaining-wall, hardscape, and outdoor-living work our crews are known for." }
+        {
+          q: "Can you light a steep, hillside lot in Lakeway?",
+          a: "Yes, hillside lots are a specialty of the area for us. We design lighting that works with the grade — lit steps, paths, and terraces for safe footing, plus uplighting that turns the slopes and retaining walls into a dramatic layered scene."
+        },
+        {
+          q: "Is Lakeway within your service area?",
+          a: "It is. Lakeway is prime territory for our landscape and outdoor-living lighting, and we serve it as part of our Travis County coverage from our Buda shop."
+        },
+        {
+          q: "Will lighting spoil my Lakeway lake or hill-country view?",
+          a: "No. We use glare-controlled fixtures aimed to light your trees, terraces, and living spaces without spilling into the view or your neighbors'. The idea is to enhance the setting after dark, not wash it out."
+        }
       ]
     },
     {
       slug: "bee-cave",
       city: "Bee Cave",
       county: "Travis County",
-      headline: "Landscaping & Outdoor Living in Bee Cave, TX",
+      headline: "Outdoor Lighting in Bee Cave, TX",
       intro:
-        "Bee Cave properties tend to be larger, rockier, and beautifully exposed to the Hill Country. That's ideal for the water-wise, native-forward design and high-craft hardscape — pergolas, patios, stonework — that we're known for. We build outdoor spaces that match the setting and the home.",
+        "Bee Cave properties tend to be larger and beautifully exposed to the Hill Country — ideal for architectural and landscape lighting that frames the home and makes big lots feel intentional and safe at night.",
       note:
-        "Bee Cave is a strong market for our full design-build and outdoor-living projects.",
+        "Bee Cave is a strong market for our full design-and-install lighting projects.",
       body: [
         {
-          h: "Larger, rockier, beautifully exposed",
+          h: "Framing the home on a bigger lot",
           p: [
-            "Bee Cave properties tend to be larger, rockier, and beautifully open to the Hill Country. That setting rewards water-wise, native-forward design, plants that thrive in shallow soil over limestone and shrug off drought, rather than thirsty, high-maintenance landscapes that fight the land and lose. The exposure and the rock are part of the character, and the best designs work with them.",
-            "We build landscapes here that look lush and intentional while staying light on water and easy to maintain, using natives, adapted perennials, stone, and mulch that belong in this terrain and hold up through a Bee Cave summer."
+            "Bee Cave properties tend to be larger and beautifully open to the Hill Country, which gives lighting a lot to work with. Architectural lighting frames the home itself — grazing facades, highlighting rooflines and stonework, and drawing out the lines that make a house memorable — so a substantial home reads as intentional and impressive after dark rather than fading into a big dark lot.",
+            "On this scale, lighting is what pulls a property together at night. It gives all that space and architecture a clear focal point and a sense of design once the sun goes down."
           ]
         },
         {
-          h: "High-craft hardscape and outdoor living",
+          h: "Landscape lighting for space and safety",
           p: [
-            "The larger lots are ideal for the high-craft hardscape our crews are known for, pergolas and shade structures, patios sized for entertaining, stonework that ties into the natural limestone, and outdoor living spaces that match both the setting and the home. Bee Cave homes tend to be built with care, and the landscaping deserves the same craftsmanship.",
-            "Because we design and build the whole project, the plantings, hardscape, and structures come together as one cohesive outdoor space, which is why Bee Cave is such a strong market for our full design-build work."
+            "The larger lots common in Bee Cave are ideal for layered landscape lighting. Uplit specimen trees become focal points, lit drives and paths make a big property safe and easy to navigate, and warm accents fill in the space so the whole lot feels finished rather than dark and empty at its edges.",
+            "Bee Cave is a strong market for our full design-and-install projects, and every one is handled by a family-owned team that is fully insured and bonded, with warm, weather-rated fixtures and our 1-year labor warranty."
           ]
         }
       ],
       faqs: [
-        { q: "Do you do landscape design and outdoor living in Bee Cave?", a: "Yes, Bee Cave is a strong market for our full design-build and outdoor-living projects. We handle water-wise design, native planting, and high-craft hardscape, pergolas, patios, and stonework, on the larger, rockier lots here." },
-        { q: "What landscaping suits Bee Cave's rocky, exposed lots?", a: "Water-wise, native-forward design is the right fit. Natives and adapted perennials thrive in the shallow soil over limestone, and stone and mulch ground cover hold up through drought, so the landscape looks lush without fighting the terrain or running up the water bill." },
-        { q: "Can you build a pergola or patio that matches my Bee Cave home?", a: "Definitely. We design hardscape and structures to suit your home's architecture and tie into the natural limestone of the setting, and because we design and build it all, the plantings and hardscape come together as one cohesive space." },
-        { q: "Do you serve Bee Cave?", a: "Yes, Bee Cave is within our Travis County service area, and its larger, beautifully exposed properties are ideal for the full design-build and outdoor-living work we're known for." }
+        {
+          q: "What lighting suits a larger Bee Cave home?",
+          a: "Architectural lighting that frames the home — grazing facades and highlighting rooflines and stonework — paired with layered landscape lighting for the grounds tends to suit larger Bee Cave properties best. Together they give a big home and lot a clear focal point and finished look at night."
+        },
+        {
+          q: "Do you handle full design-and-install projects in Bee Cave?",
+          a: "Yes. Bee Cave is a strong market for our complete design-and-install work. We handle the whole project from the free consultation and written estimate through installation and service."
+        },
+        {
+          q: "Can lighting make a big Bee Cave lot feel less dark at the edges?",
+          a: "It can. Lit drives, uplit trees, and warm accents fill in the space on a large lot so it feels intentional and safe rather than fading into darkness at its edges, all while respecting the Hill Country setting."
+        }
       ]
     },
     {
       slug: "west-lake-hills",
       city: "West Lake Hills",
       county: "Travis County",
-      headline: "Landscape Design in West Lake Hills, TX",
+      headline: "Outdoor Lighting in West Lake Hills, TX",
       intro:
-        "West Lake Hills homes deserve landscaping with the same craftsmanship as the architecture. We bring careful design, quality stonework and masonry, and meticulous maintenance to Westlake properties — landscapes that look intentional in every season and hold their value.",
+        "West Lake Hills homes deserve lighting with the same craftsmanship as the architecture. We bring careful design and premium fixtures to Westlake properties — architectural accent lighting, landscape lighting and outdoor-living lighting that hold their look for years.",
       note:
-        "West Lake Hills is a premium market for our design, masonry and maintenance work.",
+        "West Lake Hills is a premium market for our architectural and landscape lighting.",
       body: [
         {
-          h: "Landscaping worthy of the architecture",
+          h: "Craftsmanship to match the architecture",
           p: [
-            "West Lake Hills homes are built with real craftsmanship, and the landscaping should match it. Careful design, quality stonework and masonry, and meticulous maintenance are what keep a Westlake property looking intentional in every season and holding its value. A yard here isn't an afterthought around the house, it's part of how the whole property reads.",
-            "We bring that level of attention to Westlake landscapes, thoughtful designs that suit the home and the lot, native and adapted plantings that stay handsome year-round, and the kind of detail that shows up close, in the joints of the stonework and the clean lines of the beds."
+            "West Lake Hills homes are built with real care, and their lighting should be too. We bring the same craftsmanship to the lighting that went into the architecture — careful design, premium fixtures, and clean, concealed installation — so the result looks like an intentional part of the home rather than something added on.",
+            "For Westlake properties, architectural accent lighting is often the centerpiece: grazing facades, highlighting the lines and materials that make each home distinctive, and giving the house the same presence at night that it has by day."
           ]
         },
         {
-          h: "Masonry and meticulous upkeep",
+          h: "A premium result that lasts",
           p: [
-            "Stonework is often where a Westlake landscape earns its keep, stone borders, columns, veneer, steps, and entries built with Texas limestone and real craftsmanship, the kind of masonry that anchors a property and lasts for decades. We build it on proper footings with the drainage and tight joints that keep it true over time, not just looking good the week it's finished.",
-            "Then we keep it that way. Meticulous, consistent maintenance, from lawn and bed care to seasonal attention, is what preserves a premium landscape, and it's a big part of why West Lake Hills is such a strong market for our design, masonry, and upkeep work."
+            "Beyond the facade, we layer landscape and outdoor-living lighting to complete a Westlake property — uplit trees, lit paths and terraces, and warm patio and pool lighting that make the grounds and living spaces beautiful and usable after dark.",
+            "This is a premium market for us, and we treat it that way: quality, weather-rated fixtures and careful workmanship that hold their look for years, installed by a family-owned team that is fully insured and bonded and backs its labor for a year."
           ]
         }
       ],
       faqs: [
-        { q: "Do you do high-end landscape design in West Lake Hills?", a: "Yes, West Lake Hills is a premium market for us. We bring careful design, quality stonework and masonry, and meticulous maintenance to Westlake properties, landscapes built to match the craftsmanship of the homes and hold their value." },
-        { q: "Can you do custom masonry and stonework in Westlake?", a: "Definitely, it's some of our signature work here. We build stone borders, columns, veneer, steps, and entries in Texas limestone with the footings, drainage, and tight joints that keep the work true and handsome for decades." },
-        { q: "Do you offer ongoing maintenance for West Lake Hills properties?", a: "We do, and meticulous, consistent upkeep is exactly what a premium landscape needs. One reliable crew handles the lawn, bed, and seasonal care that keeps a Westlake yard looking intentional in every season." },
-        { q: "Do you serve West Lake Hills?", a: "Yes, West Lake Hills is within our Travis County service area, and it's one of our strongest markets for design, masonry, and maintenance work on premium properties." }
-      ]
-    },
-    {
-      slug: "round-rock",
-      city: "Round Rock",
-      county: "Williamson County",
-      headline: "Landscaping & Lawn Care in Round Rock, TX",
-      intro:
-        "Round Rock has grown fast, and a lot of its neighborhoods were sodded builder-grade and left to fend for themselves in the clay and heat. We redesign those yards into water-wise landscapes that actually thrive here, and keep established lawns across Round Rock thick, green and healthy year-round.",
-      note:
-        "Round Rock anchors our northern service area in Williamson County — strong for both design-build and ongoing maintenance.",
-      body: [
         {
-          h: "Fast growth, builder-grade yards",
-          p: [
-            "Round Rock grew fast, and a lot of its neighborhoods were sodded builder-grade and then left to fend for themselves in the clay and heat. Those yards tend to look the part, thin turf, compacted soil, beds that were never really designed, irrigation that wasn't set up for our restrictions. We redesign them into water-wise landscapes that actually thrive in Williamson County conditions instead of struggling every summer.",
-            "The soil here is a big part of the story. Round Rock's clay holds water and compacts hard, so smart drainage, proper bed prep, and the right plant choices matter more than most homeowners realize. Get those right and a yard stops fighting the ground it's planted in."
-          ]
+          q: "Do you use quality fixtures for West Lake Hills homes?",
+          a: "Yes. West Lake Hills is a premium market for us, and we bring careful design and premium, weather-rated fixtures with clean, concealed installation. The goal is lighting that matches the craftsmanship of the architecture and holds its look for years."
         },
         {
-          h: "Design-build and dependable maintenance",
-          p: [
-            "As the anchor of our northern service area, Round Rock is strong for both sides of the business. We build complete landscapes, design, beds, sod, irrigation, drainage, and hardscape, and we keep established Round Rock lawns thick, green, and healthy year-round with scheduled mowing, feeding, and weed control from one consistent crew.",
-            "Whether your yard needs a full reset or just reliable ongoing care, Round Rock is well within reach and one of our busiest Williamson County markets."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you offer landscaping and lawn care in Round Rock?", a: "Yes, Round Rock anchors our northern service area in Williamson County. We handle both full design-build projects and ongoing maintenance here, from redesigning builder-grade yards to keeping established lawns thick and green year-round." },
-        { q: "Can you fix my builder-grade Round Rock yard?", a: "That's one of the most common things we do in Round Rock. We redesign thin, cheaply sodded yards into water-wise landscapes with proper bed prep, drainage, and plant choices suited to the local clay and heat, so the yard thrives instead of struggling." },
-        { q: "How do you handle Round Rock's clay soil?", a: "With smart drainage, proper soil and bed prep, and the right plant and turf choices for clay. Round Rock's clay holds water and compacts hard, so getting the grading, drainage, and prep right is what keeps a landscape from fighting the ground it's in." },
-        { q: "Do you serve Round Rock from Buda?", a: "Yes, Round Rock is a busy Williamson County market for us and well within our service area. We're set up to deliver both design-build and recurring maintenance here." }
-      ]
-    },
-    {
-      slug: "cedar-park",
-      city: "Cedar Park",
-      county: "Williamson County",
-      headline: "Landscape Design & Hardscape in Cedar Park, TX",
-      intro:
-        "Cedar Park sits on the rocky edge of the Hill Country, where thin soils and slopes call for smart design — native plantings, retaining walls, and hardscape that works with the grade. We design and build landscapes and outdoor living spaces built for exactly those conditions.",
-      note:
-        "Cedar Park is prime territory for our retaining-wall, hardscape and native-planting work.",
-      body: [
-        {
-          h: "Thin soils on the edge of the Hill Country",
-          p: [
-            "Cedar Park sits on the rocky edge of the Hill Country, where thin soils over limestone and rolling grades call for smart, deliberate design. You can't just drop a standard subdivision landscape here and expect it to thrive, the soil is shallow, the slopes shed water, and the exposure is real. Native plantings, retaining walls, and hardscape that works with the grade are what actually hold up.",
-            "We design for those conditions specifically. Native and adapted plants that thrive in shallow, alkaline soil, efficient irrigation that makes the most of limited water, and mulch or stone ground cover that keeps roots cool and holds moisture where the rock is close to the surface."
-          ]
+          q: "What lighting is most popular in Westlake?",
+          a: "Architectural accent lighting is often the centerpiece, grazing facades and highlighting the lines and materials that make each home distinctive. We typically layer landscape and outdoor-living lighting with it to complete the property."
         },
         {
-          h: "Retaining walls and hardscape that fit the grade",
-          p: [
-            "Cedar Park's slopes are why hardscape is such a big part of our work here. Retaining walls turn steep, unusable grade into flat, plantable yard and stop the erosion that thin-soiled slopes are prone to, and terracing steps a hillside into stable, usable levels. Built with proper footing and drainage, those walls hold for decades on exactly these grades.",
-            "Paired with patios and native plantings, that hardscape lets us build landscapes and outdoor living spaces designed for the rocky, sloped conditions Cedar Park is known for, which makes it prime territory for the work our crews do best."
-          ]
+          q: "Are you insured to work on West Lake Hills properties?",
+          a: "Yes. We are a family-owned company that is fully insured and bonded, and we back our labor for a year. We treat Westlake projects with the care and workmanship these homes deserve."
         }
-      ],
-      faqs: [
-        { q: "Do you build retaining walls in Cedar Park?", a: "Yes, Cedar Park's rocky, sloped lots make retaining walls and terracing some of our most valuable work here. We build with the footing and drainage that hold for decades, turning steep grade into usable, plantable yard and stopping erosion." },
-        { q: "What landscaping works in Cedar Park's thin, rocky soil?", a: "Native and adapted plantings paired with efficient irrigation and stone or mulch ground cover. Those plants thrive in the shallow, alkaline soil over limestone and hold up through drought, giving you a lush look without fighting the rock." },
-        { q: "Can you design a landscape that works with my Cedar Park slope?", a: "That's our specialty here. We work with the grade using retaining walls, terracing, and hardscape to create usable space, then add native plantings and patios designed for Cedar Park's rocky, exposed conditions." },
-        { q: "Do you serve Cedar Park?", a: "Yes, Cedar Park is within our Williamson County service area, and its thin soils and slopes are ideal for the retaining-wall, hardscape, and native-planting work our crews are known for." }
-      ]
-    },
-    {
-      slug: "leander",
-      city: "Leander",
-      county: "Williamson County",
-      headline: "Landscaping & Lawn Care in Leander, TX",
-      intro:
-        "Leander is one of the fastest-growing cities in Texas, which means a wave of new homes with blank-slate yards. We design and install complete landscapes — beds, sod, irrigation and outdoor living — and maintain them so they grow in beautifully instead of struggling through the first summer.",
-      note:
-        "Leander's new-construction growth makes it one of our busiest design-build markets.",
-      body: [
-        {
-          h: "Blank-slate yards, everywhere",
-          p: [
-            "Leander has been one of the fastest-growing cities in Texas, which means a wave of brand-new homes with blank-slate yards, a patch of builder sod, bare dirt, and not much else. Those lots are opportunity, but they need real landscaping to become somewhere you're proud of instead of green space that struggles through its first summer in the clay and heat.",
-            "We design and install complete landscapes for exactly these homes: beds with native and adapted plants, sod that's prepped and installed to actually take, irrigation designed for our watering restrictions, drainage that handles the clay, and outdoor living to make the backyard usable. Done right from the start, a new Leander yard grows in beautifully."
-          ]
-        },
-        {
-          h: "Installed to establish, then maintained",
-          p: [
-            "A new landscape's first year is the make-or-break one, so we set everything up to establish and then keep it maintained, so it fills in and matures rather than thinning out. That combination of thoughtful install and dependable ongoing care is how a fresh Leander yard starts looking established fast.",
-            "With so much new construction, Leander is one of our busiest design-build markets, and we're well set up to take a brand-new lot from bare dirt to a finished, thriving landscape."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you landscape new construction homes in Leander?", a: "Yes, it's some of our busiest work. Leander's rapid new-home growth means lots of blank-slate yards, and we install complete landscapes, beds, sod, irrigation, drainage, and outdoor living, built for the local clay and heat." },
-        { q: "How do I get my new Leander yard established quickly?", a: "Start with a proper install and follow it with consistent care. We prep and install turf and beds to actually take, set up efficient irrigation, and then maintain the yard so it fills in and matures fast rather than struggling through its first summer." },
-        { q: "Can you do the whole yard, front and back, on a new Leander home?", a: "Absolutely. We design and install complete landscapes, beds, sod, irrigation, drainage, and outdoor living spaces, as one project, so a brand-new lot goes from bare dirt to finished and thriving." },
-        { q: "Do you serve Leander?", a: "Yes, Leander is one of our busiest Williamson County design-build markets. Its new-construction growth makes it a natural fit for our complete landscape design, install, and maintenance work." }
-      ]
-    },
-    {
-      slug: "georgetown",
-      city: "Georgetown",
-      county: "Williamson County",
-      headline: "Lawn Care & Landscaping in Georgetown, TX",
-      intro:
-        "From the historic homes near the square to the newer developments and larger lots north of town, Georgetown yards span every style. We bring thoughtful design, quality installation, and dependable lawn and turf care to properties of every size across Georgetown.",
-      note:
-        "Georgetown marks the northern reach of our Williamson County service area.",
-      body: [
-        {
-          h: "Every style of yard in one city",
-          p: [
-            "Georgetown spans just about every kind of property there is. There are the historic homes near the square with their established landscapes and mature trees, the family neighborhoods filling in around town, and the newer developments and larger lots north of town where there's room to spread out. Each calls for a different approach, which is exactly why we bring the full range of our work to Georgetown.",
-            "For the older homes it's often thoughtful care of mature trees and established beds, and tasteful updates that respect the character of the property. For the newer and larger lots it's complete design and install, water-wise plantings, irrigation, and the hardscape and outdoor living that make the most of the space."
-          ]
-        },
-        {
-          h: "Thoughtful design, dependable turf care",
-          p: [
-            "Whatever the property, the fundamentals hold: design that fits the lot and the Hill Country climate, quality installation, and dependable lawn and turf care that keeps a Georgetown yard thick and green through our seasons. We keep the same reliable crew on your property so nothing falls through the cracks between visits.",
-            "Georgetown marks the northern reach of our Williamson County service area, and its mix of historic and new gives us the whole spectrum of work we love to do."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you offer landscaping and turf care in Georgetown?", a: "Yes, Georgetown is the northern reach of our Williamson County service area, and we bring the full range there, design, installation, hardscape, outdoor living, and dependable lawn and turf care for properties of every size and style." },
-        { q: "Can you care for an older home's landscape near the Georgetown square?", a: "Definitely. For Georgetown's historic homes we offer thoughtful care of mature trees and established beds, plus tasteful updates that respect the character of the property. We handle oaks with the timing and sealing that guard against oak wilt." },
-        { q: "Do you landscape the newer developments north of Georgetown?", a: "Yes, the newer and larger lots north of town are great for complete design and install, water-wise plantings, irrigation, hardscape, and outdoor living that make the most of the extra space." },
-        { q: "Do you serve Georgetown from Buda?", a: "Yes, Georgetown is within our Williamson County service area at its northern edge. We deliver both design-build and ongoing turf care to Georgetown properties." }
-      ]
-    },
-    {
-      slug: "pflugerville",
-      city: "Pflugerville",
-      county: "Travis County",
-      headline: "Lawn Care & Landscaping in Pflugerville, TX",
-      intro:
-        "Pflugerville's family neighborhoods and HOA communities want yards that look sharp and stay that way. We handle everything from scheduled lawn care and seasonal color to full landscape redesigns and irrigation, with one reliable crew you can count on.",
-      note:
-        "Pflugerville is a strong market for our recurring lawn care and HOA-friendly maintenance.",
-      body: [
-        {
-          h: "Family neighborhoods that want sharp yards",
-          p: [
-            "Pflugerville is full of family neighborhoods and HOA communities where a yard is expected to look sharp and stay that way. That makes it a strong market for our recurring lawn care, dependable scheduled mowing, edging, feeding, and weed control from one consistent crew, so your lawn stays thick and green and your yard stays on the right side of the HOA all year.",
-            "Consistency is what these neighborhoods reward, and it's what we're built for. The same crew shows up on the same rhythm, learns your property, and keeps everything looking cared-for without you having to think about it or chase a rotating cast of subcontractors."
-          ]
-        },
-        {
-          h: "More than mowing when you want it",
-          p: [
-            "Beyond recurring maintenance, we handle everything a Pflugerville yard might need: seasonal color to keep the beds looking fresh, full landscape redesigns when a yard needs a reset, irrigation installation and repair to keep everything watered efficiently within restrictions, and drainage work for the clay soils that hold water after a storm.",
-            "Whether you want steady, HOA-friendly upkeep or a bigger project, one reliable crew can cover it, which is why Pflugerville is such a comfortable fit for us."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you offer recurring lawn care in Pflugerville?", a: "Yes, Pflugerville is a strong market for our recurring lawn care. We provide scheduled mowing, edging, feeding, and weed control from one consistent crew, keeping your lawn thick and green and your yard looking sharp all year." },
-        { q: "Can you keep my yard up to HOA standards in Pflugerville?", a: "That's much of what we do in Pflugerville's HOA communities. Consistent, dependable maintenance from the same crew keeps your lawn and beds looking cared-for and on the right side of the HOA, without you having to manage it." },
-        { q: "Do you do more than mowing in Pflugerville?", a: "Yes. Beyond recurring care we handle seasonal color, full landscape redesigns, irrigation installation and repair, and drainage work for the clay soils, so one reliable crew can cover whatever your Pflugerville yard needs." },
-        { q: "Do you serve Pflugerville?", a: "Yes, Pflugerville is within our service area, and it's a strong market for our recurring lawn care and HOA-friendly maintenance, as well as larger landscape projects." }
-      ]
-    },
-    {
-      slug: "hutto",
-      city: "Hutto",
-      county: "Williamson County",
-      headline: "Landscaping & Lawn Care in Hutto, TX",
-      intro:
-        "Hutto has exploded with new subdivisions, and most of those homes need real landscaping — not just the builder's sod. We design water-wise yards, install beds, turf and irrigation, and keep them maintained so your new place looks established fast.",
-      note:
-        "Hutto is the northeastern edge of our service area — new-build landscaping is our bread and butter here.",
-      body: [
-        {
-          h: "Subdivisions filling in fast",
-          p: [
-            "Hutto has exploded with new subdivisions, and most of those homes came with the standard builder package and not much more, a bit of sod, bare beds, and a lot of potential. Turning that into a real yard is our bread and butter here. We design water-wise landscapes, install beds, turf, and irrigation, and set everything up so a new Hutto home looks established fast instead of struggling through its first summer.",
-            "Hutto's clay soils and full-sun lots are the conditions we design around every day, so the plant choices, drainage, and irrigation we build in are made to handle the local ground and heat, not just look good on install day."
-          ]
-        },
-        {
-          h: "From bare dirt to a finished yard",
-          p: [
-            "We can take a brand-new Hutto lot from bare dirt to a complete landscape, front and back, and then keep it maintained so it establishes and fills in. That first-year care is what turns a fresh install into an established-looking yard quickly, and it's a big part of doing new-build landscaping right.",
-            "As the northeastern edge of our service area, Hutto is a natural fit for our design, install, and maintenance work, exactly the kind of new-construction landscaping we do best."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you landscape new construction homes in Hutto?", a: "Yes, new-build landscaping is our bread and butter in Hutto. We take the bare builder package and turn it into a complete water-wise landscape, beds, turf, and irrigation, built for the local clay and full-sun lots." },
-        { q: "How fast can a new Hutto yard look established?", a: "Faster than you'd think, with a proper install and consistent care. We prep and install turf and beds to take, set up efficient irrigation, and maintain the yard through its first year so it fills in and matures instead of struggling." },
-        { q: "Can you do both the front and back yard on a new Hutto home?", a: "Absolutely. We design and install complete landscapes, front and back, as one project, taking a brand-new lot from bare dirt to a finished, thriving yard." },
-        { q: "Do you serve Hutto?", a: "Yes, Hutto is the northeastern edge of our service area, and its rapid subdivision growth makes it a natural fit for our new-build design, install, and maintenance work." }
-      ]
-    },
-    {
-      slug: "liberty-hill",
-      city: "Liberty Hill",
-      county: "Williamson County",
-      headline: "Landscape Design & Outdoor Living in Liberty Hill, TX",
-      intro:
-        "Liberty Hill's larger, more rural properties are made for the kind of work we love — native, low-water design, stonework and masonry, retaining walls, and outdoor living spaces that make the most of Hill Country acreage. We design and build landscapes that fit the land.",
-      note:
-        "Liberty Hill is the northwestern reach of our service area and ideal for acreage design-build projects.",
-      body: [
-        {
-          h: "Acreage that rewards real design",
-          p: [
-            "Liberty Hill's properties tend to be larger and more rural, and that acreage is made for the kind of work we love. There's room for native, low-water design that spreads across the land instead of being crammed into a subdivision lot, for stonework and masonry that ties into the Hill Country terrain, for retaining walls that manage the grade, and for outdoor living spaces that make the most of the space and the sky.",
-            "On rural acreage, a thirsty, high-maintenance landscape doesn't make sense, so we design water-wise from the start. Natives and adapted plants that thrive on thin soils and drought, efficient irrigation, and stone and mulch ground cover give a Liberty Hill property a landscape that fits the land and stays maintainable."
-          ]
-        },
-        {
-          h: "Design-build for the land",
-          p: [
-            "The larger lots are ideal for full design-build projects. Because we design and build the whole thing, the plantings, hardscape, stonework, retaining walls, and outdoor living come together as one cohesive landscape rather than a collection of separate pieces. That coordination matters even more on acreage, where the elements have to work across a bigger canvas.",
-            "As the northwestern reach of our service area, Liberty Hill is prime territory for exactly that kind of acreage design-build work, and we're set up to deliver it."
-          ]
-        }
-      ],
-      faqs: [
-        { q: "Do you do landscape design and outdoor living in Liberty Hill?", a: "Yes, Liberty Hill's larger, more rural properties are ideal for our design-build work. We handle native, low-water design, stonework and masonry, retaining walls, and outdoor living spaces that make the most of Hill Country acreage." },
-        { q: "What landscaping suits Liberty Hill acreage?", a: "Water-wise, native-forward design paired with well-placed hardscape. Natives and adapted plants thrive on the thin soils and drought, efficient irrigation makes the most of limited water, and stonework and retaining walls tie the landscape into the terrain, all kept maintainable across a larger lot." },
-        { q: "Can you handle a large acreage design-build project in Liberty Hill?", a: "Definitely, it's exactly the kind of work we love here. Because we design and build the whole landscape, the plantings, hardscape, and outdoor living come together as one cohesive project across the larger canvas of an acreage lot." },
-        { q: "Do you serve Liberty Hill?", a: "Yes, Liberty Hill is the northwestern reach of our service area, and its rural acreage is prime territory for the design-build, stonework, and outdoor-living work our crews are known for." }
       ]
     }
   ],
 
-  // Additional covered cities — listed, not given thin standalone pages.
+  // Additional covered communities — listed, not given standalone pages.
   additional: [
-    "Austin", "North Austin", "Barton Creek", "Bear Creek", "Blanco", "Briarcliff",
-    "Brushy Creek", "Canyon Lake", "Coupland", "Creedmoor", "Elgin", "Hudson Bend",
-    "Jarrell", "Johnson City", "Jollyville", "Jonestown", "Lago Vista",
-    "Lost Creek", "Manor", "Mustang Ridge", "Niederwald", "Point Venture", "Redwood",
-    "Serenada", "Sunset Valley", "Taylor", "Uhland", "Wells Branch", "Weir"
+    "Austin", "North Austin", "Sunset Valley", "Barton Creek", "Lost Creek",
+    "Creedmoor", "Niederwald", "Uhland", "Mountain City", "Hays", "Kyle",
+    "Mustang Ridge", "Manor", "Elgin", "Cedar Park", "Round Rock", "Pflugerville"
   ]
 };

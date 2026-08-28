@@ -14,7 +14,7 @@
   {% set canonical = (page.url | absoluteUrl(site.url)) %}
   <link rel="canonical" href="{{ canonical }}">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#2F5D3A">
+  <meta name="theme-color" content="#14294A">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -44,10 +44,11 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LandscapingBusiness",
+    "@type": "HomeAndConstructionBusiness",
+    "additionalType": "https://www.productontology.org/id/Landscape_lighting",
     "@id": "{{ site.url }}/#business",
     "name": "{{ site.name }}",
-    "alternateName": "Excel Lawn Care",
+    "alternateName": "Excel Outdoor Lighting",
     "slogan": "{{ site.tagline }}",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}",
@@ -88,8 +89,7 @@
       {% for loc in locations.priority %}{ "@type": "City", "name": "{{ loc.city }}, TX" }{{ "," if not loop.last }}{% endfor %}
     ],
     "sameAs": [
-      "{{ site.social.facebook }}",
-      "{{ site.social.youtube }}"
+      "{{ site.social.google }}"
     ]
   }
   </script>
