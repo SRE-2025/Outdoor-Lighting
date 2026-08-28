@@ -1,25 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
-      <stop offset="0" stop-color="#2F5D3A"/>
-      <stop offset="1" stop-color="#1E3E26"/>
+      <stop offset="0" stop-color="#14294A"/>
+      <stop offset="1" stop-color="#0B182C"/>
     </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E9B96B" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#E9B96B" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="0" y="606" width="1200" height="24" fill="#B4562C"/>
-  <g opacity="0.12" fill="none" stroke="#EFE7D8" stroke-width="2">
-    <circle cx="1040" cy="120" r="210"/>
-    <circle cx="1040" cy="120" r="140"/>
-  </g>
-  <!-- logo mark -->
+  <circle cx="1010" cy="150" r="260" fill="url(#glow)"/>
+  <rect x="0" y="606" width="1200" height="24" fill="#E39A2B"/>
+  <!-- bulb mark -->
   <g transform="translate(90,150)">
-    <rect x="0" y="0" width="92" height="92" rx="22" fill="#25492D" stroke="#4C8759" stroke-width="2"/>
-    <path d="M46 74V41" stroke="#EFE7D8" stroke-width="4.5" stroke-linecap="round"/>
-    <path d="M46 52c-2.3-11.5-11.5-16.3-23-16.3 0 11.5 7.7 18.2 23 18.2Z" fill="#EFE7D8"/>
-    <path d="M46 43c2.1-10.6 10.2-14.4 20.2-14.4 0 10.6-6.3 16.4-20.2 16.4Z" fill="#B4562C"/>
+    <rect x="0" y="0" width="92" height="92" rx="22" fill="#0B182C" stroke="#2C4A78" stroke-width="2"/>
+    <circle cx="46" cy="40" r="20" fill="#E9B96B"/>
+    <rect x="36" y="58" width="20" height="8" rx="2" fill="#EFE7D8"/>
+    <rect x="39" y="66" width="14" height="6" rx="3" fill="#EFE7D8"/>
   </g>
-  <text x="212" y="196" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="4" fill="#D8C9AE" font-weight="700">GROWING GREEN, LIVING BEAUTY</text>
-  <text x="88" y="372" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" fill="#FFFFFF">Excel Lawn Care</text>
-  <text x="90" y="482" font-family="Arial, sans-serif" font-size="31" fill="#E7EEE4">Lawn care, landscape design &amp; build · Central Texas</text>
-  <text x="90" y="540" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#D8C9AE">Family-owned in Buda since 1998 &nbsp;·&nbsp; 5.0★ &nbsp;·&nbsp; BBB A+</text>
+  <text x="212" y="196" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="4" fill="#E9B96B" font-weight="700">BEAUTIFULLY LIT, EVERY NIGHT</text>
+  <text x="88" y="344" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" fill="#FFFFFF">Excel Outdoor</text>
+  <text x="88" y="430" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" fill="#FFFFFF">Lighting Co.</text>
+  <text x="90" y="502" font-family="Arial, sans-serif" font-size="30" fill="#E8EDF4">Permanent · Landscape · Holiday · Commercial lighting</text>
+  <text x="90" y="556" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#E9B96B">Family-owned in Buda, TX &nbsp;·&nbsp; Insured &amp; bonded &nbsp;·&nbsp; 5.0★</text>
 </svg>
