@@ -570,3 +570,12 @@ li { margin-bottom: .4em; }
 /* Original brand lockup: keep the business’s established wordmark prominent and uncluttered. */
 .brand__logo { width: 176px; height: auto; max-height: 58px; object-fit: contain; object-position: left center; }
 @media (max-width: 520px) { .brand__logo { width: 142px; max-height: 50px; } }
+
+
+/* Original, non-repeating project photography */
+.hero { position: relative; overflow: hidden; }
+.hero__media { position: absolute; inset: 0; z-index: 0; }
+.hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,24,44,.92) 0%, rgba(11,24,44,.72) 46%, rgba(11,24,44,.30) 100%); }
+.hero__media .hero__image { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.82) contrast(.98) brightness(.78); }
+.hero > .wrap { position: relative; z-index: 1; }
+@media (max-width: 700px) { .hero__media::after { background: linear-gradient(120deg, rgba(11,24,44,.94), rgba(11,24,44,.72)); } }

@@ -4,6 +4,7 @@ title: "About — Family-Owned Outdoor Lighting in Buda, TX"
 description: "Excel Outdoor Lighting Co. is a family-owned outdoor lighting company in Buda, TX, serving Hays County. Insured, bonded, and backed by 20+ years of lighting experience."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -33,11 +34,7 @@ description: "Excel Outdoor Lighting Co. is a family-owned outdoor lighting comp
       <p>That's why customers call us back season after season for holiday lighting, and refer their neighbors for permanent and landscape lighting.</p>
     </div>
     <div>
-      <div class="glowpanel reveal">
-        <span class="glowpanel__icon">{{ ico.svg("bulb") }}</span>
-        <p class="glowpanel__title">Family-owned in Buda, TX</p>
-        <p class="glowpanel__sub">Insured &amp; bonded · 20+ years experience</p>
-      </div>
+      <figure class="media reveal">{{ media.image("about", "Excel Outdoor Lighting planning a custom exterior lighting design") }}</figure>
       <div class="badges" style="margin-top:22px">
         <span class="badge">{{ ico.svg("star") }} 5.0★ Google</span>
         <span class="badge">{{ ico.svg("shield") }} Insured &amp; bonded</span>

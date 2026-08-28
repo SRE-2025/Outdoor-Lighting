@@ -20,6 +20,7 @@ eleventyComputed:
     description: "{{ cat.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -44,6 +45,7 @@ eleventyComputed:
     <p class="lead">{{ cat.intro }}</p>
     <a class="btn btn--primary" href="/contact/">Get a Free Estimate {{ ico.svg("arrow") }}</a>
   </div>
+  <div class="wrap narrow" style="margin:30px auto 0"><figure class="media reveal">{{ media.image("category-" + cat.slug, cat.name + " designed for Central Texas properties") }}</figure></div>
   {% if cat.body %}
   <div class="wrap narrow prose" style="margin:28px auto 0">
     {% for sec in cat.body %}

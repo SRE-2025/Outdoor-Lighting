@@ -21,6 +21,7 @@ eleventyComputed:
     description: "{{ service.short | safe }}"
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -62,6 +63,7 @@ eleventyComputed:
       {% endif %}
     </div>
     <div>
+      <figure class="media reveal" style="margin-bottom:22px">{{ media.image("service-" + service.slug, service.name + " exterior lighting project") }}</figure>
       <div class="card card--accent">
         <p class="eyebrow">Free estimate</p>
         <h3 style="margin-top:4px">Get {{ service.name | lower }} done right</h3>

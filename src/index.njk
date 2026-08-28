@@ -4,8 +4,10 @@ title: "Outdoor Lighting in Buda, Kyle & Hays County, TX"
 description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor lighting, landscape lighting, holiday lighting & commercial lighting across Buda, Kyle, San Marcos & Hays County. Family-owned, insured & bonded. 5-star rated. Free consultations."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero">
+  <div class="hero__media" aria-hidden="true">{{ media.image("home-hero", "", "hero__image", "eager") }}</div>
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">{{ site.tagline }}</p>
@@ -50,11 +52,10 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
       </ul>
     </div>
     <div>
-      <div class="glowpanel reveal">
-        <span class="glowpanel__icon">{{ ico.svg("bulb") }}</span>
-        <p class="glowpanel__title">Beautifully lit, every night</p>
-        <p class="glowpanel__sub">Permanent · Landscape · Holiday · Commercial</p>
-      </div>
+      <figure class="media reveal">
+        {{ media.image("home-intro", "Custom landscape lighting on a Central Texas stone path") }}
+        <figcaption class="media__label">Custom lighting, designed around your property</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -70,6 +71,7 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
     <div class="grid grid-3 grid--center">
       {% for c in serviceCategories %}
         <a class="card card--link" href="/services/{{ c.slug }}/">
+          <figure class="card__photo">{{ media.image("home-category-" + c.slug, c.name + " by Excel Outdoor Lighting") }}</figure>
           <div class="card__body">
           <div class="card__icon card__icon--lg">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
@@ -103,11 +105,10 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
 <section class="section">
   <div class="wrap split">
     <div>
-      <div class="glowpanel glowpanel--alt reveal">
-        <span class="glowpanel__icon">{{ ico.svg("bulb") }}</span>
-        <p class="glowpanel__title">One system. Every occasion.</p>
-        <p class="glowpanel__sub">Warm white nightly · Team colors on game day · Full holiday scenes</p>
-      </div>
+      <figure class="media reveal">
+        {{ media.image("home-permanent", "Warm permanent eave lighting on a Central Texas home") }}
+        <figcaption class="media__label">Permanent lighting for every occasion</figcaption>
+      </figure>
     </div>
     <div>
       <p class="eyebrow">Permanent outdoor lighting</p>

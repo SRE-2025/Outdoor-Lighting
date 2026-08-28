@@ -4,6 +4,7 @@ title: "Frequently Asked Questions — Excel Outdoor Lighting"
 description: "Answers about outdoor lighting in Hays County — service areas, permanent lighting, holiday lighting, warranties, consultations and more. Family-owned, insured & bonded."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -21,7 +22,8 @@ description: "Answers about outdoor lighting in Hays County — service areas, p
 <nav class="wrap crumbs"><a href="/">Home</a><span>/</span>FAQs</nav>
 
 <section class="section">
-  <div class="wrap">
+  <div class="wrap split" style="align-items:start">
+    <figure class="media reveal">{{ media.image("faqs", "Outdoor lighting consultation with a local specialist") }}</figure>
     <div class="faq">
       {% for f in faqs %}
       <details{% if loop.first %} open{% endif %}>

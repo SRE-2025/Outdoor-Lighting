@@ -4,6 +4,7 @@ title: "Service Areas — Outdoor Lighting Across Hays County"
 description: "Excel Outdoor Lighting Co. serves Buda, Kyle, San Marcos, Dripping Springs, Wimberley, Driftwood and the surrounding Austin area with permanent, landscape, holiday & commercial lighting."
 ---
 {% import "partials/icons.njk" as ico %}
+{% import "partials/media.njk" as media %}
 {% set totalCities = (locations.priority | length) + (locations.additional | length) %}
 
 <section class="hero hero--page">
@@ -28,6 +29,7 @@ description: "Excel Outdoor Lighting Co. serves Buda, Kyle, San Marcos, Dripping
       <h2>Our core service cities</h2>
       <p class="lead">These are the communities we serve most — click through for local details.</p>
     </div>
+    <figure class="media reveal" style="max-width:900px;margin:0 auto 34px">{{ media.image("areas", "Outdoor lighting for homes and businesses across Hays County") }}</figure>
     <div class="grid grid-4">
       {% for loc in locations.priority %}
       <a class="card card--link" href="/service-areas/{{ loc.slug }}/">
