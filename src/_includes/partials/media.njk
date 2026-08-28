@@ -1,0 +1,41 @@
+{% set photos = {
+  "home-hero": "/assets/img/excel-lighting-1.png",
+  "home-intro": "/assets/img/excel-lighting-2.png",
+  "home-permanent": "/assets/img/excel-lighting-3.png",
+  "home-category-permanent-outdoor-lighting": "/assets/img/excel-lighting-4.png",
+  "home-category-landscape-lighting": "https://images.unsplash.com/photo-1519608487953-e999c86e745?auto=format&fit=crop&w=1200&q=82",
+  "home-category-outdoor-living-space-lighting": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=82",
+  "home-category-holiday-lighting": "https://images.unsplash.com/photo-1543862479-2f1f6fef6b24?auto=format&fit=crop&w=1200&q=82",
+  "home-category-commercial-lighting": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=82",
+  "category-permanent-outdoor-lighting": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=82",
+  "category-landscape-lighting": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=82",
+  "category-outdoor-living-space-lighting": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=82",
+  "category-holiday-lighting": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?auto=format&fit=crop&w=1200&q=82",
+  "category-commercial-lighting": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=82",
+  "service-permanent-roofline-lighting": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=82",
+  "service-app-controlled-lighting": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=82",
+  "service-year-round-accent-lighting": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=82",
+  "service-path-walkway-lighting": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=82",
+  "service-uplighting-trees-architecture": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=82",
+  "service-garden-bed-lighting": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=82",
+  "service-security-lighting": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=82",
+  "service-patio-deck-lighting": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=82",
+  "service-pergola-pavilion-lighting": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=82",
+  "service-pool-water-feature-lighting": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=82",
+  "service-outdoor-kitchen-lighting": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=82",
+  "service-christmas-roofline-lighting": "https://images.unsplash.com/photo-1543257580-7269da773bf8?auto=format&fit=crop&w=1200&q=82",
+  "service-tree-wrapping-wreaths": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?auto=format&fit=crop&w=1200&q=82",
+  "service-install-takedown-storage": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1200&q=82",
+  "service-architectural-accent-lighting": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=82",
+  "service-commercial-landscape-lighting": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=82",
+  "service-parking-security-lighting": "https://images.unsplash.com/photo-1519608487953-e999c86e745?auto=format&fit=crop&w=1200&q=82",
+  "about": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=82",
+  "process": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=82",
+  "contact": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=82",
+  "areas": "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=1200&q=82",
+  "faqs": "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=82"
+} %}
+
+{% macro image(key, alt, className="", loading="lazy") %}
+<img class="media__image {{ className }}" src="{{ photos[key] }}" alt="{{ alt }}" loading="{{ loading }}" decoding="async">
+{% endmacro %}
