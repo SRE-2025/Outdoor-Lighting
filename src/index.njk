@@ -37,55 +37,49 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
   </div>
 </div>
 
-<!-- Intro / positioning -->
+<!-- Intro / positioning: centered statement + credentials -->
 <section class="section">
-  <div class="wrap split">
-    <div>
-      <p class="eyebrow">Who we are</p>
-      <h2>Custom outdoor lighting, done right the first time.</h2>
-      <p class="lead">Excel Outdoor Lighting Co. is a family-owned lighting company based in Buda. We design and install professional exterior lighting across Hays County — and we back every install with real warranties and real service.</p>
-      <p>Our team brings over 20 years of exterior-lighting experience to every project. We design the system around your property, install it cleanly with concealed wiring and weatherproof LED fixtures, and stay on to service it — so it looks incredible on night one and every night after.</p>
-      <ul class="checks mt-2">
-        <li>{{ ico.svg("check") }} <span><strong>Permanent &amp; landscape lighting</strong> designed for your home</span></li>
-        <li>{{ ico.svg("check") }} <span><strong>Warm, low-glare LED</strong> — beautiful, efficient and long-lasting</span></li>
-        <li>{{ ico.svg("check") }} <span><strong>Fully insured &amp; bonded</strong>, with a 1-year labor warranty</span></li>
-      </ul>
-    </div>
-    <div>
-      <figure class="media reveal">
-        {{ media.image("home-intro", "Custom landscape lighting on a Central Texas stone path") }}
-        <figcaption class="media__label">Custom lighting, designed around your property</figcaption>
-      </figure>
-    </div>
+  <div class="wrap narrow center" style="margin:0 auto">
+    <p class="eyebrow">Who we are</p>
+    <h2>Custom outdoor lighting, done right the first time.</h2>
+    <p class="lead">Excel Outdoor Lighting Co. is a family-owned lighting company based in Buda. Our team brings over 20 years of exterior-lighting experience to every project — we design the system around your property, install it cleanly with concealed wiring and weatherproof LED fixtures, and stay on to service it for years.</p>
+  </div>
+  <div class="wrap creds">
+    <div class="cred"><span class="cred__n">{{ site.experience }}</span><span class="cred__l">Years of lighting experience</span></div>
+    <div class="cred"><span class="cred__n">5.0★</span><span class="cred__l">Google review rating</span></div>
+    <div class="cred"><span class="cred__n">Insured</span><span class="cred__l">Fully insured &amp; bonded</span></div>
+    <div class="cred"><span class="cred__n">5-yr</span><span class="cred__l">Parts warranty on permanent lighting</span></div>
   </div>
 </section>
 
-<!-- Services -->
+<!-- Services as editorial rows with real project imagery -->
 <section class="section section--soft">
-  <div class="wrap">
-    <div class="center narrow" style="margin:0 auto 44px">
-      <p class="eyebrow">What we do</p>
-      <h2>Lighting for every part of your property</h2>
-      <p class="lead">From always-on permanent lighting to a full landscape design or a professional holiday display — one local team designs, installs and services it all.</p>
-    </div>
-    <div class="grid grid-3 grid--center">
-      {% for c in serviceCategories %}
-        <a class="card card--link" href="/services/{{ c.slug }}/">
-          <figure class="card__photo">{{ media.image("home-category-" + c.slug, c.name + " by Excel Outdoor Lighting") }}</figure>
-          <div class="card__body">
-          <div class="card__icon card__icon--lg">{{ ico.svg(c.icon) }}</div>
-          <h3>{{ c.name }}</h3>
-          <p class="muted">{{ c.short }}</p>
-          <span class="card__more">
-            {% if c.subs.length > 1 %}{{ c.subs.length }} services{% else %}Learn more{% endif %} {{ ico.svg("arrow") }}
-          </span>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-    <div class="center" style="margin-top:32px">
-      <a class="btn btn--ghost" href="/services/">See all our lighting services {{ ico.svg("arrow") }}</a>
-    </div>
+  <div class="wrap center narrow" style="margin:0 auto 40px">
+    <p class="eyebrow">What we do</p>
+    <h2>Five ways we light a property</h2>
+    <p class="lead">From always-on permanent lighting to a full landscape design or a professional holiday display — one local team designs, installs and services it all.</p>
+  </div>
+  <div class="wrap feature-rows">
+    {% for c in serviceCategories %}
+    <article class="feature-row reveal">
+      <a class="feature-row__img" href="/services/{{ c.slug }}/" aria-label="{{ c.name }}">{{ media.image("home-category-" + c.slug, c.name + " by Excel Outdoor Lighting") }}</a>
+      <div class="feature-row__body">
+        <span class="feature-row__num">{{ "0" }}{{ loop.index }}</span>
+        <h3><a href="/services/{{ c.slug }}/">{{ c.name }}</a></h3>
+        <p class="muted">{{ c.short }}</p>
+        <div class="feature-row__subs">
+          {% for slug in c.subs %}
+            {% for s in services %}{% if s.slug == slug %}
+            <a class="chip" href="/services/{{ s.slug }}/" style="text-decoration:none">{{ s.name }}</a>
+            {% endif %}{% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="feature-row__cta">
+        <a class="btn btn--ghost" href="/services/{{ c.slug }}/">Explore {{ ico.svg("arrow") }}</a>
+      </div>
+    </article>
+    {% endfor %}
   </div>
 </section>
 
@@ -101,26 +95,23 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
   </div>
 </section>
 
-<!-- Permanent lighting highlight -->
-<section class="section">
-  <div class="wrap split">
-    <div>
-      <figure class="media reveal">
-        {{ media.image("home-permanent", "Warm permanent eave lighting on a Central Texas home") }}
-        <figcaption class="media__label">Permanent lighting for every occasion</figcaption>
-      </figure>
+<!-- Permanent lighting spotlight — full-bleed image band -->
+<section class="spotlight">
+  <div class="spotlight__media" aria-hidden="true">{{ media.image("home-permanent", "", "spotlight__img") }}</div>
+  <div class="wrap narrow center spotlight__inner">
+    <p class="eyebrow">Permanent outdoor lighting</p>
+    <h2>Never hang a strand of lights again.</h2>
+    <p class="lead" style="color:#EAF0F7">Our permanent lighting tucks a channel of app-controlled, full-color LEDs under your eaves. Invisible by day, it delivers warm accent light every night and full holiday color on command — no ladders, no takedown, ever.</p>
+    <div class="pill-row">
+      <span class="pill">{{ ico.svg("bulb") }} Warm white nightly</span>
+      <span class="pill">{{ ico.svg("star") }} Team colors on game day</span>
+      <span class="pill">{{ ico.svg("award") }} Full holiday scenes</span>
     </div>
-    <div>
-      <p class="eyebrow">Permanent outdoor lighting</p>
-      <h2>Never hang a strand of lights again.</h2>
-      <p class="lead">Our permanent lighting tucks a channel of app-controlled, full-color LEDs under your eaves. Invisible by day, it delivers warm accent light every night and full holiday color on command — no ladders, no takedown, ever.</p>
-      <p>It's the one upgrade that pays you back all year: better curb appeal, more safety, and a holiday display that's ready at the tap of a button.</p>
-      <a class="btn btn--primary" href="/services/permanent-outdoor-lighting/">Explore Permanent Lighting {{ ico.svg("arrow") }}</a>
-    </div>
+    <a class="btn btn--primary btn--lg" href="/services/permanent-outdoor-lighting/" style="margin-top:26px">Explore Permanent Lighting {{ ico.svg("arrow") }}</a>
   </div>
 </section>
 
-<!-- Approved video -->
+<!-- Approved project video -->
 <section class="section section--soft">
   <div class="wrap split">
     <div>
@@ -138,64 +129,37 @@ description: "Excel Outdoor Lighting Co. designs & installs permanent outdoor li
   </div>
 </section>
 
-<!-- Process -->
+<!-- Process — horizontal steps -->
 <section class="section">
-  <div class="wrap">
-    <div class="center narrow" style="margin:0 auto 44px">
-      <p class="eyebrow">How we work</p>
-      <h2>Design → Install → Enjoy</h2>
-      <p class="lead">One team, one point of contact, from the free consultation to years of easy service. Simple and done right.</p>
-    </div>
-    <div class="grid grid-3 process">
-      <div class="process__item">
-        <div class="process__num">1</div>
-        <h3>Design</h3>
-        <p class="muted">We visit your property for a free consultation, learn what you want to light and why, and design a system around your home — then send a detailed written estimate.</p>
-      </div>
-      <div class="process__item">
-        <div class="process__num">2</div>
-        <h3>Install</h3>
-        <p class="muted">Our own crew installs clean, weatherproof LED fixtures with concealed wiring, dials in the aim and scenes, and walks you through the app before we leave.</p>
-      </div>
-      <div class="process__item">
-        <div class="process__num">3</div>
-        <h3>Enjoy</h3>
-        <p class="muted">You enjoy the lighting — and we stay on to service it, with a 1-year labor warranty and a 5-year parts warranty on permanent lighting.</p>
-      </div>
-    </div>
+  <div class="wrap center narrow" style="margin:0 auto 44px">
+    <p class="eyebrow">How we work</p>
+    <h2>Design → Install → Enjoy</h2>
+    <p class="lead">One team, one point of contact, from the free consultation to years of easy service.</p>
+  </div>
+  <div class="wrap process-line">
+    <div class="process-line__step"><span class="process-line__num">1</span><h3>Design</h3><p class="muted">A free in-home consultation, then a system designed around your property and a detailed written estimate.</p></div>
+    <div class="process-line__step"><span class="process-line__num">2</span><h3>Install</h3><p class="muted">Our own crew installs weatherproof LED fixtures with concealed wiring and sets up your app before we leave.</p></div>
+    <div class="process-line__step"><span class="process-line__num">3</span><h3>Enjoy</h3><p class="muted">You enjoy the lighting — and we service it, with a 1-year labor and 5-year parts warranty.</p></div>
   </div>
 </section>
 
-<!-- Reviews (scrolling) -->
+<!-- Reviews — static grid -->
 <section class="section section--soft">
-  <div class="wrap">
-    <div class="center narrow" style="margin:0 auto 36px">
-      <p class="eyebrow">What customers say</p>
-      <h2>A perfect 5.0★ rating</h2>
-      <p class="lead">Hays County homeowners and businesses trust us to light their properties — here's what a few of them had to say.</p>
-    </div>
+  <div class="wrap center narrow" style="margin:0 auto 36px">
+    <p class="eyebrow">What customers say</p>
+    <h2>A perfect 5.0★ rating</h2>
   </div>
-  <div class="reviews-marquee" aria-label="Customer reviews">
-    <div class="reviews-track">
-      {% for r in reviews.featured %}
-      <figure class="review-card">
-        <div class="review__stars">★★★★★</div>
-        <blockquote>"{{ r.quote }}"</blockquote>
-        <figcaption><span class="review__author">{{ r.author }}</span><span class="review__context"> · {{ r.context }}</span></figcaption>
-      </figure>
-      {% endfor %}
-      {# duplicate set for seamless looping #}
-      {% for r in reviews.featured %}
-      <figure class="review-card" aria-hidden="true">
-        <div class="review__stars">★★★★★</div>
-        <blockquote>"{{ r.quote }}"</blockquote>
-        <figcaption><span class="review__author">{{ r.author }}</span><span class="review__context"> · {{ r.context }}</span></figcaption>
-      </figure>
-      {% endfor %}
-    </div>
+  <div class="wrap reviews-grid">
+    {% for r in reviews.featured %}
+    <figure class="review-card">
+      <div class="review__stars">★★★★★</div>
+      <blockquote>"{{ r.quote }}"</blockquote>
+      <figcaption><span class="review__author">{{ r.author }}</span><span class="review__context"> · {{ r.context }}</span></figcaption>
+    </figure>
+    {% endfor %}
   </div>
-  <div class="wrap center" style="margin-top:34px">
-    <a class="btn btn--primary btn--lg" href="{{ site.social.google }}" target="_blank" rel="noopener">{{ ico.svg("star") }} Leave us a Google review</a>
+  <div class="wrap center" style="margin-top:32px">
+    <a class="btn btn--ghost" href="{{ site.social.google }}" target="_blank" rel="noopener">{{ ico.svg("star") }} Read &amp; leave Google reviews</a>
   </div>
 </section>
 
