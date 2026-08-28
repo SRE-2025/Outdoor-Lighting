@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: "Landscape Design, Build & Turf Care in Buda, TX"
-description: "Research Turf Management designs, builds & maintains water-wise landscapes across Buda, Kyle, San Marcos & Central Texas. Family-owned since 1998. 5-star rated. Free estimates."
+title: "Lawn Care & Landscaping in Buda, Kyle & Central Texas"
+description: "Research Turf Management provides lawn care, landscape design, hardscape & sprinkler services across Buda, Kyle, San Marcos & Central Texas. Family-owned since 1998. 5-star rated. Free estimates."
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/scene.njk" as scn %}
@@ -11,8 +11,8 @@ description: "Research Turf Management designs, builds & maintains water-wise la
   <div class="wrap">
     <div class="hero__inner">
       <p class="hero__tagline">{{ site.tagline }}</p>
-      <h1>Central Texas landscapes, designed &amp; built to thrive.</h1>
-      <p class="hero__sub">From native-plant designs and pergolas to turf that stays green through a Hill Country August — Research Turf Management is the family-owned crew Buda has trusted since {{ site.parentFounded }}.</p>
+      <h1>Lawn care &amp; landscaping, built for Central Texas.</h1>
+      <p class="hero__sub">From dependable lawn care and native-plant design to pergolas, patios and sprinkler systems — Research Turf Management is the family-owned crew Buda has trusted since {{ site.parentFounded }}.</p>
       <div class="hero__actions">
         <a class="btn btn--primary btn--lg" href="/contact/">Get a Free Estimate</a>
         <a class="btn btn--white btn--lg" href="/services/">Our Services</a>
@@ -32,7 +32,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <span>{{ ico.svg("award") }} Family-owned since <b>{{ site.parentFounded }}</b></span>
       <span>{{ ico.svg("check") }} Design → Build → Maintain</span>
       <span>{{ ico.svg("shield") }} Licensed &amp; insured</span>
-      <span>{{ ico.svg("star") }} <b>10% off</b> for military, first responders, nurses &amp; teachers</span>
+      <span>{{ ico.svg("star") }} <b>5.0★</b> Google-rated &amp; BBB accredited</span>
     </div>
   </div>
 </div>
@@ -48,7 +48,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <ul class="checks mt-2">
         <li>{{ ico.svg("check") }} <span><strong>Native &amp; water-wise plantings</strong> suited to Hays County soil and restrictions</span></li>
         <li>{{ ico.svg("check") }} <span><strong>High-craft hardscape</strong> — pergolas, patios, masonry &amp; stonework</span></li>
-        <li>{{ ico.svg("check") }} <span><strong>Ongoing turf management</strong> from a team that studies turf</span></li>
+        <li>{{ ico.svg("check") }} <span><strong>Dependable lawn care &amp; maintenance</strong> from a crew that knows Central Texas grass</span></li>
       </ul>
     </div>
     <div>
@@ -71,9 +71,8 @@ description: "Research Turf Management designs, builds & maintains water-wise la
     <div class="grid grid-3">
       {% for c in serviceCategories %}
         <a class="card card--link" href="/services/{{ c.slug }}/">
-          <div class="card__photo">{{ photo.image(c.photo, c.name + " in Central Texas") }}</div>
           <div class="card__body">
-          <div class="card__icon">{{ ico.svg(c.icon) }}</div>
+          <div class="card__icon card__icon--lg">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
           <p class="muted">{{ c.short }}</p>
           <span class="card__more">
@@ -142,7 +141,7 @@ description: "Research Turf Management designs, builds & maintains water-wise la
       <div class="process__item">
         <div class="process__num">3</div>
         <h3>Maintain</h3>
-        <p class="muted">We keep it thriving season after season with turf management, trimming, and irrigation care. The same faces, year after year.</p>
+        <p class="muted">We keep it thriving season after season with lawn care, trimming, and irrigation. The same faces, year after year.</p>
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/photo.njk" as photo %}
+{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -27,9 +28,8 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
     <div class="grid grid-3">
       {% for c in serviceCategories %}
       <a class="card card--link" href="/services/{{ c.slug }}/">
-        <div class="card__photo">{{ photo.image(c.photo, c.name + " in Central Texas") }}</div>
         <div class="card__body">
-          <div class="card__icon">{{ ico.svg(c.icon) }}</div>
+          <div class="card__icon card__icon--lg">{{ ico.svg(c.icon) }}</div>
           <h3>{{ c.name }}</h3>
           <p class="muted">{{ c.short }}</p>
           <span class="card__more">
@@ -53,7 +53,7 @@ description: "Landscape design, installation, hardscape, pergolas, lawn care, tr
         <li>{{ ico.svg("check") }} <span>Residential &amp; light commercial properties welcome</span></li>
         <li>{{ ico.svg("check") }} <span>Native &amp; water-wise recommendations for Hays County</span></li>
         <li>{{ ico.svg("check") }} <span>Licensed, insured &amp; warranty-backed work</span></li>
-        <li>{{ ico.svg("check") }} <span>10% off for military, first responders, nurses &amp; teachers</span></li>
+        <li>{{ ico.svg("check") }} <span>One reliable crew from design through maintenance</span></li>
       </ul>
     </div>
     <div>

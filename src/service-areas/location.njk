@@ -8,11 +8,11 @@ pagination:
 permalink: "/service-areas/{{ loc.slug }}/"
 eleventyComputed:
   title: "{{ loc.headline | safe }}"
-  description: "Landscape design, hardscape, lawn care & turf management in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Research Turf Management."
+  description: "Lawn care, landscape design, hardscape & sprinkler services in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Research Turf Management."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
-    serviceType: "Landscaping and Turf Management"
+    serviceType: "Lawn Care and Landscaping"
     areaServed:
       "@type": "City"
       name: "{{ loc.city }}, TX"
@@ -52,6 +52,14 @@ eleventyComputed:
         <li>{{ ico.svg("check") }} <span><a href="/services/{{ c.slug }}/">{{ c.name }}</a> — {{ c.short }}</span></li>
         {% endfor %}
       </ul>
+      {% if loc.body %}
+      <div class="prose__body">
+        {% for sec in loc.body %}
+        <h3>{{ sec.h }}</h3>
+        {% for para in sec.p %}<p>{{ para | safe }}</p>{% endfor %}
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     <div>
       <div class="card">
@@ -61,7 +69,7 @@ eleventyComputed:
           <li>{{ ico.svg("award") }} <span><strong>{{ site.yearsInBusiness }} years</strong> serving Central Texas</span></li>
           <li>{{ ico.svg("shield") }} <span>Licensed, insured &amp; warranty-backed</span></li>
           <li>{{ ico.svg("check") }} <span>One crew from design through maintenance</span></li>
-          <li>{{ ico.svg("check") }} <span>10% off for military, first responders, nurses &amp; teachers</span></li>
+          <li>{{ ico.svg("check") }} <span>Free, no-pressure estimates from the owner</span></li>
         </ul>
         <a class="btn btn--primary" href="/contact/" style="margin-top:12px">Request Your Free Estimate</a>
       </div>
@@ -78,6 +86,38 @@ eleventyComputed:
     </div>
   </div>
 </section>
+
+{% if loc.faqs %}
+<section class="section section--soft">
+  <div class="wrap narrow" style="margin:0 auto">
+    <div class="center" style="margin-bottom:32px">
+      <p class="eyebrow">{{ loc.city }} questions</p>
+      <h2>Landscaping in {{ loc.city }}: FAQs</h2>
+    </div>
+    <div class="faq">
+      {% for item in loc.faqs %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a | safe }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in loc.faqs %}{
+      "@type": "Question",
+      "name": {{ item.q | dump | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | dump | safe }} }
+    }{{ "," if not loop.last }}{% endfor %}
+  ]
+}
+</script>
+{% endif %}
 
 {% set ctaHeading = "Let's transform your " + loc.city + " landscape." %}
 {% set ctaText = "Free, no-pressure consultations for " + loc.city + " homeowners. Talk directly with the owner about your project." %}

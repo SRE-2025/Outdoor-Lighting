@@ -54,12 +54,23 @@ eleventyComputed:
         <li>{{ ico.svg("check") }} <span>{{ f }}</span></li>
         {% endfor %}
       </ul>
+      {% if service.body %}
+      <div class="prose__body">
+        {% for sec in service.body %}
+        <h3>{{ sec.h }}</h3>
+        {% for para in sec.p %}<p>{{ para | safe }}</p>{% endfor %}
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     <div>
-      <figure class="media media--tall reveal">
-        {{ photo.image(parentCat.photo if parentCat else "lawn", service.name + " in Central Texas") }}
-        <span class="media__label">{{ service.name }} · Central Texas</span>
-      </figure>
+      <div class="card card--accent">
+        <p class="eyebrow">Free estimate</p>
+        <h3 style="margin-top:4px">Get {{ service.name | lower }} done right</h3>
+        <p class="muted">Family-owned since {{ site.parentFounded }}, licensed &amp; insured, and 5.0★ Google-rated. Talk directly with the owner about your project.</p>
+        <a class="btn btn--primary" href="/contact/" style="margin-top:6px">Get a Free Estimate</a>
+        <a class="btn btn--ghost" href="tel:{{ site.phoneRaw }}" style="margin-top:10px">{{ ico.svg("phone") }} {{ site.phone }}</a>
+      </div>
       <div class="card" style="margin-top:22px">
         <h3 style="margin-top:0">Serving your neighborhood</h3>
         <p class="muted">Available across our full greater-Austin service area, including:</p>
@@ -73,8 +84,40 @@ eleventyComputed:
   </div>
 </section>
 
-<!-- Other services -->
+{% if service.faqs %}
 <section class="section section--soft">
+  <div class="wrap narrow" style="margin:0 auto">
+    <div class="center" style="margin-bottom:32px">
+      <p class="eyebrow">Common questions</p>
+      <h2>{{ service.name }} FAQs</h2>
+    </div>
+    <div class="faq">
+      {% for item in service.faqs %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a | safe }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in service.faqs %}{
+      "@type": "Question",
+      "name": {{ item.q | dump | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | dump | safe }} }
+    }{{ "," if not loop.last }}{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Other services -->
+<section class="section">
   <div class="wrap">
     <div class="center narrow" style="margin:0 auto 36px">
       <p class="eyebrow">Explore more</p>

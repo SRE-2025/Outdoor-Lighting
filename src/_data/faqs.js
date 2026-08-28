@@ -27,7 +27,7 @@ module.exports = [
   },
   {
     q: "Do you offer any discounts?",
-    a: "We offer 10% off for military, veterans, first responders, nurses and teachers. Just mention it when you schedule (not combinable with other offers)."
+    a: "We appreciate our service members, first responders, nurses and teachers — if that's you, ask us when you schedule and we'll take care of you. It isn't combinable with other offers."
   },
   {
     q: "Do you also handle pest control?",

@@ -21,6 +21,7 @@ eleventyComputed:
 ---
 {% import "partials/icons.njk" as ico %}
 {% import "partials/photo.njk" as photo %}
+{% import "partials/scene.njk" as scn %}
 
 <section class="hero hero--page">
   <div class="wrap">
@@ -39,17 +40,20 @@ eleventyComputed:
 <nav class="wrap crumbs"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span>{{ cat.name }}</nav>
 
 <section class="section">
-  <div class="wrap split reveal" style="margin-bottom:12px">
-    <figure class="media">
-      {{ photo.image(cat.photo, cat.name + " in Central Texas") }}
-    </figure>
-    <div>
-      <p class="eyebrow">What's included</p>
-      <h2>{{ cat.name }}</h2>
-      <p class="lead">{{ cat.intro }}</p>
-      <a class="btn btn--primary" href="/contact/">Get a Free Estimate {{ ico.svg("arrow") }}</a>
-    </div>
+  <div class="wrap narrow reveal" style="margin:0 auto 8px">
+    <p class="eyebrow">What's included</p>
+    <h2>{{ cat.name }}</h2>
+    <p class="lead">{{ cat.intro }}</p>
+    <a class="btn btn--primary" href="/contact/">Get a Free Estimate {{ ico.svg("arrow") }}</a>
   </div>
+  {% if cat.body %}
+  <div class="wrap narrow prose" style="margin:28px auto 0">
+    {% for sec in cat.body %}
+    <h3>{{ sec.h }}</h3>
+    {% for para in sec.p %}<p>{{ para | safe }}</p>{% endfor %}
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="wrap" style="margin-top:44px">
     <div class="grid grid-3">
       {% for slug in cat.subs %}
@@ -70,8 +74,40 @@ eleventyComputed:
   </div>
 </section>
 
-<!-- Other categories -->
+{% if cat.faqs %}
 <section class="section section--soft">
+  <div class="wrap narrow" style="margin:0 auto">
+    <div class="center" style="margin-bottom:32px">
+      <p class="eyebrow">Common questions</p>
+      <h2>{{ cat.name }} FAQs</h2>
+    </div>
+    <div class="faq">
+      {% for item in cat.faqs %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a | safe }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in cat.faqs %}{
+      "@type": "Question",
+      "name": {{ item.q | dump | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | dump | safe }} }
+    }{{ "," if not loop.last }}{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Other categories -->
+<section class="section">
   <div class="wrap">
     <div class="center narrow" style="margin:0 auto 36px">
       <p class="eyebrow">More services</p>
