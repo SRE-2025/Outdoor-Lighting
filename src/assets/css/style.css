@@ -159,19 +159,30 @@ li { margin-bottom: .4em; }
 .nav__links a:hover { background: var(--green-50); color: var(--green-800); text-decoration: none; }
 
 /* Services hover dropdown (mega-menu) */
-.has-dropdown { position: relative; }
+.site-header .wrap { position: relative; }
+.has-dropdown { position: static; }
 .caret { font-size: .68em; opacity: .8; }
 .dropdown {
-  position: absolute; top: calc(100% + 2px); left: 0; z-index: 60;
-  display: none; grid-template-columns: repeat(3, minmax(150px, 1fr)); gap: 20px 26px;
+  position: absolute; top: calc(100% + 4px); left: 0; z-index: 60;
+  display: none; grid-template-columns: repeat(5, 178px); align-items: start; gap: 4px 20px;
   background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--color-accent);
-  border-radius: 0 0 12px 12px; box-shadow: var(--shadow-lg); padding: 22px 24px; min-width: 620px;
+  border-radius: 0 0 14px 14px; box-shadow: var(--shadow-lg); padding: 22px 26px;
+  max-width: calc(100vw - 32px);
 }
+/* invisible hover bridge so the menu stays open while the cursor crosses to it */
+.dropdown::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; }
 .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { display: grid; }
-.dropdown__col { display: flex; flex-direction: column; }
-.dropdown__head { font-family: var(--font-display); font-weight: 700; color: var(--color-primary); font-size: .97rem; padding: 2px 0 6px; }
-.dropdown__link { color: var(--ink-2); font-size: .9rem; padding: 4px 0; font-weight: 500; }
-.dropdown a:hover { color: var(--color-accent); text-decoration: none; }
+.dropdown__col { display: flex; flex-direction: column; min-width: 0; }
+.dropdown .dropdown__head {
+  display: block; font-family: var(--font-display); font-weight: 700; color: var(--color-primary);
+  font-size: .95rem; padding: 0 0 8px; margin-bottom: 6px; border-bottom: 1px solid var(--line);
+  white-space: normal;
+}
+.dropdown .dropdown__link {
+  display: block; color: var(--ink-2); font-size: .875rem; padding: 5px 0; font-weight: 500;
+  line-height: 1.28; white-space: normal;
+}
+.dropdown a:hover { color: var(--color-accent); background: none; text-decoration: none; }
 .nav__cta { display: flex; align-items: center; gap: 14px; }
 .nav__phone { font-weight: 700; color: var(--color-accent); white-space: nowrap; }
 .nav__phone:hover { text-decoration: none; color: var(--color-accent-dark); }
