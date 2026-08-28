@@ -241,14 +241,14 @@ li { margin-bottom: .4em; }
 .hero--page .hero__actions { margin-bottom: 4px; }
 
 /* ------------------------------------------------------------ trust bar */
-.trustbar { background: var(--dark-2); color: var(--dark-ink); border-bottom: 1px solid var(--dark-line); }
+.trustbar { background: #fff; color: var(--ink-2); border-bottom: 1px solid var(--line); }
 .trustbar__row {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px;
   padding: 16px 0; font-size: .92rem; text-align: center;
 }
 .trustbar__row span { display: inline-flex; align-items: center; gap: 8px; }
-.trustbar__row b { color: #fff; }
-.trustbar svg { width: 18px; height: 18px; color: var(--green-400); }
+.trustbar__row b { color: var(--green-800); }
+.trustbar svg { width: 18px; height: 18px; color: var(--green-600); }
 
 /* --------------------------------------------------------------- grids */
 .grid { display: grid; gap: 22px; }
@@ -276,6 +276,10 @@ li { margin-bottom: .4em; }
   display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
 }
 .card__icon svg { width: 28px; height: 28px; stroke: var(--green-700); }
+.card__icon--lg { width: 64px; height: 64px; border-radius: 16px; margin-bottom: 20px; }
+.card__icon--lg svg { width: 34px; height: 34px; }
+.card--accent { background: var(--green-50, #F1F6EE); border-color: var(--green-200, #cfe0c6); display: flex; flex-direction: column; align-items: flex-start; }
+.card--accent .btn { width: 100%; justify-content: center; }
 .card h3 { color: var(--green-800); }
 .card__more { font-weight: 700; color: var(--green-600); font-size: .95rem; display: inline-flex; align-items: center; gap: 6px; }
 .card--link:hover .card__more { gap: 10px; }
@@ -418,6 +422,9 @@ li { margin-bottom: .4em; }
 .prose h2 { margin-top: 1.6em; }
 .prose h3 { margin-top: 1.3em; color: var(--green-800); }
 .prose ul { padding-left: 1.3em; }
+.prose__body { margin-top: 2em; padding-top: 1.6em; border-top: 1px solid var(--line, #e6e0d6); }
+.prose__body h3:first-child { margin-top: 0; }
+.prose__body p { color: var(--ink-2); line-height: 1.75; }
 
 /* -------------------------------------------------------- breadcrumbs */
 .crumbs { font-size: .86rem; color: var(--muted); padding: 18px 0 0; }
