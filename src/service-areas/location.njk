@@ -8,7 +8,7 @@ pagination:
 permalink: "/service-areas/{{ loc.slug }}/"
 eleventyComputed:
   title: "{{ loc.headline | safe }}"
-  description: "Lawn care, landscape design, hardscape & sprinkler services in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Research Turf Management."
+  description: "Lawn care, landscape design, hardscape & sprinkler services in {{ loc.city | safe }}, TX. Family-owned since 1998, licensed & insured. Free estimates from Excel Lawn Care."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
@@ -18,7 +18,7 @@ eleventyComputed:
       name: "{{ loc.city }}, TX"
     provider:
       "@type": "LandscapingBusiness"
-      name: "Research Turf Management"
+      name: "Excel Lawn Care"
       telephone: "{{ site.phone }}"
 ---
 {% import "partials/icons.njk" as ico %}

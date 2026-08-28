@@ -3,16 +3,16 @@
 module.exports = {
   aggregate: {
     rating: "5.0",
-    // Combined across the family of companies (Excel Pest + Research Turf
+    // Combined across the family of companies (Excel Pest + Excel Lawn Care
     // share one customer base). The turf brand's own Google profile is newer;
     // present the count as combined so it stays accurate, not inflated.
     reviewCount: 41,
-    scope: "across Excel Pest & Research Turf"
+    scope: "across Excel Pest & Excel Lawn Care"
   },
   featured: [
     {
       quote:
-        "We have used Excel Pest / Research Turf Mgmt for the past 13+ years. Pergola, extending the patio, masonry work on the front porch and flower beds, tree trimming, plus regular lawn care.",
+        "We have used Excel Pest / Excel Lawn Care for the past 13+ years. Pergola, extending the patio, masonry work on the front porch and flower beds, tree trimming, plus regular lawn care.",
       author: "Judy Buck",
       context: "13+ year customer",
       date: "2026-03-01"

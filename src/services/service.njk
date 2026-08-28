@@ -9,14 +9,14 @@ permalink: "/services/{{ service.slug }}/"
 tags: service
 eleventyComputed:
   title: "{{ service.name | safe }} in Buda, Kyle & Central Texas"
-  description: "{{ service.short | safe }} Family-owned, licensed & insured. Serving Buda, Kyle, San Marcos & Central Texas. Free estimates from Research Turf Management."
+  description: "{{ service.short | safe }} Family-owned, licensed & insured. Serving Buda, Kyle, San Marcos & Central Texas. Free estimates from Excel Lawn Care."
   schema:
     "@context": "https://schema.org"
     "@type": "Service"
     serviceType: "{{ service.name | safe }}"
     provider:
       "@type": "LandscapingBusiness"
-      name: "Research Turf Management"
+      name: "Excel Lawn Care"
     areaServed: "Central Texas"
     description: "{{ service.short | safe }}"
 ---
