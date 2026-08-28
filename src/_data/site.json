@@ -1,17 +1,17 @@
 {
   "name": "Excel Outdoor Lighting Co.",
   "shortName": "Excel Outdoor Lighting",
-  "tagline": "Beautifully Lit, Every Night",
+  "tagline": "Lighting the Way to Extraordinary Exteriors",
   "url": "https://www.exceloutdoorlightingtx.com",
-  "description": "Excel Outdoor Lighting Co. designs and installs permanent outdoor lighting, landscape lighting, holiday lighting and commercial lighting across Buda, Kyle, San Marcos and Hays County. Family-owned, fully insured & bonded.",
+  "description": "Excel Outdoor Lighting Co. designs and installs permanent outdoor, holiday, landscape, architectural accent and commercial lighting across Hays County and Central Texas.",
   "founded": 2021,
   "parentFounded": 2021,
-  "yearsInBusiness": 4,
+  "yearsInBusiness": 5,
   "experience": "20+",
-  "phone": "(512) 291-5900",
-  "phoneRaw": "+15122915900",
+  "phone": "(737) 252-4169",
+  "phoneRaw": "+17372524169",
   "address": {
-    "street": "175 Warehouse Dr, Ste C",
+    "street": "175 Warehouse Dr, Suite C",
     "city": "Buda",
     "state": "TX",
     "zip": "78610",
@@ -22,24 +22,41 @@
     "lng": -97.8403
   },
   "hours": [
-    { "days": "Monday – Friday", "open": "8:00 AM", "close": "5:00 PM" },
-    { "days": "Saturday – Sunday", "open": "By appointment", "close": "" }
+    {
+      "days": "Monday – Friday",
+      "open": "8:00 AM",
+      "close": "5:00 PM"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "open": "By appointment",
+      "close": ""
+    }
   ],
   "openingHoursSpec": [
-    { "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" }
+    {
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
   ],
   "trust": {
     "googleRating": "5.0",
-    "reviewCount": 4,
-    "insured": "Fully insured & bonded",
-    "warranty": "1-year labor · 5-year parts"
+    "bbbRating": "Licensed, Bonded & Insured",
+    "bbbAccreditedYear": 2021
   },
-  "discount": "Discounts for veterans, first responders, medical professionals, educators & seniors",
+  "discount": "Discounts for veterans, first responders, medical professionals, educators and seniors",
   "offers": [
-    "Free in-home consultations within 24–48 hours",
-    "Detailed estimates within 24–72 hours",
-    "Fully insured & bonded",
-    "1-year labor & 5-year parts warranty"
+    "Free in-home consultations",
+    "Licensed, bonded & insured",
+    "One-year labor warranty",
+    "Five-year Gemstone Lights parts warranty"
   ],
   "sister": {
     "name": "Excel Pest & Lawn Control",
@@ -50,5 +67,9 @@
   "social": {
     "google": "https://www.google.com/search?q=Excel+Outdoor+Lighting+Co+Buda+TX"
   },
-  "author": "Excel Outdoor Lighting Co."
+  "author": "Excel Outdoor Lighting Co.",
+  "owner": {
+    "name": "Excel Outdoor Lighting Co.",
+    "title": "Outdoor Lighting Specialists"
+  }
 }
