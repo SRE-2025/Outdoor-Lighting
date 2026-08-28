@@ -65,10 +65,11 @@ module.exports = [
     slug: "landscape-lighting",
     name: "Landscape Lighting",
     icon: "tree",
-    short: "Soffit downlighting, architectural uplighting and exterior illumination that make your property look exceptional after dark.",
+    short: "Path, uplighting and garden lighting that make your yard beautiful and safe after dark.",
     intro:
-      "Professionally designed landscape lighting brings a refined after-dark look to your exterior. We use soffit-mounted downlighting and carefully aimed architectural illumination to highlight your home, trees, plants, hardscape and water features without a harsh or spotty effect.",
+      "Professionally designed landscape lighting turns a dark yard into an outdoor space you actually use at night. We light paths and steps for safety, uplight your best trees and architecture for drama, and layer warm, low-voltage LED fixtures so the whole property looks intentional — never harsh or spotty.",
     subs: [
+      "path-walkway-lighting",
       "uplighting-trees-architecture",
       "garden-bed-lighting",
       "security-lighting"
