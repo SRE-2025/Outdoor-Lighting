@@ -13,7 +13,7 @@
   <meta name="description" content="{{ metaDesc }}">
   {% set canonical = (page.url | absoluteUrl(site.url)) %}
   <link rel="canonical" href="{{ canonical }}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="{{ robots if robots else 'index, follow, max-image-preview:large' }}">
   <meta name="theme-color" content="#14294A">
 
   <!-- Open Graph -->
