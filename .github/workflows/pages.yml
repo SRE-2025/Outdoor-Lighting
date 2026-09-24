@@ -6,7 +6,7 @@ name: Build & publish to gh-pages
 #
 # ONE-TIME: Repo → Settings → Pages → Build and deployment →
 #   Source: "Deploy from a branch"  ·  Branch: gh-pages  ·  Folder: / (root)  → Save
-# After that, the site auto-updates at https://<org>.github.io/<repo>/ on every push.
+# The production build is served from the custom domain root.
 
 on:
   push:
@@ -35,9 +35,7 @@ jobs:
 
       - run: npm ci
 
-      - name: Build site (project sub-path)
-        env:
-          PATH_PREFIX: /${{ github.event.repository.name }}/
+      - name: Build site (custom domain root)
         run: npm run build
 
       - name: Add .nojekyll
