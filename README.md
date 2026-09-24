@@ -1,7 +1,7 @@
-# Research Turf Management — Website
+# Excel Outdoor Lighting Co. — Website
 
-Marketing website for **Research Turf Management** — landscape design, build &
-turf care in Buda, TX and across Central Texas. _"Growing Green, Living Beauty."_
+Marketing website for **Excel Outdoor Lighting Co.** — permanent, landscape,
+holiday, outdoor-living and commercial lighting across Hays County, Texas.
 
 Built as a fast, SEO-first **static site** with [Eleventy (11ty)](https://www.11ty.dev/).
 It generates plain HTML/CSS/JS with no runtime dependencies, so it hosts anywhere —

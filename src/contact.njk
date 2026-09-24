@@ -23,13 +23,40 @@ description: "Request a free outdoor lighting consultation from Excel Outdoor Li
     <div>
       <p class="eyebrow">Request a consultation</p>
       <h2>Get your free consultation</h2>
-      <p class="muted">Prefer to talk now? Call or text us at <a href="tel:{{ site.phoneRaw }}"><strong>{{ site.phone }}</strong></a> during business hours.</p>
+      <p class="muted">Share a few project details and we’ll open a ready-to-send text to our local team. You review it before anything is sent.</p>
 
-      <div class="contact-options">
-        <a class="btn btn--primary btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a>
-        <a class="btn btn--ghost btn--lg" href="sms:{{ site.phoneRaw }}">Text {{ site.phone }}</a>
+      <form class="form card" id="sms-lead-form" data-phone="{{ site.phoneRaw }}">
+        <div class="form__row">
+          <div>
+            <label for="lead-name">Name</label>
+            <input id="lead-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="lead-city">City or ZIP</label>
+            <input id="lead-city" name="city" type="text" autocomplete="postal-code" required>
+          </div>
+        </div>
+        <div style="margin-top:16px">
+          <label for="lead-service">What would you like illuminated?</label>
+          <select id="lead-service" name="service" required>
+            <option value="">Choose a service</option>
+            {% for cat in serviceCategories %}<option value="{{ cat.name }}">{{ cat.name }}</option>{% endfor %}
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div style="margin-top:16px">
+          <label for="lead-details">Project details</label>
+          <textarea id="lead-details" name="details" placeholder="Tell us about the property, areas you want lit, and your ideal timing."></textarea>
+        </div>
+        <button class="btn btn--primary btn--lg" type="submit" style="margin-top:16px;width:100%">Text My Project Details</button>
+        <p class="form__note">This opens your text-message app with the details filled in. Nothing is sent until you tap Send.</p>
+        <p class="form__status" id="sms-lead-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-options" style="margin-top:18px">
+        <a class="btn btn--ghost btn--lg" href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} Call {{ site.phone }}</a>
+        <a class="btn btn--ghost btn--lg" href="sms:{{ site.phoneRaw }}">Send a Quick Text</a>
       </div>
-      <p class="form__note" style="margin-top:18px">Call or text for a free consultation. We’ll confirm a convenient on-site consultation time.</p>
     </div>
 
     <aside>

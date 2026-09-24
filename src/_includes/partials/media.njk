@@ -1,11 +1,11 @@
 {% set photos = {
-  "home-hero": "/assets/img/excel-lighting-1.png",
-  "home-intro": "/assets/img/excel-lighting-2.png",
-  "home-permanent": "/assets/img/excel-lighting-3.png",
-  "home-category-permanent-outdoor-lighting": "/assets/img/excel-lighting-4.png",
-  "home-category-landscape-lighting": "/assets/img/excel-lighting-9.png",
+  "home-hero": "/assets/img/excel-lighting-1.webp",
+  "home-intro": "/assets/img/excel-lighting-2.webp",
+  "home-permanent": "/assets/img/excel-lighting-3.webp",
+  "home-category-permanent-outdoor-lighting": "/assets/img/excel-lighting-4.webp",
+  "home-category-landscape-lighting": "/assets/img/excel-lighting-9.webp",
   "home-category-outdoor-living-space-lighting": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=82",
-  "home-category-holiday-lighting": "/assets/img/excel-lighting-8.png",
+  "home-category-holiday-lighting": "/assets/img/excel-lighting-8.webp",
   "home-category-commercial-lighting": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=82",
   "category-permanent-outdoor-lighting": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=82",
   "category-landscape-lighting": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=82",
@@ -42,5 +42,5 @@
 } %}
 
 {% macro image(key, alt, className="", loading="lazy") %}
-<img class="media__image {{ className }}" src="{{ photos[key] }}" alt="{{ alt }}" loading="{{ loading }}" decoding="async">
+<img class="media__image {{ className }}" src="{{ photos[key] }}" alt="{{ alt }}" width="1200" height="800" loading="{{ loading }}" decoding="async"{% if loading == "eager" %} fetchpriority="high"{% endif %}>
 {% endmacro %}

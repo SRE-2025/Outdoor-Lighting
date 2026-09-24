@@ -36,6 +36,15 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Keep search snippets within the range most search results can display,
+  // without cutting the final word in half.
+  eleventyConfig.addFilter("metaDescription", (value) => {
+    const text = String(value || "").replace(/\s+/g, " ").trim();
+    if (text.length <= 160) return text;
+    const shortened = text.slice(0, 157).replace(/\s+\S*$/, "");
+    return `${shortened}…`;
+  });
+
   // --- Collections -----------------------------------------------------
   eleventyConfig.addCollection("services", (collectionApi) =>
     collectionApi
