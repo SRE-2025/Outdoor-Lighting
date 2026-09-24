@@ -76,3 +76,32 @@
   }, { threshold: 0.5 });
   nums.forEach(function (el) { io.observe(el); });
 })();
+
+// Turn the static contact form into a pre-filled SMS lead. The visitor reviews
+// the message in their own texting app before anything is sent.
+(function () {
+  var form = document.getElementById('sms-lead-form');
+  if (!form) return;
+
+  var status = document.getElementById('sms-lead-status');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    var data = new FormData(form);
+    var lines = [
+      'Hi Excel Outdoor Lighting, I would like a free consultation.',
+      'Name: ' + data.get('name'),
+      'City/ZIP: ' + data.get('city'),
+      'Service: ' + data.get('service')
+    ];
+    var details = String(data.get('details') || '').trim();
+    if (details) lines.push('Project: ' + details);
+
+    var phone = form.getAttribute('data-phone');
+    var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    var separator = isiOS ? '&' : '?';
+    if (status) status.textContent = 'Opening your text-message app…';
+    window.location.href = 'sms:' + phone + separator + 'body=' + encodeURIComponent(lines.join('\n'));
+  });
+})();

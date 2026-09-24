@@ -497,6 +497,7 @@ li { margin-bottom: .4em; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 560px) { .form__row { grid-template-columns: 1fr; } }
 .form__note { font-size: .85rem; color: var(--muted); }
+.form__status { min-height: 1.25em; margin: 10px 0 0; color: var(--color-primary); font-weight: 700; }
 
 /* -------------------------------------------------------------- footer */
 .site-footer { background: var(--dark); color: var(--dark-muted); padding: 40px 0 20px; font-size: .88rem; border-top: 3px solid var(--green-600); }
