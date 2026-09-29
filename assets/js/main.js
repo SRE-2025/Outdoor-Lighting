@@ -77,31 +77,53 @@
   nums.forEach(function (el) { io.observe(el); });
 })();
 
-// Turn the static contact form into a pre-filled SMS lead. The visitor reviews
-// the message in their own texting app before anything is sent.
+// Submit consultation leads to the office inbox through FormSubmit. The normal
+// form action remains as a no-JavaScript fallback; the AJAX path keeps visitors
+// on-brand and records a GA4 generate_lead event without sending form data to GA.
 (function () {
-  var form = document.getElementById('sms-lead-form');
+  var form = document.getElementById('lead-form');
   if (!form) return;
 
-  var status = document.getElementById('sms-lead-status');
+  var status = document.getElementById('lead-form-status');
+  var button = form.querySelector('button[type="submit"]');
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     if (!form.reportValidity()) return;
 
-    var data = new FormData(form);
-    var lines = [
-      'Hi Excel Outdoor Lighting, I would like a free consultation.',
-      'Name: ' + data.get('name'),
-      'City/ZIP: ' + data.get('city'),
-      'Service: ' + data.get('service')
-    ];
-    var details = String(data.get('details') || '').trim();
-    if (details) lines.push('Project: ' + details);
+    var honeypot = form.elements._honey;
+    if (honeypot && honeypot.value) {
+      window.location.href = '/thank-you/';
+      return;
+    }
 
-    var phone = form.getAttribute('data-phone');
-    var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    var separator = isiOS ? '&' : '?';
-    if (status) status.textContent = 'Opening your text-message app…';
-    window.location.href = 'sms:' + phone + separator + 'body=' + encodeURIComponent(lines.join('\n'));
+    var endpoint = form.getAttribute('data-ajax-endpoint');
+    if (!endpoint || !window.fetch) {
+      HTMLFormElement.prototype.submit.call(form);
+      return;
+    }
+
+    if (status) status.textContent = 'Sending your request…';
+    if (button) button.disabled = true;
+
+    fetch(endpoint, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error('Submission failed');
+        return response.json();
+      })
+      .then(function (result) {
+        if (!result || !result.success) throw new Error('Submission failed');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { method: 'website_form' });
+        }
+        window.location.href = '/thank-you/';
+      })
+      .catch(function () {
+        if (status) status.textContent = 'Finishing your request…';
+        HTMLFormElement.prototype.submit.call(form);
+      });
   });
 })();
