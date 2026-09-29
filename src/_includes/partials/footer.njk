@@ -15,14 +15,14 @@
       </div>
 
       <div>
-        <h4>Services</h4>
+        <h2>Services</h2>
         <ul>
           {% for c in serviceCategories %}
           <li><a href="/services/{{ c.slug }}/">{{ c.name }}</a></li>
           {% endfor %}
           <li><a href="/services/"><strong>All services &rarr;</strong></a></li>
         </ul>
-        <h4 style="margin-top:24px">Explore</h4>
+        <h2 style="margin-top:24px">Explore</h2>
         <ul>
           <li><a href="/about/">About Us</a></li>
           <li><a href="/process/">Our Process</a></li>
@@ -34,7 +34,7 @@
       </div>
 
       <div>
-        <h4>Service Areas</h4>
+        <h2>Service Areas</h2>
         <ul class="footer-cols">
           {% for loc in locations.priority %}
             {% if loop.index <= 10 %}
@@ -46,9 +46,10 @@
       </div>
 
       <div>
-        <h4>Contact</h4>
+        <h2>Contact</h2>
         <ul>
           <li><a href="tel:{{ site.phoneRaw }}">{{ ico.svg("phone") }} {{ site.phone }}</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           <li>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</li>
           <li><strong style="color:#fff">Mon–Fri 8am–5pm</strong></li>
         </ul>
@@ -61,7 +62,7 @@
 
     <div class="footer__legal">
       <span>&copy; {{ "now" | year }} {{ site.name }}. All rights reserved.</span>
-      <span>Buda, TX &middot; {{ site.address.county }} &middot; Design → Install → Enjoy</span>
+      <span><a href="/privacy-policy/">Privacy Policy</a> &middot; Buda, TX &middot; {{ site.address.county }} &middot; Design → Install → Enjoy</span>
     </div>
   </div>
 </footer>

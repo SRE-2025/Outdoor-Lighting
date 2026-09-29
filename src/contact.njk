@@ -23,13 +23,28 @@ description: "Request a free outdoor lighting consultation from Excel Outdoor Li
     <div>
       <p class="eyebrow">Request a consultation</p>
       <h2>Get your free consultation</h2>
-      <p class="muted">Share a few project details and we’ll open a ready-to-send text to our local team. You review it before anything is sent.</p>
+      <p class="muted">Share a few project details and our local team will follow up to schedule your free, no-pressure consultation.</p>
 
-      <form class="form card" id="sms-lead-form" data-phone="{{ site.phoneRaw }}">
+      <form class="form card" id="lead-form" action="https://formsubmit.co/{{ site.email }}" method="post" data-ajax-endpoint="https://formsubmit.co/ajax/{{ site.email }}">
+        <input type="hidden" name="_subject" value="New consultation request from the Excel Outdoor Lighting website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="{{ site.url }}/thank-you/">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <div class="form__row">
           <div>
             <label for="lead-name">Name</label>
             <input id="lead-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="lead-email">Email</label>
+            <input id="lead-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form__row">
+          <div>
+            <label for="lead-phone">Phone</label>
+            <input id="lead-phone" name="phone" type="tel" autocomplete="tel" required>
           </div>
           <div>
             <label for="lead-city">City or ZIP</label>
@@ -48,9 +63,9 @@ description: "Request a free outdoor lighting consultation from Excel Outdoor Li
           <label for="lead-details">Project details</label>
           <textarea id="lead-details" name="details" placeholder="Tell us about the property, areas you want lit, and your ideal timing."></textarea>
         </div>
-        <button class="btn btn--primary btn--lg" type="submit" style="margin-top:16px;width:100%">Text My Project Details</button>
-        <p class="form__note">This opens your text-message app with the details filled in. Nothing is sent until you tap Send.</p>
-        <p class="form__status" id="sms-lead-status" role="status" aria-live="polite"></p>
+        <button class="btn btn--primary btn--lg" type="submit" style="margin-top:16px;width:100%">Request My Free Consultation</button>
+        <p class="form__note">Your request is sent directly to our office. By submitting, you agree to be contacted about your project. See our <a href="/privacy-policy/">privacy policy</a>.</p>
+        <p class="form__status" id="lead-form-status" role="status" aria-live="polite"></p>
       </form>
 
       <div class="contact-options" style="margin-top:18px">
@@ -65,6 +80,7 @@ description: "Request a free outdoor lighting consultation from Excel Outdoor Li
         <h3 style="margin-top:0">Get in touch</h3>
         <ul class="checks" style="gap:16px">
           <li>{{ ico.svg("phone") }} <span><strong>Phone / Text</strong><br><a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a></span></li>
+          <li><span><strong>Email</strong><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
           <li>{{ ico.svg("pin") }} <span><strong>Office</strong><br>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</span></li>
           <li>{{ ico.svg("clock") }} <span><strong>Hours</strong><br>{% for h in site.hours %}{{ h.days }}: {{ h.open }}{% if h.close %}–{{ h.close }}{% endif %}<br>{% endfor %}</span></li>
         </ul>

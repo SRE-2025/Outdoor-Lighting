@@ -16,6 +16,15 @@
   <meta name="robots" content="{{ robots if robots else 'index, follow, max-image-preview:large' }}">
   <meta name="theme-color" content="#14294A">
 
+  <!-- Google Analytics 4: Excel Outdoor Lighting Co. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4MeasurementId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.ga4MeasurementId }}');
+  </script>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.name }}">

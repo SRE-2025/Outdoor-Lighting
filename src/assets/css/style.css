@@ -507,7 +507,7 @@ li { margin-bottom: .4em; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.1fr 1fr; gap: 22px 30px; margin-bottom: 26px; }
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 22px; } }
 @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; } }
-.footer-grid h4 { color: #fff; font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 10px; }
+.footer-grid h2 { color: #fff; font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 10px; }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { margin-bottom: 6px; }
 .footer-grid .footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
