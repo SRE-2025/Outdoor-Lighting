@@ -204,6 +204,11 @@ li { margin-bottom: .4em; }
   display: none; background: none; border: 0; cursor: pointer; padding: 8px; border-radius: 8px;
 }
 .nav__call-mobile { display: none; }
+.nav__fallback { display: none; }
+@media (max-width: 1280px) {
+  html:not(.nav-ready) .nav__toggle { display: none; }
+  html:not(.nav-ready) .nav__fallback { display: inline-block; }
+}
 .mobile-actions { display: none; }
 .nav__toggle svg { width: 26px; height: 26px; stroke: var(--ink); }
 
