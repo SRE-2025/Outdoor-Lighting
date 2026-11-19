@@ -8,6 +8,7 @@
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
     // Close menu when a nav link (not the Services parent) is tapped
+    document.documentElement.classList.add('nav-ready');
     links.addEventListener('click', function (e) {
       if (e.target.tagName === 'A' && !e.target.closest('.has-dropdown > a')) {
         links.classList.remove('open');
@@ -41,7 +42,11 @@
       if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' });
-  els.forEach(function (el) { io.observe(el); });
+  els.forEach(function (el) {
+    io.observe(el);
+    if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in');
+  });
+  document.documentElement.classList.add('js');
 })();
 
 // Animated count-up for stat numbers
